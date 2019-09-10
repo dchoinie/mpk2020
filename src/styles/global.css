@@ -1,0 +1,42 @@
+@tailwind base;
+
+:root {
+  --main-pink: #ed418e;
+  --main-blue: #48c5dd;
+  --main-yellow: #fbed1d;
+  --main-black: #221f1f;
+  --highlight-pink: #8d2168;
+  --highlight-blue: #226a73;
+  --highlight-yellow: #9d9334;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fredoka One", cursive;
+}
+
+p,
+a,
+ul,
+li,
+div {
+  font-family: "Open Sans", sans-serif;
+}
+
+@tailwind components;
+
+.menu-highlight {
+  border-bottom: 2px solid transparent;
+}
+
+.menu-highlight:hover {
+  color: var(--main-pink);
+  border-bottom: 2px solid var(--main-pink);
+  cursor: pointer;
+}
+
+@tailwind utilities;
