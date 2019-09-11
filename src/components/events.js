@@ -13,6 +13,7 @@ export default () => {
             province
             time
             venue
+            ticketLink
           }
           recordId
         }

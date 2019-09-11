@@ -24,7 +24,7 @@ export class about extends Component {
           <div className="text-6xl flex justify-center pb-4">
             <h2 style={{ maxHeight: "64px" }}>#1</h2>
           </div>
-          <h3 className="text-2xl">Chart-Topping</h3>
+          <h3 className="text-2xl">Today's Latest Hits</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet enim
             totam suscipit rerum reprehenderit qui voluptas placeat. Laudantium
