@@ -39,4 +39,32 @@ div {
   cursor: pointer;
 }
 
+#eventsDiv {
+  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
+  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.borderRight {
+  border-right: 1px solid #fff;
+  padding-right: 0.5rem;
+}
+
+.eventButton {
+  font-family: "Fredoka One";
+  padding: 0.5rem;
+  line-height: 1.5;
+  background-color: var(--main-pink);
+  color: #fff;
+  border-radius: 0.25rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.eventButton:hover {
+  background-color: var(--main-blue);
+  cursor: pointer;
+}
+
 @tailwind utilities;

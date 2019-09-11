@@ -14,7 +14,7 @@ import {
 export class header extends Component {
   render() {
     return (
-      <div className="flex justify-between text-white">
+      <div className="flex justify-between text-white relative z-40">
         <div className="px-12 py-4">
           <img src={Logo} alt="Logo" style={{ maxWidth: "250px" }} />
         </div>
