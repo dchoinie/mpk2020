@@ -2,11 +2,7 @@ import React, { Component } from "react"
 import Layout from "../components/layout"
 import PageTitle from "../components/pageTitle"
 
-export class tour extends Component {
-  constructor(props) {
-    super(props)
-  }
-
+export class videos extends Component {
   render() {
     return (
       <Layout>
@@ -16,4 +12,4 @@ export class tour extends Component {
   }
 }
 
-export default tour
+export default videos

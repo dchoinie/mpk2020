@@ -1,6 +1,7 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Background from "../images/live_shot2.jpg"
+import { FaArrowRight } from "react-icons/fa"
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -64,6 +65,10 @@ export default () => {
             </a>
           </div>
         ))}
+        <div className="flex justify-center pinkHighlight">
+          <Link to="/tour">View More</Link>
+          <FaArrowRight className="self-center mx-1" />
+        </div>
       </div>
     </div>
   )

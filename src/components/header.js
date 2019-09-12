@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { Link } from "gatsby"
 import Logo from "../images/logo_horizontal.png"
 import {
   FaFacebook,
@@ -16,7 +17,9 @@ export class header extends Component {
     return (
       <div className="flex justify-between text-white relative z-40">
         <div className="px-12 py-4">
-          <img src={Logo} alt="Logo" style={{ maxWidth: "250px" }} />
+          <Link to="/">
+            <img src={Logo} alt="Logo" style={{ maxWidth: "250px" }} />
+          </Link>
         </div>
         <div className="px-12 py-4">
           <div>
@@ -49,42 +52,52 @@ export class header extends Component {
           </div>
           <div>
             <ul className="flex justify-end text-xl uppercase mt-6">
-              <li
-                className="px-3 menu-highlight"
-                style={{ fontFamily: "Fredoka One" }}
-              >
-                Auditions
-              </li>
-              <li
-                className="px-3 menu-highlight"
-                style={{ fontFamily: "Fredoka One" }}
-              >
-                Tour
-              </li>
-              <li
-                className="px-3 menu-highlight"
-                style={{ fontFamily: "Fredoka One" }}
-              >
-                Videos
-              </li>
-              <li
-                className="px-3 menu-highlight"
-                style={{ fontFamily: "Fredoka One" }}
-              >
-                Meet The MPK
-              </li>
+              <Link to="/auditions">
+                <li
+                  className="px-3 menu-highlight"
+                  style={{ fontFamily: "Fredoka One" }}
+                >
+                  Auditions
+                </li>
+              </Link>
+              <Link to="/tour">
+                <li
+                  className="px-3 menu-highlight"
+                  style={{ fontFamily: "Fredoka One" }}
+                >
+                  Tour
+                </li>
+              </Link>
+              <Link to="/videos">
+                <li
+                  className="px-3 menu-highlight"
+                  style={{ fontFamily: "Fredoka One" }}
+                >
+                  Videos
+                </li>
+              </Link>
+              <Link to="/meet-the-mpk">
+                <li
+                  className="px-3 menu-highlight"
+                  style={{ fontFamily: "Fredoka One" }}
+                >
+                  Meet The MPK
+                </li>
+              </Link>
               <li
                 className="px-3 menu-highlight"
                 style={{ fontFamily: "Fredoka One" }}
               >
                 Shop
               </li>
-              <li
-                className="pl-3 pr-1 menu-highlight"
-                style={{ fontFamily: "Fredoka One" }}
-              >
-                Contact
-              </li>
+              <Link to="/contact">
+                <li
+                  className="pl-3 pr-1 menu-highlight"
+                  style={{ fontFamily: "Fredoka One" }}
+                >
+                  Contact
+                </li>
+              </Link>
             </ul>
           </div>
         </div>

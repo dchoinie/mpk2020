@@ -40,8 +40,8 @@ div {
 }
 
 #eventsDiv {
-  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
-  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
+  /* -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
+  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%); */
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
@@ -65,6 +65,10 @@ div {
 .eventButton:hover {
   background-color: var(--main-blue);
   cursor: pointer;
+}
+
+.pinkHighlight:hover {
+  color: var(--main-pink);
 }
 
 @tailwind utilities;
