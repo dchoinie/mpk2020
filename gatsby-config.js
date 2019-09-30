@@ -1,6 +1,3 @@
-const path = require(`path`)
-require("dotenv").config()
-
 module.exports = {
   siteMetadata: {
     title: `Mini Pop Kids`,
@@ -25,18 +22,6 @@ module.exports = {
         google: {
           families: ["Fredoka One", "Open Sans"],
         },
-      },
-    },
-    {
-      resolve: `gatsby-source-airtable`,
-      options: {
-        tables: [
-          {
-            apiKey: process.env.AIRTABLE_API_KEY,
-            baseId: `appwZGm6ryl1cLQ1o`,
-            tableName: `MPKTourDates`,
-          },
-        ],
       },
     },
     // {
