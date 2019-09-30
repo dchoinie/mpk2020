@@ -1,109 +1,87 @@
-import React, { Component } from "react"
+import React from "react"
+import { Navbar } from "react-bootstrap"
+import Logo from "../images/logos/logo-horizontal.png"
 import { Link } from "gatsby"
-import Logo from "../images/logo_horizontal.png"
 import {
   FaFacebook,
   FaTwitter,
   FaInstagram,
-  FaSpotify,
-  FaAmazon,
   FaYoutube,
-  FaShoppingCart,
+  FaSpotify,
   FaApple,
-} from "react-icons/fa"
+  FaAmazon,
+} from "react-icons/Fa"
 
-export class header extends Component {
-  render() {
-    return (
-      <div className="flex justify-between text-white relative z-40">
-        <div className="px-12 py-4">
-          <Link to="/">
-            <img src={Logo} alt="Logo" style={{ maxWidth: "250px" }} />
-          </Link>
-        </div>
-        <div className="px-12 py-4">
-          <div>
-            <ul className="flex justify-end text-xl">
-              <li className="px-1">
+export default () => {
+  return (
+    <Navbar variant="light" collapseOnSelect expand="lg" className="flex">
+      <Link to="/">
+        <img src={Logo} alt="Mini Pop Kids logo" id="nav-logo" />
+      </Link>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <div className="flex-col w-full">
+          <div id="nav-socials">
+            <ul className="flex">
+              <li className="mx-2">
                 <FaFacebook />
               </li>
-              <li className="px-1">
-                <FaInstagram />
-              </li>
-              <li className="px-1">
-                <FaYoutube />
-              </li>
-              <li className="px-1">
+              <li className="mx-2">
                 <FaTwitter />
               </li>
-              <li className="px-1">
+              <li className="mx-2">
+                <FaInstagram />
+              </li>
+              <li className="mx-2">
+                <FaYoutube />
+              </li>
+              <li className="mx-2">
                 <FaSpotify />
               </li>
-              <li className="px-1">
-                <FaAmazon />
-              </li>
-              <li className="px-1">
+              <li className="mx-2">
                 <FaApple />
               </li>
-              <li className="px-1">
-                <FaShoppingCart />
+              <li className="ml-2">
+                <FaAmazon />
               </li>
             </ul>
           </div>
-          <div>
-            <ul className="flex justify-end text-xl uppercase mt-6">
-              <Link to="/auditions">
-                <li
-                  className="px-3 menu-highlight"
-                  style={{ fontFamily: "Fredoka One" }}
-                >
-                  Auditions
-                </li>
-              </Link>
-              <Link to="/tour">
-                <li
-                  className="px-3 menu-highlight"
-                  style={{ fontFamily: "Fredoka One" }}
-                >
+          <div id="nav-links">
+            <ul id="nav-links-ul" className="flex text-xl">
+              <li className="mx-2">
+                <Link to="/" className="pink">
                   Tour
-                </li>
-              </Link>
-              <Link to="/videos">
-                <li
-                  className="px-3 menu-highlight"
-                  style={{ fontFamily: "Fredoka One" }}
-                >
-                  Videos
-                </li>
-              </Link>
-              <Link to="/meet-the-mpk">
-                <li
-                  className="px-3 menu-highlight"
-                  style={{ fontFamily: "Fredoka One" }}
-                >
-                  Meet The MPK
-                </li>
-              </Link>
-              <li
-                className="px-3 menu-highlight"
-                style={{ fontFamily: "Fredoka One" }}
-              >
-                Shop
+                </Link>
               </li>
-              <Link to="/contact">
-                <li
-                  className="pl-3 pr-1 menu-highlight"
-                  style={{ fontFamily: "Fredoka One" }}
-                >
+              <li className="mx-2">
+                <Link to="/" className="pink">
+                  Music
+                </Link>
+              </li>
+              <li className="mx-2">
+                <Link to="/" className="pink">
+                  Videos
+                </Link>
+              </li>
+              <li className="mx-2">
+                <Link to="/" className="pink">
+                  Meet The Kids
+                </Link>
+              </li>
+              <li className="mx-2">
+                <Link to="/" className="pink">
+                  Shop
+                </Link>
+              </li>
+              <li className="ml-2">
+                <Link to="/" className="pink">
                   Contact
-                </li>
-              </Link>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
-      </div>
-    )
-  }
+      </Navbar.Collapse>
+    </Navbar>
+  )
 }
-
-export default header

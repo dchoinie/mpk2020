@@ -1,22 +1,17 @@
-import React, { Component } from "react"
+import React from "react"
 
-export class footer extends Component {
-  render() {
-    return (
-      <div
-        className="flex justify-between px-12"
-        style={{
-          backgroundColor: "var(--main-black)",
-          color: "#fff",
-          height: "300px",
-        }}
-      >
-        <div>Footer Area 1</div>
-        <div>Footer Area 2</div>
-        <div>Footer Area 3</div>
+export default () => {
+  return (
+    <div id="footer" className="mt-12">
+      <ul id="footer-nav">
+        <li className="mx-1">Privacy Policy</li>
+        <li className="mx-1">Terms Of Use</li>
+        <li className="mx-1">FAQ</li>
+        <li className="mx-1">Contact Us</li>
+      </ul>
+      <div id="footer-copyright">
+        <p>@ {new Date().getFullYear()} Mini Pop Kids </p>
       </div>
-    )
-  }
+    </div>
+  )
 }
-
-export default footer

@@ -1,18 +1,18 @@
 import React from "react"
 import { Link } from "gatsby"
-import Hero from "../components/hero"
-import About from "../components/about"
-import Events from "../components/events"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import HeroSlider from "../components/heroSlider"
+import HomeContent from "../components/homeContent"
+import HomeTour from "../components/homeTour"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Hero />
-    <About />
-    <Events />
+    <HeroSlider />
+    <HomeContent />
+    <HomeTour />
   </Layout>
 )
 

@@ -15,60 +15,77 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: "Fredoka One", cursive;
-}
-
-p,
-a,
-ul,
-li,
-div {
-  font-family: "Open Sans", sans-serif;
+h6,
+a {
+  font-family: "Fredoka One";
 }
 
 @tailwind components;
 
-.menu-highlight {
-  border-bottom: 2px solid transparent;
+#nav-logo {
+  max-width: 250px;
 }
 
-.menu-highlight:hover {
-  color: var(--main-pink);
-  border-bottom: 2px solid var(--main-pink);
-  cursor: pointer;
+#nav-socials,
+#nav-links {
+  display: flex;
+  justify-content: flex-end;
 }
 
-#eventsDiv {
-  /* -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
-  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%); */
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+#home-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  column-gap: 2rem;
 }
 
-.borderRight {
-  border-right: 1px solid #fff;
-  padding-right: 0.5rem;
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.eventButton {
-  font-family: "Fredoka One";
-  padding: 0.5rem;
-  line-height: 1.5;
-  background-color: var(--main-pink);
-  color: #fff;
-  border-radius: 0.25rem;
-  font-size: 1.5rem;
-  cursor: pointer;
+#footer-nav {
+  display: flex;
+  flex-direction: row;
 }
 
-.eventButton:hover {
-  background-color: var(--main-blue);
-  cursor: pointer;
-}
-
-.pinkHighlight:hover {
-  color: var(--main-pink);
+@media screen and (max-width: 768px) {
+  #nav-logo {
+    max-width: 150px;
+  }
+  #nav-socials {
+    margin-top: 2rem;
+  }
+  #nav-links-ul {
+    flex-direction: column;
+    text-align: right;
+  }
+  #home-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 2rem;
+  }
+  #footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  #footer-nav {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 @tailwind utilities;
+
+.pink {
+  color: var(--main-pink);
+}
+
+.blue {
+  color: var(--main-blue);
+}
+
+.yellow {
+  color: var(--main-yellow);
+}
