@@ -23,22 +23,22 @@ export default () => {
         <div className="flex-col w-full">
           <div id="nav-socials">
             <ul className="flex">
-              <li className="mx-2">
+              <li className="lg:mx-2">
                 <FaFacebook />
               </li>
-              <li className="mx-2">
+              <li className="lg:mx-2">
                 <FaTwitter />
               </li>
-              <li className="mx-2">
+              <li className="lg:mx-2">
                 <FaInstagram />
               </li>
-              <li className="mx-2">
+              <li className="lg:mx-2">
                 <FaYoutube />
               </li>
-              <li className="mx-2">
+              <li className="lg:mx-2">
                 <FaSpotify />
               </li>
-              <li className="mx-2">
+              <li className="lg:mx-2">
                 <FaApple />
               </li>
               <li className="ml-2">
@@ -48,27 +48,27 @@ export default () => {
           </div>
           <div id="nav-links">
             <ul id="nav-links-ul" className="flex text-xl">
-              <li className="mx-2">
-                <Link to="/" className="pink">
+              <li className="lg:mx-2">
+                <Link to="/tour" className="pink">
                   Tour
                 </Link>
               </li>
-              <li className="mx-2">
-                <Link to="/" className="pink">
+              <li className="lg:mx-2">
+                <Link to="/music" className="pink">
                   Music
                 </Link>
               </li>
-              <li className="mx-2">
+              <li className="lg:mx-2">
                 <Link to="/" className="pink">
                   Videos
                 </Link>
               </li>
-              <li className="mx-2">
+              <li className="lg:mx-2">
                 <Link to="/" className="pink">
-                  Meet The Kiddos
+                  Meet The Kids
                 </Link>
               </li>
-              <li className="mx-2">
+              <li className="lg:mx-2">
                 <Link to="/" className="pink">
                   Shop
                 </Link>

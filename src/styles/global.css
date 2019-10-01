@@ -50,6 +50,14 @@ a {
   flex-direction: row;
 }
 
+#albums-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
 @media screen and (max-width: 768px) {
   #nav-logo {
     max-width: 150px;
