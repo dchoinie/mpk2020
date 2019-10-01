@@ -4,7 +4,7 @@ import Album from "./album"
 
 const getAlbums = graphql`
   {
-    albums: allContentfulAlbum {
+    albums: allContentfulAlbum(sort: { order: DESC, fields: releaseDate }) {
       edges {
         node {
           cover {
