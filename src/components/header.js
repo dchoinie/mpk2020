@@ -10,7 +10,7 @@ import {
   FaSpotify,
   FaApple,
   FaAmazon,
-} from "react-icons/Fa"
+} from "react-icons/fa"
 
 export default () => {
   return (
@@ -65,7 +65,7 @@ export default () => {
               </li>
               <li className="mx-2">
                 <Link to="/" className="pink">
-                  Meet The Kids
+                  Meet The Kiddos
                 </Link>
               </li>
               <li className="mx-2">
