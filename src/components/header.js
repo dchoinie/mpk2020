@@ -23,22 +23,22 @@ export default () => {
         <div className="flex-col w-full">
           <div id="nav-socials">
             <ul className="flex">
-              <li className="lg:mx-2">
+              <li className="mx-2">
                 <FaFacebook />
               </li>
-              <li className="lg:mx-2">
+              <li className="mx-2">
                 <FaTwitter />
               </li>
-              <li className="lg:mx-2">
+              <li className="mx-2">
                 <FaInstagram />
               </li>
-              <li className="lg:mx-2">
+              <li className="mx-2">
                 <FaYoutube />
               </li>
-              <li className="lg:mx-2">
+              <li className="mx-2">
                 <FaSpotify />
               </li>
-              <li className="lg:mx-2">
+              <li className="mx-2">
                 <FaApple />
               </li>
               <li className="ml-2">
@@ -59,7 +59,7 @@ export default () => {
                 </Link>
               </li>
               <li className="lg:mx-2">
-                <Link to="/" className="pink">
+                <Link to="/videos" className="pink">
                   Videos
                 </Link>
               </li>
