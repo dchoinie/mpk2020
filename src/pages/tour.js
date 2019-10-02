@@ -34,7 +34,7 @@ export default ({ data }) => {
             }}
           >
             <div className="flex">
-              <p className="pr-2">{node.data.date} |</p>
+              <p className="pr-2">{node.data.date}</p>
               <p className="px-2">
                 {node.data.city}, {node.data.province}
               </p>
@@ -46,7 +46,7 @@ export default ({ data }) => {
                 href={node.data.ticketLink}
                 target="_blank"
                 rel="noopener"
-                className="btn btn-primary"
+                className=""
               >
                 Get Tickets
               </a>
