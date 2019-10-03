@@ -25,23 +25,21 @@ export const homeQuery = graphql`
 
 export default ({ data }) => {
   return (
-    <div style={{ backgroundColor: "var(--main-pink)", minHeight: "100vh" }}>
+    <div
+      style={{
+        backgroundImage:
+          "radial-gradient(var(--main-yellow), var(--main-pink) 80%)",
+        minHeight: "100vh",
+      }}
+    >
       <div
         className="container mx-auto flex"
         style={{
           minHeight: "100vh",
-          backgroundImage:
-            "linear-gradient(var(--main-pink) 30%, var(--main-yellow))",
         }}
       >
         <div className="mx-auto self-center">
-          <div
-            style={{
-              border: "2px solid var(--main-black)",
-              borderRadius: "50%",
-              backgroundColor: "#fff",
-            }}
-          >
+          <div>
             <Img fluid={data.tourImg.childImageSharp.fluid} />
           </div>
           <Img fluid={data.kidsImg.childImageSharp.fluid} />

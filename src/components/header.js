@@ -79,7 +79,7 @@ export default () => {
                 </Link>
               </li>
               <li className="ml-2">
-                <Link to="/" className="pink">
+                <Link to="/contact" className="pink">
                   Contact
                 </Link>
               </li>

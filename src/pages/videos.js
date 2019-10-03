@@ -6,7 +6,10 @@ import { FaYoutube } from "react-icons/fa"
 
 export const videosQuery = graphql`
   {
-    allContentfulMusicVideo(sort: { fields: releaseDate, order: DESC }) {
+    allContentfulMusicVideo(
+      sort: { fields: releaseDate, order: DESC }
+      limit: 8
+    ) {
       nodes {
         id
         releaseDate
@@ -40,6 +43,15 @@ export default ({ data }) => {
           </div>
         ))}
       </div>
+      <a
+        href="https://www.youtube.com/minipopkids"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex justify-center my-6 py-2 text-xl lg:text-2xl"
+        id="youtube-btn"
+      >
+        More Videos &nbsp; <FaYoutube className="self-center" />
+      </a>
     </Layout>
   )
 }

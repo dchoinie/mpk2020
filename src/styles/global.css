@@ -106,7 +106,20 @@ a {
   height: 100%;
 }
 
+#youtube-btn {
+  background-color: #666;
+  color: #fff;
+}
+
+#youtube-btn:hover {
+  background-color: #ff0000;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 768px) {
+  .landingPageBtn {
+    border: 2px solid #fff;
+  }
   #nav-logo {
     max-width: 150px;
   }

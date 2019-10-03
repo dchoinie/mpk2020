@@ -33,7 +33,7 @@ export default () => {
   `)
   return (
     <div id="home-grid" className="text-center">
-      <Link className="home-card" to="/tour">
+      <Link className="home-card whitespace-no-wrap" to="/tour">
         <div>
           <h2>MPK Tour</h2>
           <Img
@@ -43,7 +43,7 @@ export default () => {
           <h5 className="py-2">Tickets On Sale Now!</h5>
         </div>
       </Link>
-      <Link className="home-card" to="/shop">
+      <Link className="home-card whitespace-no-wrap" to="/shop">
         <div>
           <h2>MPK Shop</h2>
           <Img
@@ -53,7 +53,7 @@ export default () => {
           <h5 className="py-2">Get Your MPK Swag!</h5>
         </div>
       </Link>
-      <Link className="home-card" to="/meet-the-mpk">
+      <Link className="home-card whitespace-no-wrap" to="/meet-the-mpk">
         <div>
           <h2>Meet The MPK</h2>
           <Img
