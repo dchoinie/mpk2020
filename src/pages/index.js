@@ -20,6 +20,14 @@ export const homeQuery = graphql`
         }
       }
     }
+    mpkLiveImg: file(relativePath: { eq: "landingPage/mpk_live_logo.png" }) {
+      childImageSharp {
+        fluid {
+          src
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
 
@@ -33,18 +41,18 @@ export default ({ data }) => {
       }}
     >
       <div
-        className="container mx-auto flex"
+        className="flex container mx-auto"
         style={{
           minHeight: "100vh",
         }}
       >
         <div className="mx-auto self-center">
           <div>
-            <Img fluid={data.tourImg.childImageSharp.fluid} />
+            <Img fluid={data.mpkLiveImg.childImageSharp.fluid} />
           </div>
           <Img fluid={data.kidsImg.childImageSharp.fluid} />
           <h2 className="text-center text-4xl">Tickets Available Now!</h2>
-          <div className="flex flex-col text-center lg:flex-row justify-between">
+          <div className="flex flex-col text-center lg:flex-row justify-around">
             <Link
               to="/tour"
               className="text-xl landingPageBtn mx-4 my-4 lg:my-0"
