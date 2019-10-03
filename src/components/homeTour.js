@@ -1,9 +1,15 @@
 import React from "react"
+import Tour from "../images/carousel/bright_lights_tour_carousel.jpg"
 
 export default () => {
   return (
-    <div>
-      <img src="https://via.placeholder.com/1280x200" alt="" />
-    </div>
+    <div
+      style={{
+        backgroundImage: `url(${Tour})`,
+        backgroundSize: "cover",
+        backgroundPosition: "top center",
+        height: "150px",
+      }}
+    ></div>
   )
 }

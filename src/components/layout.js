@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
           crossorigin="anonymous"
         />
       </Helmet>
-      <div className="container mx-auto" style={{ border: "1px solid black" }}>
+      <div className="container mx-auto">
         <Header />
         <div>
           <main>{children}</main>

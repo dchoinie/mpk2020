@@ -1,4 +1,7 @@
 import React from "react"
+import Live from "../images/live_shot.png"
+import Meet from "../images/meet.png"
+import Shop from "../images/shop.png"
 
 export default () => {
   return (
@@ -6,27 +9,30 @@ export default () => {
       <div className="mx-auto text-center">
         <h2>Live Shows</h2>
         <img
-          src="https://via.placeholder.com/300x200"
-          alt=""
-          className="py-2"
+          src={Live}
+          alt="Live Shows"
+          className="p-2"
+          style={{ borderRadius: "1rem" }}
         />
         <h4>Tickets on sale now!</h4>
       </div>
       <div className="mx-auto text-center">
         <h2>Meet The Kids</h2>
         <img
-          src="https://via.placeholder.com/300x200"
-          alt=""
-          className="py-2"
+          src={Meet}
+          alt="Meet The Kids"
+          className="p-2"
+          style={{ borderRadius: "1rem" }}
         />
         <h4>Meet Our Newest Kids!</h4>
       </div>
       <div className="mx-auto text-center">
         <h2>MPK Shop</h2>
         <img
-          src="https://via.placeholder.com/300x200"
+          src={Shop}
           alt=""
-          className="py-2"
+          className="p-2"
+          style={{ borderRadius: "1rem" }}
         />
         <h4>MPK17 Coming Soon!</h4>
       </div>

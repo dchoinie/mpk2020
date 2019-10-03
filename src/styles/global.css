@@ -53,7 +53,7 @@ a {
 #albums-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
   column-gap: 2rem;
   row-gap: 2rem;
 }
@@ -61,7 +61,7 @@ a {
 #videos-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
   column-gap: 2rem;
   row-gap: 2rem;
 }

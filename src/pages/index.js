@@ -1,14 +1,14 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import HeroSlider from "../components/heroSlider"
 import HomeContent from "../components/homeContent"
 import HomeTour from "../components/homeTour"
+import Carousel from "../components/carousel"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <HeroSlider />
+    <Carousel />
     <HomeContent />
     <HomeTour />
   </Layout>
