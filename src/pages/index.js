@@ -1,17 +1,55 @@
 import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import HomeContent from "../components/homeContent"
-import HomeTour from "../components/homeTour"
-import Carousel from "../components/carousel"
+import { graphql, Link } from "gatsby"
+import Img from "gatsby-image"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <Carousel />
-    <HomeContent />
-    <HomeTour />
-  </Layout>
-)
+export const homeQuery = graphql`
+  {
+    tourImg: file(relativePath: { eq: "landingPage/bright_lights_logo.png" }) {
+      childImageSharp {
+        fluid {
+          src
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    kidsImg: file(relativePath: { eq: "landingPage/kids.png" }) {
+      childImageSharp {
+        fluid {
+          src
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
 
-export default IndexPage
+export default ({ data }) => {
+  return (
+    <div style={{ backgroundColor: "var(--main-pink)", minHeight: "100vh" }}>
+      <div
+        className="container mx-auto bg-white flex"
+        style={{ minHeight: "100vh" }}
+      >
+        <div className="max-w-lg mx-auto self-center">
+          <Img fluid={data.tourImg.childImageSharp.fluid} />
+          <Img fluid={data.kidsImg.childImageSharp.fluid} />
+          <h2 className="text-center text-4xl py-6">Tickets Available Now!</h2>
+          <div className="flex flex-col text-center lg:flex-row justify-between">
+            <Link
+              to="/tour"
+              className="text-xl landingPageBtn mx-4 my-4 lg:my-0"
+            >
+              Tour Dates + Info
+            </Link>
+            <Link
+              to="/home"
+              className="text-xl landingPageBtn mx-4 my-4 lg:my-0"
+            >
+              Enter Site
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}

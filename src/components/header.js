@@ -14,7 +14,7 @@ import {
 
 export default () => {
   return (
-    <Navbar variant="light" collapseOnSelect expand="lg" className="flex">
+    <Navbar collapseOnSelect expand="lg" className="flex pt-4">
       <Link to="/">
         <img src={Logo} alt="Mini Pop Kids logo" id="nav-logo" />
       </Link>
@@ -48,6 +48,11 @@ export default () => {
           </div>
           <div id="nav-links">
             <ul id="nav-links-ul" className="flex text-xl">
+              <li className="lg:mx-2">
+                <Link to="/home" className="pink">
+                  Home
+                </Link>
+              </li>
               <li className="lg:mx-2">
                 <Link to="/tour" className="pink">
                   Tour

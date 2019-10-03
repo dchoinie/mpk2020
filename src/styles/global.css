@@ -22,6 +22,21 @@ a {
 
 @tailwind components;
 
+.landingPageBtn {
+  background-color: var(--main-pink);
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem;
+}
+
+.landingPageBtn:hover {
+  border: 2px solid var(--main-pink);
+  background-color: white;
+  color: var(--main-pink);
+}
+
 #nav-logo {
   max-width: 250px;
 }
@@ -96,6 +111,9 @@ a {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
     row-gap: 2rem;
+  }
+  #videos-container {
+    grid-template-columns: repeat(1, 1fr);
   }
   #footer {
     flex-direction: column;

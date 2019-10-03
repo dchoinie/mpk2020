@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import PageTitle from "../components/pageTitle"
+import Img from "gatsby-image"
 
 export const tourQuery = graphql`
   {
@@ -18,6 +19,16 @@ export const tourQuery = graphql`
         }
       }
     }
+    tourImage: file(
+      relativePath: { eq: "carousel/bright_lights_tour_carousel.jpg" }
+    ) {
+      childImageSharp {
+        fluid(quality: 80) {
+          src
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
 
@@ -25,6 +36,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <PageTitle title="Tour" />
+      <Img fluid={data.tourImage.childImageSharp.fluid} />
       <div>
         {data.allAirtable.nodes.map(node => (
           <div
