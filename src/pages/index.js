@@ -27,13 +27,17 @@ export default ({ data }) => {
   return (
     <div style={{ backgroundColor: "var(--main-pink)", minHeight: "100vh" }}>
       <div
-        className="container mx-auto bg-white flex"
-        style={{ minHeight: "100vh" }}
+        className="container mx-auto flex"
+        style={{
+          minHeight: "100vh",
+          backgroundImage:
+            "linear-gradient(var(--main-pink) 30%, var(--main-yellow))",
+        }}
       >
-        <div className="max-w-lg mx-auto self-center">
+        <div className="mx-auto self-center">
           <Img fluid={data.tourImg.childImageSharp.fluid} />
           <Img fluid={data.kidsImg.childImageSharp.fluid} />
-          <h2 className="text-center text-4xl py-6">Tickets Available Now!</h2>
+          <h2 className="text-center text-4xl">Tickets Available Now!</h2>
           <div className="flex flex-col text-center lg:flex-row justify-between">
             <Link
               to="/tour"
