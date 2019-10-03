@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import PageTitle from "../components/pageTitle"
 
 export const tourQuery = graphql`
   {
@@ -23,6 +24,7 @@ export const tourQuery = graphql`
 export default ({ data }) => {
   return (
     <Layout>
+      <PageTitle title="Tour" />
       <div>
         {data.allAirtable.nodes.map(node => (
           <div

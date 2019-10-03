@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import PageTitle from "../components/pageTitle"
 import { FaYoutube } from "react-icons/fa"
 
 export const videosQuery = graphql`
@@ -20,6 +21,7 @@ export const videosQuery = graphql`
 export default ({ data }) => {
   return (
     <Layout>
+      <PageTitle title="Videos" />
       <div id="videos-container">
         {data.allContentfulMusicVideo.nodes.map(node => (
           <div key={node.id} className="text-center">
@@ -29,9 +31,9 @@ export default ({ data }) => {
                 <iframe
                   title={node.title}
                   src={node.youTubeEmbed.youTubeEmbed}
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
+                  allowFullScreen
                 ></iframe>
               </div>
             </div>
