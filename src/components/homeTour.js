@@ -10,6 +10,8 @@ export default () => {
         backgroundPosition: "top center",
         height: "150px",
       }}
-    ></div>
+    >
+      <p className="text-white text-center">This image will be changed</p>
+    </div>
   )
 }

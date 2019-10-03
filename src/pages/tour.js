@@ -10,7 +10,7 @@ export const tourQuery = graphql`
         id
         data {
           city
-          date(formatString: "DD MMMM YYYY")
+          date(formatString: "DD MMM")
           province
           ticketLink
           time
@@ -40,8 +40,8 @@ export default ({ data }) => {
               <p className="px-2">
                 {node.data.city}, {node.data.province}
               </p>
-              <p className="px-2">{node.data.venue}</p>
-              <p className="px-2">{node.data.time}</p>
+              <p className="px-2 hidden md:block">{node.data.venue}</p>
+              <p className="px-2 hidden lg:block">{node.data.time}</p>
             </div>
             <div className="flex">
               <a
