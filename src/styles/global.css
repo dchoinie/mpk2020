@@ -50,8 +50,18 @@ a {
 #home-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 1fr);
   column-gap: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.home-card {
+  color: var(--main-black);
+}
+
+.home-card:hover {
+  color: var(--main-pink);
+  text-decoration: none;
 }
 
 #footer {
@@ -109,7 +119,7 @@ a {
   }
   #home-grid {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
     row-gap: 2rem;
   }
   #videos-container {

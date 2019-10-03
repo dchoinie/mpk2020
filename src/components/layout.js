@@ -36,9 +36,7 @@ const Layout = ({ children }) => {
       </Helmet>
       <div className="container mx-auto">
         <Header />
-        <div>
-          <main>{children}</main>
-        </div>
+        <main>{children}</main>
         <Footer />
       </div>
     </>

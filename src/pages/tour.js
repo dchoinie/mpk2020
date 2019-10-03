@@ -59,8 +59,8 @@ export default ({ data }) => {
               <a
                 href={node.data.ticketLink}
                 target="_blank"
-                rel="noopener"
-                className=""
+                rel="noopener noreferrer"
+                className="pink"
               >
                 Get Tickets
               </a>

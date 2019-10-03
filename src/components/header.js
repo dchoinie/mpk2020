@@ -69,7 +69,7 @@ export default () => {
                 </Link>
               </li>
               <li className="lg:mx-2">
-                <Link to="/" className="pink">
+                <Link to="/meet-the-mpk" className="pink">
                   Meet The Kids
                 </Link>
               </li>

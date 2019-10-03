@@ -1,41 +1,68 @@
 import React from "react"
-import Live from "../images/live_shot.png"
-import Meet from "../images/meet.png"
-import Shop from "../images/shop.png"
+import { useStaticQuery, graphql, Link } from "gatsby"
+import Img from "gatsby-image"
 
 export default () => {
+  const data = useStaticQuery(graphql`
+    {
+      liveImg: file(relativePath: { eq: "live_shot.png" }) {
+        childImageSharp {
+          fluid {
+            src
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      meetImg: file(relativePath: { eq: "meet.png" }) {
+        childImageSharp {
+          fluid {
+            src
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      shopImg: file(relativePath: { eq: "shop.png" }) {
+        childImageSharp {
+          fluid {
+            src
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
   return (
-    <div id="home-grid" className="my-12">
-      <div className="mx-auto text-center">
-        <h2>Live Shows</h2>
-        <img
-          src={Live}
-          alt="Live Shows"
-          className="p-2"
-          style={{ borderRadius: "1rem" }}
-        />
-        <h4>Tickets on sale now!</h4>
-      </div>
-      <div className="mx-auto text-center">
-        <h2>Meet The Kids</h2>
-        <img
-          src={Meet}
-          alt="Meet The Kids"
-          className="p-2"
-          style={{ borderRadius: "1rem" }}
-        />
-        <h4>Meet Our Newest Kids!</h4>
-      </div>
-      <div className="mx-auto text-center">
-        <h2>MPK Shop</h2>
-        <img
-          src={Shop}
-          alt=""
-          className="p-2"
-          style={{ borderRadius: "1rem" }}
-        />
-        <h4>MPK17 Coming Soon!</h4>
-      </div>
+    <div id="home-grid" className="text-center">
+      <Link className="home-card" to="/tour">
+        <div>
+          <h2>MPK Tour</h2>
+          <Img
+            style={{ borderRadius: "0.5rem" }}
+            fluid={data.liveImg.childImageSharp.fluid}
+          />
+          <h5 className="py-2">Tickets On Sale Now!</h5>
+        </div>
+      </Link>
+      <Link className="home-card" to="/shop">
+        <div>
+          <h2>MPK Shop</h2>
+          <Img
+            style={{ borderRadius: "0.5rem" }}
+            fluid={data.shopImg.childImageSharp.fluid}
+          />
+          <h5 className="py-2">Get Your MPK Swag!</h5>
+        </div>
+      </Link>
+      <Link className="home-card" to="/meet-the-mpk">
+        <div>
+          <h2>Meet The MPK</h2>
+          <Img
+            style={{ borderRadius: "0.5rem" }}
+            fluid={data.meetImg.childImageSharp.fluid}
+          />
+          <h5 className="py-2">Meet The Kids!</h5>
+        </div>
+      </Link>
     </div>
   )
 }

@@ -35,7 +35,15 @@ export default ({ data }) => {
         }}
       >
         <div className="mx-auto self-center">
-          <Img fluid={data.tourImg.childImageSharp.fluid} />
+          <div
+            style={{
+              border: "2px solid var(--main-black)",
+              borderRadius: "50%",
+              backgroundColor: "#fff",
+            }}
+          >
+            <Img fluid={data.tourImg.childImageSharp.fluid} />
+          </div>
           <Img fluid={data.kidsImg.childImageSharp.fluid} />
           <h2 className="text-center text-4xl">Tickets Available Now!</h2>
           <div className="flex flex-col text-center lg:flex-row justify-between">
