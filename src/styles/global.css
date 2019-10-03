@@ -161,3 +161,11 @@ a {
 .yellow {
   color: var(--main-yellow);
 }
+
+.text-center-noimportant {
+  text-align: center;
+}
+
+.fredoka {
+  font-family: "Fredoka One";
+}

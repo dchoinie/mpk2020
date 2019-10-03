@@ -3,9 +3,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from "react-responsive-carousel"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import Otr from "../images/carousel/otr_carousel.jpg"
-import Senorita from "../images/carousel/senorita_carousel.png"
-import Tour from "../images/carousel/bright_lights_tour_carousel.jpg"
 
 const HomeCarousel = () => {
   const data = useStaticQuery(graphql`
