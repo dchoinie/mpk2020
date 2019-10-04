@@ -53,10 +53,9 @@ export default ({ data }) => {
               <p className="mb-0">{node.data.weekday}</p>
               <p className="mb-0 fredoka">{node.data.date}</p>
               <p className="mb-0">{node.data.year}</p>
-              <p className="mb-0">{node.data.time}</p>
             </div>
             <div
-              className="flex flex-col lg:flex-row justify-between w-full lg:self-center py-6"
+              className="flex flex-col self-center lg:flex-row lg:justify-between w-full py-6"
               // style={{ border: "1px solid green" }}
             >
               <div className="flex flex-col self-center text-center-noimportant lg:text-left">
@@ -64,6 +63,7 @@ export default ({ data }) => {
                   {node.data.city}, {node.data.province}
                 </p>
                 <p className="mb-0">{node.data.venue}</p>
+                <p>{node.data.time}</p>
               </div>
               <a
                 href={node.data.ticketLink}

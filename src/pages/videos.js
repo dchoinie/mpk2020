@@ -6,7 +6,7 @@ import { FaYoutube } from "react-icons/fa"
 
 export const videosQuery = graphql`
   {
-    allContentfulMusicVideo(
+    videos: allContentfulMusicVideo(
       sort: { fields: releaseDate, order: DESC }
       limit: 8
     ) {
@@ -26,7 +26,7 @@ export default ({ data }) => {
     <Layout>
       <PageTitle title="Videos" />
       <div id="videos-container">
-        {data.allContentfulMusicVideo.nodes.map(node => (
+        {data.videos.nodes.map(node => (
           <div key={node.id} className="text-center">
             <div>
               <h6>{node.title}</h6>
