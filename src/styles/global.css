@@ -141,6 +141,8 @@ a {
     #ffdc80
   );
   color: #fff;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .instagram-btn a:hover {

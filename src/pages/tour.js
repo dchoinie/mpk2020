@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 
 export const tourQuery = graphql`
   {
-    allAirtable(sort: { fields: data___date }) {
+    allAirtable(sort: { fields: data___sortId }) {
       nodes {
         id
         data {
@@ -27,7 +27,7 @@ export const tourQuery = graphql`
       childImageSharp {
         fluid(quality: 80) {
           src
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
@@ -47,11 +47,13 @@ export default ({ data }) => {
             // style={{ border: "1px solid red" }}
           >
             <div
-              className="py-6 lg:mr-12 text-center-noimportant"
-              // style={{ border: "1px solid blue" }}
+              className="py-6 lg:mr-12 text-center-noimportant flex-none"
+              style={{ minWidth: "68px" }}
             >
               <p className="mb-0">{node.data.weekday}</p>
-              <p className="mb-0 fredoka">{node.data.date}</p>
+              <p className="mb-0 fredoka whitespace-no-wrap">
+                {node.data.date}
+              </p>
               <p className="mb-0">{node.data.year}</p>
             </div>
             <div

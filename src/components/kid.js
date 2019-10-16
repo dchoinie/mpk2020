@@ -9,6 +9,7 @@ export default ({ kid }) => {
       <h2>{kid.name}</h2>
       <p className="mb-0">Birthday: {kid.birthday}</p>
       <p className="mb-0">Age: {kid.age}</p>
+      <Img fluid={kid.headshot.fluid} className="my-2" />
       <div className="instagram-btn">
         <a
           href={kid.instagram}
@@ -20,7 +21,6 @@ export default ({ kid }) => {
         </a>
         <FaInstagram className="self-center text-xl" />
       </div>
-      <Img fluid={kid.headshot.fluid} />
       <p className="mb-0">{kid.bio.bio}</p>
     </div>
   )

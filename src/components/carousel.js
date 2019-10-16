@@ -18,7 +18,7 @@ const HomeCarousel = () => {
             srcSetWebp
             base64
             srcSet
-            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }

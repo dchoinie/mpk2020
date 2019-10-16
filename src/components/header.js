@@ -41,7 +41,7 @@ export default () => {
               <li className="mx-2">
                 <FaApple />
               </li>
-              <li className="ml-2">
+              <li className="mx-2">
                 <FaAmazon />
               </li>
             </ul>
