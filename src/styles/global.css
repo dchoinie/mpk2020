@@ -22,6 +22,11 @@ a {
 
 @tailwind components;
 
+#landingPage-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .landingPageBtn {
   background-color: var(--main-pink);
   color: white;

@@ -1,27 +1,30 @@
 // Implement the Gatsby API “onCreatePage”. This is
 // called after every page is created.
-exports.onCreatePage = async ({ page, actions }) => {
-  const { createPage } = actions
-  // page.matchPath is a special key that's used for matching pages
-  // only on the client.
-  if (page.path.match(/^\/profile/)) {
-    page.matchPath = "/profile/*"
-    // Update the page.
-    createPage(page)
-  }
-}
 
-exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
-  if (stage === "build-html") {
-    actions.setWebpackConfig({
-      module: {
-        rules: [
-          {
-            test: /auth0-js/,
-            use: loaders.null(),
-          },
-        ],
+const path = require("path")
+
+exports.createPages = async ({ graphql, actions: { createPage } }) => {
+  const pages = await graphql(`
+    {
+      allShopifyProduct {
+        edges {
+          node {
+            id
+            handle
+          }
+        }
+      }
+    }
+  `)
+
+  pages.data.allShopifyProduct.edges.forEach(edge => {
+    createPage({
+      path: `/products/${edge.node.handle}`,
+      component: path.resolve("./src/templates/ProductPageTemplate.js"),
+      context: {
+        id: edge.node.id,
+        handle: edge.node.handle,
       },
     })
-  }
+  })
 }

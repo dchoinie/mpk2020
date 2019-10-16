@@ -18,7 +18,7 @@ const HomeCarousel = () => {
             srcSetWebp
             base64
             srcSet
-            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -31,7 +31,7 @@ const HomeCarousel = () => {
             srcSetWebp
             base64
             srcSet
-            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -44,7 +44,7 @@ const HomeCarousel = () => {
             srcSetWebp
             base64
             srcSet
-            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            ...GatsbyImageSharpFluid
           }
         }
       }

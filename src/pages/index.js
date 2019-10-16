@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
+import { FaChevronRight } from "react-icons/fa"
 
 export const homeQuery = graphql`
   {
@@ -12,7 +13,7 @@ export const homeQuery = graphql`
         }
       }
     }
-    kidsImg: file(relativePath: { eq: "landingPage/kids.png" }) {
+    kidsImg: file(relativePath: { eq: "landingPage/kids2020.png" }) {
       childImageSharp {
         fluid {
           src
@@ -39,8 +40,40 @@ export default ({ data }) => {
           "radial-gradient(var(--main-yellow), var(--main-pink) 80%)",
         minHeight: "100vh",
       }}
+      id="landingPage-container"
     >
-      <div
+      <div>
+        <div className="max-w-md mx-auto">
+          <Img fluid={data.mpkLiveImg.childImageSharp.fluid} />
+        </div>
+        <div>
+          <Img fluid={data.kidsImg.childImageSharp.fluid} />
+        </div>
+      </div>
+      <div className="flex flex-col self-center">
+        <h1
+          className="text-center text-6xl py-6"
+          style={{ textShadow: "2px 2px white" }}
+        >
+          Tickets Available Now!
+        </h1>
+        <div>
+          <div className="flex justify-around">
+            <Link to="/tour" className="landingPageBtn text-2xl">
+              Tour Dates &amp; Info
+            </Link>
+            <Link to="/home" className="landingPageBtn text-2xl flex">
+              Enter Site <FaChevronRight className="self-center" />
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+{
+  /* <div
         className="flex container mx-auto"
         style={{
           minHeight: "100vh",
@@ -67,7 +100,5 @@ export default ({ data }) => {
             </Link>
           </div>
         </div>
-      </div>
-    </div>
-  )
+      </div> */
 }
