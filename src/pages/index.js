@@ -42,7 +42,7 @@ export default ({ data }) => {
       }}
       id="landingPage-container"
     >
-      <div>
+      <div className="self-center">
         <div className="max-w-md mx-auto">
           <Img fluid={data.mpkLiveImg.childImageSharp.fluid} />
         </div>
@@ -50,19 +50,22 @@ export default ({ data }) => {
           <Img fluid={data.kidsImg.childImageSharp.fluid} />
         </div>
       </div>
-      <div className="flex flex-col self-center">
+      <div className="flex flex-col md:self-center">
         <h1
-          className="text-center text-6xl py-6"
+          className="text-center text-3xl lg:text-6xl py-6"
           style={{ textShadow: "2px 2px white" }}
         >
           Tickets Available Now!
         </h1>
         <div>
           <div className="flex justify-around">
-            <Link to="/tour" className="landingPageBtn text-2xl">
+            <Link to="/tour" className="landingPageBtn text-md lg:text-2xl">
               Tour Dates &amp; Info
             </Link>
-            <Link to="/home" className="landingPageBtn text-2xl flex">
+            <Link
+              to="/home"
+              className="landingPageBtn text-md lg:text-2xl flex"
+            >
               Enter Site <FaChevronRight className="self-center" />
             </Link>
           </div>

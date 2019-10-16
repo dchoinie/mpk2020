@@ -155,6 +155,10 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  #landingPage-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+  }
   .landingPageBtn {
     border: 2px solid #fff;
   }
