@@ -34,12 +34,14 @@ a {
   border-radius: 15px;
   text-transform: uppercase;
   padding: 0.5rem 0.75rem;
+  box-shadow: 2px 2px 5px var(--main-black);
 }
 
 .landingPageBtn:hover {
   border: 2px solid var(--main-pink);
   background-color: white;
   color: var(--main-pink);
+  box-shadow: none;
 }
 
 #nav-logo {

@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
-import { FaChevronRight } from "react-icons/fa"
+import { FaChevronRight, FaInfoCircle } from "react-icons/fa"
 
 export const homeQuery = graphql`
   {
@@ -59,14 +59,18 @@ export default ({ data }) => {
         </h1>
         <div>
           <div className="flex justify-around">
-            <Link to="/tour" className="landingPageBtn text-md lg:text-2xl">
-              Tour Dates &amp; Info
+            <Link
+              to="/tour"
+              className="landingPageBtn text-md lg:text-2xl flex"
+            >
+              Tour Dates &amp; Info{" "}
+              <FaInfoCircle className="self-center ml-2" />
             </Link>
             <Link
               to="/home"
               className="landingPageBtn text-md lg:text-2xl flex"
             >
-              Enter Site <FaChevronRight className="self-center" />
+              Enter Site <FaChevronRight className="self-center ml-2" />
             </Link>
           </div>
         </div>
