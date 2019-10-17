@@ -9,7 +9,11 @@ export default ({ kid }) => {
       <h2>{kid.name}</h2>
       <p className="mb-0">Birthday: {kid.birthday}</p>
       <p className="mb-0">Age: {kid.age}</p>
-      <Img fluid={kid.headshot.fluid} className="my-2" />
+      <Img
+        fluid={kid.headshot.fluid}
+        className="my-2"
+        style={{ minHeight: "659px" }}
+      />
       <div className="instagram-btn">
         <a
           href={kid.instagram}
