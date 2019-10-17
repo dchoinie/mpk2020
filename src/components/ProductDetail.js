@@ -6,19 +6,19 @@ import { useLayoutEffect } from "react"
 import { Base64 } from "js-base64"
 
 const ProductDetail = ({ product }) => {
-  useLayoutEffect(() => {
-    const client = ShopifyBuy.buildClient({
-      domain: "minipopkids.myshopify.com",
-      storefrontAccessToken: "81eafdbcaa5e3d68dc7a61dbec7278bc",
-    })
-    const ui = ShopifyBuy.UI.init(client)
-    const decodded = Base64.decode(product.shopifyId)
-    const actualId = decodded.replace("gid://shopify/Product/", "")
-    ui.createComponent("product", {
-      id: actualId,
-      node: document.getElementById("shopifyButton"),
-    })
-  }, [])
+  // useLayoutEffect(() => {
+  //   const client = ShopifyBuy.buildClient({
+  //     domain: "minipopkids.myshopify.com",
+  //     storefrontAccessToken: "81eafdbcaa5e3d68dc7a61dbec7278bc",
+  //   })
+  //   const ui = ShopifyBuy.UI.init(client)
+  //   const decodded = Base64.decode(product.shopifyId)
+  //   const actualId = decodded.replace("gid://shopify/Product/", "")
+  //   ui.createComponent("product", {
+  //     id: actualId,
+  //     node: document.getElementById("shopifyButton"),
+  //   })
+  // }, [])
 
   return (
     <Layout>
@@ -32,7 +32,7 @@ const ProductDetail = ({ product }) => {
           <p>{product.description}</p>
         </div>
       </div> */}
-      <div className="mx-auto my-12" id="shopifyButton"></div>
+      {/* <div className="mx-auto my-12" id="shopifyButton"></div> */}
     </Layout>
   )
 }
