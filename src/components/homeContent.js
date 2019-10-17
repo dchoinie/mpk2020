@@ -37,7 +37,7 @@ export default () => {
         <div>
           <h2>MPK Tour</h2>
           <Img
-            style={{ borderRadius: "0.5rem" }}
+            style={{ borderRadius: "0.25rem" }}
             fluid={data.liveImg.childImageSharp.fluid}
           />
           <h5 className="py-2">Tickets On Sale Now!</h5>
@@ -47,7 +47,7 @@ export default () => {
         <div>
           <h2>MPK Shop</h2>
           <Img
-            style={{ borderRadius: "0.5rem" }}
+            style={{ borderRadius: "0.25rem" }}
             fluid={data.shopImg.childImageSharp.fluid}
           />
           <h5 className="py-2">Get Your MPK Swag!</h5>
@@ -57,7 +57,7 @@ export default () => {
         <div>
           <h2>Meet The MPK</h2>
           <Img
-            style={{ borderRadius: "0.5rem" }}
+            style={{ borderRadius: "0.25rem" }}
             fluid={data.meetImg.childImageSharp.fluid}
           />
           <h5 className="py-2">Meet The Kids!</h5>

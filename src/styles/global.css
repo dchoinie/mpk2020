@@ -156,6 +156,25 @@ a {
   text-decoration: none;
 }
 
+.formField {
+  border: 2px solid lightgray;
+}
+
+.formField:focus {
+  border: 2px solid var(--main-pink);
+  outline: none;
+}
+
+.formButton {
+  background-color: var(--main-pink);
+  color: white;
+}
+
+.formButton:hover {
+  background-color: var(--highlight-pink);
+  outline: none;
+}
+
 @media screen and (max-width: 768px) {
   #landingPage-container {
     grid-template-columns: repeat(1, 1fr);
