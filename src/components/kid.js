@@ -25,7 +25,6 @@ export default ({ kid }) => {
         </a>
         <FaInstagram className="self-center text-xl" />
       </div>
-      <p className="mb-0">{kid.bio.bio}</p>
     </div>
   )
 }
