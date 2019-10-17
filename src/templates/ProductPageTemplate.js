@@ -13,6 +13,7 @@ const ProductPageTemplate = ({ data }) => {
 export const PRODUCT_QUERY = graphql`
   query ProductQuery($handle: String!) {
     shopifyProduct(handle: { eq: $handle }) {
+      shopifyId
       description
       handle
       id

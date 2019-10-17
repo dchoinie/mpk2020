@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import PageTitle from "../components/pageTitle"
 import { FaYoutube } from "react-icons/fa"
+import SEO from "../components/seo"
 
 export const videosQuery = graphql`
   {
@@ -24,6 +25,7 @@ export const videosQuery = graphql`
 export default ({ data }) => {
   return (
     <Layout>
+      <SEO title="Videos" />
       <PageTitle title="Videos" />
       <div id="videos-container">
         {data.videos.nodes.map(node => (

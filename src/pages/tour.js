@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import PageTitle from "../components/pageTitle"
 import Img from "gatsby-image"
+import SEO from "../components/seo"
 
 export const tourQuery = graphql`
   {
@@ -37,6 +38,7 @@ export const tourQuery = graphql`
 export default ({ data }) => {
   return (
     <Layout>
+      <SEO title="Tour" />
       <PageTitle title="Tour" />
       <Img fluid={data.tourImage.childImageSharp.fluid} />
       <div>

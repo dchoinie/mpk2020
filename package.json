@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@reach/router": "^1.2.1",
+    "@shopify/buy-button-js": "^1.0.4",
     "auth0-js": "^9.11.3",
     "dotenv": "^8.1.0",
     "fs": "0.0.1-security",
@@ -22,6 +23,7 @@
     "gatsby-source-filesystem": "^2.1.28",
     "gatsby-source-shopify": "^3.0.24",
     "gatsby-transformer-sharp": "^2.2.19",
+    "js-base64": "^2.5.1",
     "prop-types": "^15.7.2",
     "react": "^16.10.0",
     "react-bootstrap": "^1.0.0-beta.12",

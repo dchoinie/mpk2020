@@ -1,10 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
 import PageTitle from "../components/pageTitle"
+import SEO from "../components/seo"
 
 export default () => {
   return (
     <Layout>
+      <SEO title="Contact" />
       <PageTitle title="Contact" />
       <div>
         <h4>Want To Send The Mini Pop Kids Fan Mail?</h4>

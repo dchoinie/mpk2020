@@ -18,6 +18,7 @@ const PRODUCTS_LISTING_QUERY = graphql`
               childImageSharp {
                 fluid {
                   src
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -28,7 +29,8 @@ const PRODUCTS_LISTING_QUERY = graphql`
             id
             title
           }
-          publishedAt
+          publishedAt(formatString: "MMMM YY")
+          shopifyId
         }
       }
     }

@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import { FaChevronRight, FaInfoCircle } from "react-icons/fa"
+import SEO from "../components/seo"
 
 export const homeQuery = graphql`
   {
@@ -42,6 +43,7 @@ export default ({ data }) => {
       }}
       id="landingPage-container"
     >
+      <SEO title="Official Site Of the MPK" />
       <div className="self-center">
         <div className="max-w-md mx-auto">
           <Img fluid={data.mpkLiveImg.childImageSharp.fluid} />
