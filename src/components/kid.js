@@ -1,5 +1,6 @@
 import React from "react"
 import Img from "gatsby-image"
+import Link from "gatsby"
 import kids from "./kids"
 import { FaInstagram } from "react-icons/fa"
 
@@ -7,13 +8,7 @@ export default ({ kid }) => {
   return (
     <div>
       <h2>{kid.name}</h2>
-      <p className="mb-0">Birthday: {kid.birthday}</p>
-      <p className="mb-0">Age: {kid.age}</p>
-      <Img
-        fluid={kid.headshot.fluid}
-        className="my-2"
-        style={{ minHeight: "659px" }}
-      />
+      <Img fluid={kid.headshot.fluid} className="my-2" />
       <div className="instagram-btn">
         <a
           href={kid.instagram}

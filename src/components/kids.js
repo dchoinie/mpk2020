@@ -21,6 +21,7 @@ const getKids = graphql`
           }
           instagram
           name
+          slug
         }
       }
     }

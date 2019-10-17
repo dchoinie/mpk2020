@@ -31,7 +31,7 @@ a {
   background-color: var(--main-pink);
   color: white;
   border: 2px solid transparent;
-  border-radius: 15px;
+  border-radius: 0.25rem;
   text-transform: uppercase;
   padding: 0.5rem 0.75rem;
   box-shadow: 2px 2px 5px var(--main-black);
@@ -208,6 +208,10 @@ a {
   #footer-nav {
     margin-right: auto;
     margin-left: auto;
+  }
+  #kids-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
   }
 }
 
