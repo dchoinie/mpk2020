@@ -19,7 +19,7 @@ export default () => {
           Sign Up For Our Mini Pop Kids Newsletter!
         </h6>
         <form
-          action="https://formspree.io/xbneerkx"
+          action="https://formspree.io/xknwgllk"
           method="POST"
           className="self-center"
         >
