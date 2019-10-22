@@ -57,18 +57,9 @@ a {
 #home-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
   column-gap: 2rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
-.home-card {
-  color: var(--main-black);
-}
-
-.home-card:hover {
-  color: var(--main-pink);
-  text-decoration: none;
+  row-gap: 2rem;
 }
 
 #footer {

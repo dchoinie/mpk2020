@@ -27,7 +27,7 @@ const getKids = graphql`
     }
   }
 `
-export default () => {
+const kids = () => {
   return (
     <div>
       <StaticQuery
@@ -45,3 +45,5 @@ export default () => {
     </div>
   )
 }
+
+export default kids

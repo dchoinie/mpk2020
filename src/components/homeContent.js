@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 export default () => {
   const data = useStaticQuery(graphql`
     {
-      liveImg: file(relativePath: { eq: "live_shot.png" }) {
+      liveImg: file(relativePath: { eq: "liveShows.jpg" }) {
         childImageSharp {
           fluid {
             src
@@ -13,7 +13,7 @@ export default () => {
           }
         }
       }
-      meetImg: file(relativePath: { eq: "meet.png" }) {
+      mpk17: file(relativePath: { eq: "MPK17.jpg" }) {
         childImageSharp {
           fluid {
             src
@@ -21,7 +21,7 @@ export default () => {
           }
         }
       }
-      shopImg: file(relativePath: { eq: "shop.png" }) {
+      musicVideos: file(relativePath: { eq: "musicVideos.jpg" }) {
         childImageSharp {
           fluid {
             src
@@ -32,36 +32,32 @@ export default () => {
     }
   `)
   return (
-    <div id="home-grid" className="text-center">
-      <Link className="home-card whitespace-no-wrap" to="/tour">
-        <div>
-          <h2>MPK Tour</h2>
-          <Img
-            style={{ borderRadius: "0.25rem" }}
-            fluid={data.liveImg.childImageSharp.fluid}
-          />
-          <h5 className="py-2">Tickets On Sale Now!</h5>
-        </div>
+    <div
+      id="home-grid"
+      className="text-center my-12"
+      // style={{ border: "1px solid red" }}
+    >
+      <Link to="/tour">
+        <Img fluid={data.liveImg.childImageSharp.fluid} />
       </Link>
-      <Link className="home-card whitespace-no-wrap" to="/shop">
-        <div>
-          <h2>MPK Shop</h2>
-          <Img
-            style={{ borderRadius: "0.25rem" }}
-            fluid={data.shopImg.childImageSharp.fluid}
-          />
-          <h5 className="py-2">Get Your MPK Swag!</h5>
-        </div>
+      <a
+        href="https://minipopkids.myshopify.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Img fluid={data.mpk17.childImageSharp.fluid} />
+      </a>
+      <Link to="/videos">
+        <Img fluid={data.musicVideos.childImageSharp.fluid} />
       </Link>
-      <Link className="home-card whitespace-no-wrap" to="/meet-the-mpk">
-        <div>
-          <h2>Meet The MPK</h2>
-          <Img
-            style={{ borderRadius: "0.25rem" }}
-            fluid={data.meetImg.childImageSharp.fluid}
-          />
-          <h5 className="py-2">Meet The Kids!</h5>
-        </div>
+      <Link to="/">
+        <img src="https://via.placeholder.com/500x400" alt="" />
+      </Link>
+      <Link to="/">
+        <img src="https://via.placeholder.com/500x400" alt="" />
+      </Link>
+      <Link to="/">
+        <img src="https://via.placeholder.com/500x400" alt="" />
       </Link>
     </div>
   )

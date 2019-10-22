@@ -27,9 +27,6 @@ export default () => {
                 <FaFacebook />
               </li>
               <li className="mx-2">
-                <FaTwitter />
-              </li>
-              <li className="mx-2">
                 <FaInstagram />
               </li>
               <li className="mx-2">
@@ -39,10 +36,10 @@ export default () => {
                 <FaSpotify />
               </li>
               <li className="mx-2">
-                <FaApple />
+                <FaAmazon />
               </li>
               <li className="mx-2">
-                <FaAmazon />
+                <FaApple />
               </li>
             </ul>
           </div>

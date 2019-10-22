@@ -22,9 +22,7 @@ export const tourQuery = graphql`
         }
       }
     }
-    tourImage: file(
-      relativePath: { eq: "carousel/bright_lights_tour_carousel.jpg" }
-    ) {
+    tourImage: file(relativePath: { eq: "carousel/bannerTour.jpg" }) {
       childImageSharp {
         fluid(quality: 80) {
           src

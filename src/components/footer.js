@@ -1,13 +1,12 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
+import Newsletter from "../components/newsletter"
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
     {
-      footerImg: file(
-        relativePath: { eq: "carousel/bright_lights_tour_carousel.jpg" }
-      ) {
+      footerImg: file(relativePath: { eq: "footerImg.jpg" }) {
         childImageSharp {
           fluid(quality: 80) {
             src
@@ -22,8 +21,11 @@ const Footer = () => {
 
   return (
     <div className="mt-12">
-      <div>
+      <Link to="/tour">
         <Img fluid={data.footerImg.childImageSharp.fluid} />
+      </Link>
+      <div>
+        <Newsletter />
       </div>
       <div id="footer" className="mt-12">
         <ul id="footer-nav">
