@@ -30,6 +30,14 @@ export default () => {
           }
         }
       }
+      travellingStage: file(relativePath: { eq: "travellingStage.jpg" }) {
+        childImageSharp {
+          fluid {
+            src
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
   return (
@@ -55,8 +63,8 @@ export default () => {
       <Link to="/">
         <img src="https://via.placeholder.com/500x400" alt="" />
       </Link>
-      <Link to="/">
-        <img src="https://via.placeholder.com/500x400" alt="" />
+      <Link to="/pop-star-programs">
+        <Img fluid={data.travellingStage.childImageSharp.fluid} />
       </Link>
     </div>
   )
