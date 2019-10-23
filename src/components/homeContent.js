@@ -38,6 +38,14 @@ export default () => {
           }
         }
       }
+      newsletter: file(relativePath: { eq: "newsletterImg.jpg" }) {
+        childImageSharp {
+          fluid {
+            src
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
   return (
@@ -60,9 +68,13 @@ export default () => {
         <Img fluid={data.musicVideos.childImageSharp.fluid} />
       </Link>
       <KidCarousel />
-      <Link to="/">
-        <img src="https://via.placeholder.com/500x400" alt="" />
-      </Link>
+      <a
+        href="https://mailchi.mp/minipopkids/newsletter"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Img fluid={data.newsletter.childImageSharp.fluid} />
+      </a>
       <Link to="/pop-star-programs">
         <Img fluid={data.travellingStage.childImageSharp.fluid} />
       </Link>
