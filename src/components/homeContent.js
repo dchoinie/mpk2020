@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
+import KidCarousel from "../components/kidCarousel"
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -50,9 +51,7 @@ export default () => {
       <Link to="/videos">
         <Img fluid={data.musicVideos.childImageSharp.fluid} />
       </Link>
-      <Link to="/">
-        <img src="https://via.placeholder.com/500x400" alt="" />
-      </Link>
+      <KidCarousel />
       <Link to="/">
         <img src="https://via.placeholder.com/500x400" alt="" />
       </Link>

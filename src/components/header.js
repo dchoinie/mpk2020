@@ -1,10 +1,10 @@
-import React from "react"
+import React, { useContext } from "react"
 import { Navbar } from "react-bootstrap"
 import Logo from "../images/logos/logo-horizontal.png"
 import { Link } from "gatsby"
+import { StoreContext } from "../context/StoreContext"
 import {
   FaFacebook,
-  FaTwitter,
   FaInstagram,
   FaYoutube,
   FaSpotify,
@@ -13,6 +13,7 @@ import {
 } from "react-icons/fa"
 
 export default () => {
+  const { isCartOpen, addProductToCart } = useContext(StoreContext)
   return (
     <Navbar collapseOnSelect expand="lg" className="flex pt-4">
       <Link to="/">
@@ -71,9 +72,14 @@ export default () => {
                 </Link>
               </li>
               <li className="lg:mx-2">
-                <Link to="/shop" className="pink">
+                <a
+                  href="https://minipopkids.myshopify.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="pink"
+                >
                   Shop
-                </Link>
+                </a>
               </li>
               <li className="ml-2">
                 <Link to="/contact" className="pink">

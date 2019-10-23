@@ -166,6 +166,16 @@ a {
   outline: none;
 }
 
+#footerEnvelope {
+  max-width: 100px;
+  margin-right: -1rem;
+  position: relative;
+}
+
+#newsletterEmail:focus {
+  outline: none;
+}
+
 @media screen and (max-width: 768px) {
   #landingPage-container {
     grid-template-columns: repeat(1, 1fr);
@@ -199,6 +209,10 @@ a {
   #footer-nav {
     margin-right: auto;
     margin-left: auto;
+  }
+  #footerEnvelope {
+    margin-right: 0;
+    max-width: 50px;
   }
   #kids-container {
     grid-template-columns: repeat(1, 1fr);
