@@ -234,6 +234,10 @@ a {
   color: var(--main-yellow);
 }
 
+.black {
+  color: var(--main-black);
+}
+
 .text-center-noimportant {
   text-align: center;
 }

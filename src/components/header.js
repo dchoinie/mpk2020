@@ -25,22 +25,64 @@ export default () => {
           <div id="nav-socials">
             <ul className="flex">
               <li className="mx-2">
-                <FaFacebook />
+                <a
+                  href="https://www.facebook.com/minipopkids"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="black"
+                >
+                  <FaFacebook />
+                </a>
               </li>
               <li className="mx-2">
-                <FaInstagram />
+                <a
+                  href="https://www.instagram.com/minipopkids"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="black"
+                >
+                  <FaInstagram />
+                </a>
               </li>
               <li className="mx-2">
-                <FaYoutube />
+                <a
+                  href="https://www.youtube.com/minipopkids"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="black"
+                >
+                  <FaYoutube />
+                </a>
               </li>
               <li className="mx-2">
-                <FaSpotify />
+                <a
+                  href="https://open.spotify.com/artist/2VAjBQ6cM2faT2UKxONV93"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="black"
+                >
+                  <FaSpotify />
+                </a>
               </li>
               <li className="mx-2">
-                <FaAmazon />
+                <a
+                  href="https://www.amazon.com/Mini-Pop-Kids/e/B01GIM8EB0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="black"
+                >
+                  <FaAmazon />
+                </a>
               </li>
               <li className="mx-2">
-                <FaApple />
+                <a
+                  href="https://music.apple.com/ca/artist/mini-pop-kids/39864063"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="black"
+                >
+                  <FaApple />
+                </a>
               </li>
             </ul>
           </div>
