@@ -239,12 +239,27 @@ a {
   color: var(--main-pink);
 }
 
+.pink:hover {
+  color: var(--highlight-pink);
+  text-decoration: none;
+}
+
 .blue {
   color: var(--main-blue);
 }
 
+.blue:hover {
+  color: var(--highlight-blue);
+  text-decoration: none;
+}
+
 .yellow {
   color: var(--main-yellow);
+}
+
+.yellow:hover {
+  color: var(--highlight-yellow);
+  text-decoration: none;
 }
 
 .black {

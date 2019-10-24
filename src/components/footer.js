@@ -30,18 +30,30 @@ const Footer = () => {
       <div id="footer" className="mt-12">
         <ul id="footer-nav">
           <li className="mx-1">
-            <Link to="privacy-policy">Privacy Policy</Link>
+            <Link to="privacy-policy" className="blue">
+              Privacy Policy
+            </Link>
           </li>
           <li className="mx-1">
-            <Link to="/terms-conditions">Terms &amp; Conditions</Link>
+            <Link to="/terms-conditions" className="blue">
+              Terms &amp; Conditions
+            </Link>
           </li>
-          <li className="mx-1">FAQ</li>
           <li className="mx-1">
-            <Link to="/contact">Contact Us</Link>
+            <Link to="/" className="blue">
+              FAQ
+            </Link>
+          </li>
+          <li className="mx-1">
+            <Link to="/contact" className="blue">
+              Contact Us
+            </Link>
           </li>
         </ul>
         <div id="footer-copyright">
-          <p>@ {new Date().getFullYear()} Mini Pop Kids </p>
+          <p style={{ color: "var(--main-pink)" }}>
+            @ {new Date().getFullYear()} Mini Pop Kids{" "}
+          </p>
         </div>
       </div>
     </div>
