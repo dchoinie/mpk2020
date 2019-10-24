@@ -23,6 +23,12 @@ export const kidDetailQuery = graphql`
       instagram
       slug
       name
+      fact1a
+      fact1q
+      fact2a
+      fact2q
+      fact3a
+      fact3q
       headshot {
         fluid {
           src

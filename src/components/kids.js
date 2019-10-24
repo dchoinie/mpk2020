@@ -22,6 +22,12 @@ const getKids = graphql`
           instagram
           name
           slug
+          fact1a
+          fact1q
+          fact2a
+          fact2q
+          fact3a
+          fact3q
         }
       }
     }
