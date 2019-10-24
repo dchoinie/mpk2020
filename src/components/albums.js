@@ -17,9 +17,7 @@ const getAlbums = graphql`
           }
           releaseDate(formatString: "YYYY")
           title
-          tracks {
-            tracks
-          }
+          slug
         }
       }
     }

@@ -238,6 +238,11 @@ a {
   color: var(--main-black);
 }
 
+.black:hover {
+  color: var(--main-black);
+  text-decoration: none;
+}
+
 .text-center-noimportant {
   text-align: center;
 }

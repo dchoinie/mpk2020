@@ -1,13 +1,13 @@
 import React from "react"
 import Img from "gatsby-image"
-import Link from "gatsby"
+import { Link } from "gatsby"
 
 const kid = ({ kid }) => {
   return (
-    <div>
+    <Link to={`/${kid.slug}`} className="black">
       <h2>{kid.name}</h2>
       <Img fluid={kid.headshot.fluid} className="my-2" />
-    </div>
+    </Link>
   )
 }
 
