@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../../components/layout"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import SEO from "../../components/seo"
 
 export const mpk17Query = graphql`
   {
@@ -25,6 +26,7 @@ export const mpk17Query = graphql`
 export default ({ data }) => {
   return (
     <Layout>
+      <SEO title={data.mpk17.title} />
       <div className="container mx-auto">
         <h2 className="text-center my-12">{data.mpk17.title}</h2>
         <div className="flex justify-between">

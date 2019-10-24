@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import PageTitle from "../components/pageTitle"
+import SEO from "../components/seo"
 
 export const travellingStageImg = graphql`
   {
@@ -21,6 +22,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <PageTitle title="Travelling Stage" />
+      <SEO title="Pop Star Programs" />
       <p>
         We are so excited to announce that we are partnering with the Travelling
         Stage to offer schools, community centers and Montessori programs across

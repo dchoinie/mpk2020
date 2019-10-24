@@ -1,10 +1,12 @@
 import React, { Component } from "react"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 export class termsConditions extends Component {
   render() {
     return (
       <Layout>
+        <SEO title="Terms &amp; Conditions" />
         <h2 className="mt-12">Welcome to K-Tel International, Ltd</h2>
         <p>
           These terms and conditions outline the rules and regulations for the

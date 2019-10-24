@@ -1,10 +1,12 @@
 import React, { Component } from "react"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 export class privacyPolicy extends Component {
   render() {
     return (
       <Layout>
+        <SEO title="Privacy Policy" />
         <h2 className="mt-12">Welcome to our Privacy Policy</h2>
         <h3>Your privacy is critically important to us.</h3>
         K-Tel International, Ltd is located at:
