@@ -1,28 +1,11 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
-import { FaChevronRight, FaInfoCircle } from "react-icons/fa"
 import SEO from "../components/seo"
 
 export const homeQuery = graphql`
   {
-    tourImg: file(relativePath: { eq: "landingPage/bright_lights_logo.png" }) {
-      childImageSharp {
-        fluid {
-          src
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    kidsImg: file(relativePath: { eq: "landingPage/kids2020.png" }) {
-      childImageSharp {
-        fluid {
-          src
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    mpkLiveImg: file(relativePath: { eq: "landingPage/mpk_live_logo.png" }) {
+    starLogo: file(relativePath: { eq: "Splashlogo.png" }) {
       childImageSharp {
         fluid {
           src
@@ -38,76 +21,30 @@ export default ({ data }) => {
     <div
       style={{
         backgroundImage:
-          "radial-gradient(var(--main-yellow), var(--main-pink) 80%)",
-        minHeight: "100vh",
+          "linear-gradient(to bottom right, var(--main-blue) 20%, var(--main-yellow) 50%, var(--main-pink) 80%)",
+        height: "100vh",
+        border: "1px solid blue",
       }}
-      id="landingPage-container"
     >
-      <SEO title="Official Site Of the MPK" />
-      <div className="self-center">
-        <div className="max-w-md mx-auto">
-          <Img fluid={data.mpkLiveImg.childImageSharp.fluid} />
-        </div>
-        <div>
-          <Img fluid={data.kidsImg.childImageSharp.fluid} />
-        </div>
+      <div className="starLogo">
+        <Img fluid={data.starLogo.childImageSharp.fluid} />
       </div>
-      <div className="flex flex-col md:self-center">
-        <h1
-          className="text-center text-3xl lg:text-6xl py-6"
-          style={{ textShadow: "2px 2px white" }}
+      <div className="flex flex-col justify-around py-12 lg:flex-row lg:justify-between lg:w-1/2 mx-auto h-full">
+        <Link
+          to="/tour"
+          className="text-2xl splashButton self-center"
+          style={{ backgroundColor: "var(--main-yellow)" }}
         >
-          Tickets Available Now!
-        </h1>
-        <div>
-          <div className="flex justify-around">
-            <Link
-              to="/tour"
-              className="landingPageBtn text-md lg:text-2xl flex"
-            >
-              Tour Dates &amp; Info{" "}
-              <FaInfoCircle className="self-center ml-2" />
-            </Link>
-            <Link
-              to="/home"
-              className="landingPageBtn text-md lg:text-2xl flex"
-            >
-              Enter Site <FaChevronRight className="self-center ml-2" />
-            </Link>
-          </div>
-        </div>
+          Tour Dates
+        </Link>
+        <Link
+          to="/home"
+          className="text-2xl splashButton self-center"
+          style={{ backgroundColor: "var(--main-blue)" }}
+        >
+          Enter Site
+        </Link>
       </div>
     </div>
   )
-}
-
-{
-  /* <div
-        className="flex container mx-auto"
-        style={{
-          minHeight: "100vh",
-        }}
-      >
-        <div className="mx-auto self-center">
-          <div>
-            <Img fluid={data.mpkLiveImg.childImageSharp.fluid} />
-          </div>
-          <Img fluid={data.kidsImg.childImageSharp.fluid} />
-          <h2 className="text-center text-4xl">Tickets Available Now!</h2>
-          <div className="flex flex-col text-center lg:flex-row justify-around">
-            <Link
-              to="/tour"
-              className="text-xl landingPageBtn mx-4 my-4 lg:my-0"
-            >
-              Tour Dates + Info
-            </Link>
-            <Link
-              to="/home"
-              className="text-xl landingPageBtn mx-4 my-4 lg:my-0"
-            >
-              Enter Site
-            </Link>
-          </div>
-        </div>
-      </div> */
 }
