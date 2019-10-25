@@ -10,7 +10,7 @@ export default ({ album }) => {
         <div className="w-full lg:w-1/2">
           <Img fluid={album.cover.fluid} />
         </div>
-        <div className="w-full lg:w-1/2 text-center flex flex-col justify-between px-2">
+        <div className="w-full lg:w-1/2 text-center flex flex-col justify-between px-2 self-center">
           <div>
             <h2>{album.title}</h2>
             <h4>Release Date: {album.releaseDate}</h4>
@@ -19,7 +19,8 @@ export default ({ album }) => {
           <div className="flex justify-around">
             <a
               href={album.buyCd}
-              className="pink"
+              className="splashButton"
+              style={{ backgroundColor: "var(--main-yellow)" }}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -27,7 +28,8 @@ export default ({ album }) => {
             </a>
             <a
               href={album.spotify}
-              className="pink"
+              className="splashButton"
+              style={{ backgroundColor: "var(--main-blue)" }}
               target="_blank"
               rel="noopener noreferrer"
             >
