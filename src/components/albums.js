@@ -18,6 +18,10 @@ const getAlbums = graphql`
           releaseDate(formatString: "YYYY")
           title
           slug
+          tracks {
+            tracks
+          }
+          buyCd
         }
       }
     }

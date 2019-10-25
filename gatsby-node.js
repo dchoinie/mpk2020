@@ -7,6 +7,9 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   return new Promise((resolve, reject) => {
     const kidDetailTemplate = path.resolve("src/templates/kidDetailTemplate.js")
+    const albumDetailTemplate = path.resolve(
+      "src/templates/albumDetailTemplate.js"
+    )
     resolve(
       graphql(`
         {
@@ -30,6 +33,22 @@ exports.createPages = ({ graphql, actions }) => {
               }
             }
           }
+          allContentfulAlbum {
+            edges {
+              node {
+                cover {
+                  fluid {
+                    src
+                  }
+                }
+                id
+                releaseDate
+                slug
+                spotify
+                title
+              }
+            }
+          }
         }
       `).then(result => {
         if (result.errors) {
@@ -39,6 +58,15 @@ exports.createPages = ({ graphql, actions }) => {
           createPage({
             path: edge.node.slug,
             component: kidDetailTemplate,
+            context: {
+              slug: edge.node.slug,
+            },
+          })
+        })
+        result.data.allContentfulAlbum.edges.forEach(edge => {
+          createPage({
+            path: edge.node.slug,
+            component: albumDetailTemplate,
             context: {
               slug: edge.node.slug,
             },
