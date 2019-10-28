@@ -9,10 +9,15 @@ export default () => {
   return (
     <Layout>
       <PageTitle title="F.A.Q." />
-      <Accordion>
+      <Accordion className="px-2 lg:px-0">
         <Card>
           <Card.Header>
-            <Accordion.Toggle as={Button} variant="link" eventKey="0">
+            <Accordion.Toggle
+              as={Button}
+              variant="link"
+              className="text-left"
+              eventKey="0"
+            >
               Can I Buy Tickets At The Door?
             </Accordion.Toggle>
           </Card.Header>
@@ -26,7 +31,12 @@ export default () => {
         </Card>
         <Card>
           <Card.Header>
-            <Accordion.Toggle as={Button} variant="link" eventKey="1">
+            <Accordion.Toggle
+              as={Button}
+              variant="link"
+              className="text-left"
+              eventKey="1"
+            >
               How Long Is The Mini Pop Kids Show?
             </Accordion.Toggle>
           </Card.Header>
@@ -36,7 +46,12 @@ export default () => {
         </Card>
         <Card>
           <Card.Header>
-            <Accordion.Toggle as={Button} variant="link" eventKey="2">
+            <Accordion.Toggle
+              as={Button}
+              variant="link"
+              className="text-left"
+              eventKey="2"
+            >
               Can I Exchange Tickets For Better Seats?
             </Accordion.Toggle>
           </Card.Header>
@@ -48,7 +63,12 @@ export default () => {
         </Card>
         <Card>
           <Card.Header>
-            <Accordion.Toggle as={Button} variant="link" eventKey="3">
+            <Accordion.Toggle
+              as={Button}
+              variant="link"
+              className="text-left"
+              eventKey="3"
+            >
               What Songs Will The Kids Be Performing?
             </Accordion.Toggle>
           </Card.Header>
@@ -61,7 +81,12 @@ export default () => {
         </Card>
         <Card>
           <Card.Header>
-            <Accordion.Toggle as={Button} variant="link" eventKey="4">
+            <Accordion.Toggle
+              as={Button}
+              variant="link"
+              className="text-left"
+              eventKey="4"
+            >
               Do I Need To Buy Tickets For Babies/Toddlers?
             </Accordion.Toggle>
           </Card.Header>
@@ -75,7 +100,12 @@ export default () => {
         </Card>
         <Card>
           <Card.Header>
-            <Accordion.Toggle as={Button} variant="link" eventKey="5">
+            <Accordion.Toggle
+              as={Button}
+              variant="link"
+              className="text-left"
+              eventKey="5"
+            >
               Do You Accept Debit/Credit For Merchandise?
             </Accordion.Toggle>
           </Card.Header>
@@ -88,7 +118,12 @@ export default () => {
         </Card>
         <Card>
           <Card.Header>
-            <Accordion.Toggle as={Button} variant="link" eventKey="6">
+            <Accordion.Toggle
+              as={Button}
+              variant="link"
+              className="text-left"
+              eventKey="6"
+            >
               How Do I Redeem My VIP Tickets?
             </Accordion.Toggle>
           </Card.Header>
@@ -98,7 +133,12 @@ export default () => {
         </Card>
         <Card>
           <Card.Header>
-            <Accordion.Toggle as={Button} variant="link" eventKey="7">
+            <Accordion.Toggle
+              as={Button}
+              variant="link"
+              className="text-left"
+              eventKey="7"
+            >
               Can I Buy Meet &amp; Greet Upgrades?
             </Accordion.Toggle>
           </Card.Header>
@@ -112,7 +152,12 @@ export default () => {
         </Card>
         <Card>
           <Card.Header>
-            <Accordion.Toggle as={Button} variant="link" eventKey="8">
+            <Accordion.Toggle
+              as={Button}
+              variant="link"
+              className="text-left"
+              eventKey="8"
+            >
               What Merchandise Is Available At The Show?
             </Accordion.Toggle>
           </Card.Header>

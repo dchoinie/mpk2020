@@ -35,6 +35,12 @@ export const kidDetailQuery = graphql`
           ...GatsbyContentfulFluid
         }
       }
+      headshotStar {
+        fluid {
+          src
+          ...GatsbyContentfulFluid
+        }
+      }
     }
   }
 `

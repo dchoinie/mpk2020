@@ -8,7 +8,7 @@ const kidDetail = ({ kid }) => {
       <SEO title={kid.name} />
       <div className="flex flex-col lg:flex-row my-12">
         <div className="w-full lg:w-50 self-center">
-          <Img fluid={kid.headshot.fluid} />
+          <Img fluid={kid.headshotStar.fluid} />
         </div>
         <div className="w-full lg:w-50 self-center">
           <div className="flex flex-col my-4 lg:my-0 text-center-noimportant lg:text-left">

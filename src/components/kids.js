@@ -19,6 +19,12 @@ const getKids = graphql`
               ...GatsbyContentfulFluid
             }
           }
+          headshotStar {
+            fluid {
+              src
+              ...GatsbyContentfulFluid
+            }
+          }
           instagram
           name
           slug
