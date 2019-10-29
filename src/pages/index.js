@@ -25,14 +25,10 @@ export default ({ data }) => {
           backgroundImage:
             "linear-gradient(to bottom right, var(--main-blue) 20%, var(--main-yellow) 50%, var(--main-pink) 80%)",
           height: "100vh",
-          border: "1px solid red",
         }}
         className="flex"
       >
-        <div
-          className="flex flex-col h-full justify-around mx-auto self-center lg:flex-row lg:h-auto"
-          style={{ border: "1px solid blue" }}
-        >
+        <div className="flex flex-col h-full justify-around mx-auto self-center lg:flex-row lg:h-auto">
           <Link
             to="/tour"
             className="splashButton self-center"
