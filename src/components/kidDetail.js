@@ -7,10 +7,10 @@ const kidDetail = ({ kid }) => {
     <>
       <SEO title={kid.name} />
       <div className="flex flex-col lg:flex-row my-12">
-        <div className="w-full lg:w-50 self-center">
+        <div className="w-full lg:w-50 self-center px-2">
           <Img fluid={kid.headshotStar.fluid} />
         </div>
-        <div className="w-full lg:w-50 self-center">
+        <div className="w-full lg:w-50 self-center px-2">
           <div className="flex flex-col my-4 lg:my-0 text-center-noimportant lg:text-left">
             <h2 className="mb-0">Meet</h2>
             <h2 className="text-6xl">{kid.name}</h2>
