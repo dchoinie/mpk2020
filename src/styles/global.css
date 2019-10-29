@@ -22,6 +22,10 @@ a {
 
 @tailwind components;
 
+.starLogo {
+  width: 500px;
+}
+
 .splashButton {
   color: #fff;
   text-shadow: -1px -1px 0 var(--main-black), 1px -1px 0 var(--main-black),
@@ -179,6 +183,9 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  .starLogo {
+    width: 300px;
+  }
   #nav-logo {
     max-width: 150px;
   }

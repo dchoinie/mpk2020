@@ -45,8 +45,7 @@ export default ({ data }) => {
           </Link>
           <Img
             fluid={data.starLogo.childImageSharp.fluid}
-            style={{ width: "500px" }}
-            className="mx-auto"
+            className="mx-auto starLogo"
           />
           <Link
             to="/home"
