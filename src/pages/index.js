@@ -11,9 +11,6 @@ export const homeQuery = graphql`
           src
           ...GatsbyImageSharpFluid
         }
-        fixed(width: 350) {
-          ...GatsbyImageSharpFixed
-        }
       }
     }
   }
@@ -58,27 +55,4 @@ export default ({ data }) => {
       </div>
     </>
   )
-}
-
-{
-  /* <div className="flex flex-col lg:flex-row lg:self-center text-center justify-around">
-          <Link
-            to="/tour"
-            className="splashButton self-center"
-            style={{ backgroundColor: "var(--main-yellow)" }}
-          >
-            Tour Dates
-          </Link>
-          <Img
-            fixed={data.starLogo.childImageSharp.fixed}
-            className="mx-auto starLogo"
-          />
-          <Link
-            to="/home"
-            className="splashButton self-center"
-            style={{ backgroundColor: "var(--main-blue)" }}
-          >
-            Enter Site
-          </Link>
-        </div> */
 }
