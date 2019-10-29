@@ -28,10 +28,14 @@ export default ({ data }) => {
           backgroundImage:
             "linear-gradient(to bottom right, var(--main-blue) 20%, var(--main-yellow) 50%, var(--main-pink) 80%)",
           height: "100vh",
+          border: "1px solid red",
         }}
-        className="flex justify-center"
+        className="flex"
       >
-        <div className="flex flex-col lg:flex-row lg:self-center text-center justify-around">
+        <div
+          className="flex flex-col h-full justify-around mx-auto self-center lg:flex-row lg:h-auto"
+          style={{ border: "1px solid blue" }}
+        >
           <Link
             to="/tour"
             className="splashButton self-center"
@@ -40,8 +44,9 @@ export default ({ data }) => {
             Tour Dates
           </Link>
           <Img
-            fixed={data.starLogo.childImageSharp.fixed}
-            className="mx-auto starLogo"
+            fluid={data.starLogo.childImageSharp.fluid}
+            style={{ width: "500px" }}
+            className="mx-auto"
           />
           <Link
             to="/home"
@@ -57,17 +62,21 @@ export default ({ data }) => {
 }
 
 {
-  /* <div className="flex flex-col justify-around py-12 lg:flex-row lg:justify-between lg:w-1/2 mx-auto h-full">
+  /* <div className="flex flex-col lg:flex-row lg:self-center text-center justify-around">
           <Link
             to="/tour"
-            className="text-2xl splashButton self-center"
+            className="splashButton self-center"
             style={{ backgroundColor: "var(--main-yellow)" }}
           >
             Tour Dates
           </Link>
+          <Img
+            fixed={data.starLogo.childImageSharp.fixed}
+            className="mx-auto starLogo"
+          />
           <Link
             to="/home"
-            className="text-2xl splashButton self-center"
+            className="splashButton self-center"
             style={{ backgroundColor: "var(--main-blue)" }}
           >
             Enter Site

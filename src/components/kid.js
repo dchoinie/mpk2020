@@ -6,7 +6,7 @@ const kid = ({ kid }) => {
   return (
     <Link to={`/${kid.slug}`} className="black">
       <h2>{kid.name}</h2>
-      <Img fluid={kid.headshot.fluid} className="my-2" />
+      <Img fluid={kid.headshotStar.fluid} className="my-2" />
     </Link>
   )
 }
