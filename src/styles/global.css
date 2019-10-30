@@ -184,7 +184,7 @@ a {
 
 @media screen and (max-width: 768px) {
   .starLogo {
-    width: 300px;
+    width: 250px;
   }
   #nav-logo {
     max-width: 150px;

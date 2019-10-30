@@ -28,7 +28,7 @@ export default ({ data }) => {
         }}
         className="flex"
       >
-        <div className="flex flex-col h-full justify-around mx-auto self-center lg:flex-row lg:h-auto">
+        <div className="flex flex-col justify-around mx-auto self-center lg:flex-row lg:h-auto">
           <Link
             to="/tour"
             className="splashButton self-center"
@@ -38,7 +38,7 @@ export default ({ data }) => {
           </Link>
           <Img
             fluid={data.starLogo.childImageSharp.fluid}
-            className="mx-auto starLogo"
+            className="mx-auto starLogo my-6 lg:my-0"
           />
           <Link
             to="/home"
