@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import PageTitle from "../components/pageTitle"
+import SEO from "../components/seo"
 
 export const vipQuery = graphql`
   {
@@ -16,6 +17,7 @@ export const vipQuery = graphql`
 export default ({ data }) => {
   return (
     <Layout>
+      <SEO title="VIP Process" />
       <PageTitle title="VIP Process" />
       <h4>
         We are so excited that you will be joining us for the MINI POP KIDS
