@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import PageTitle from "../components/pageTitle"
 import Accordion from "react-bootstrap/Accordion"
@@ -128,7 +129,12 @@ export default () => {
             </Accordion.Toggle>
           </Card.Header>
           <Accordion.Collapse eventKey="6">
-            <Card.Body>VIP Instructions Can Be Found Here.</Card.Body>
+            <Card.Body>
+              VIP Instructions Can Be Found{" "}
+              <Link to="/vip-process" className="pink">
+                Here.
+              </Link>
+            </Card.Body>
           </Accordion.Collapse>
         </Card>
         <Card>

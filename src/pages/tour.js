@@ -19,6 +19,7 @@ export const tourQuery = graphql`
           venue
           weekday
           year
+          buttonText
         }
       }
     }
@@ -73,7 +74,7 @@ export default ({ data }) => {
                 rel="noopener noreferrer"
                 className="self-center pink text-xl"
               >
-                Get Tickets
+                {node.data.buttonText}
               </a>
             </div>
           </div>

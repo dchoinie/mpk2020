@@ -7,6 +7,7 @@ module.exports = {
     title: `Mini Pop Kids`,
     description: `Canada's #1 Music Brand For Kids`,
     author: `Dan Choiniere`,
+    tourName: `Bright Lights Tour`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
