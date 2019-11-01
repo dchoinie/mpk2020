@@ -40,7 +40,7 @@ export default ({ data }) => {
       <SEO title="Tour" />
       <PageTitle title="Tour" />
       <Img fluid={data.tourImage.childImageSharp.fluid} />
-      <div>
+      <div className="max-w-3xl mx-auto">
         {data.allAirtable.nodes.map(node => (
           <div
             key={node.data.id}

@@ -20,7 +20,7 @@ const HomeCarousel = () => {
           }
         }
       }
-      car2: file(relativePath: { eq: "carousel/otr_carousel.jpg" }) {
+      car2: file(relativePath: { eq: "carousel/badGuy_carousel.jpg" }) {
         childImageSharp {
           fluid(quality: 100) {
             src
@@ -58,9 +58,16 @@ const HomeCarousel = () => {
       transitionTime={450}
       interval={4000}
     >
-      <div>
+      <Link to="/tour">
         <Img fluid={data.car1.childImageSharp.fluid} />
-      </div>
+      </Link>
+      <a
+        href="https://www.youtube.com/watch?v=KGVbn-Y7RHM"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Img fluid={data.car2.childImageSharp.fluid} />
+      </a>
     </Carousel>
   )
 }
