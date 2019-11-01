@@ -61,12 +61,6 @@ const HomeCarousel = () => {
       <div>
         <Img fluid={data.car1.childImageSharp.fluid} />
       </div>
-      <div>
-        <Img fluid={data.car2.childImageSharp.fluid} />
-      </div>
-      <div>
-        <Img fluid={data.car3.childImageSharp.fluid} />
-      </div>
     </Carousel>
   )
 }

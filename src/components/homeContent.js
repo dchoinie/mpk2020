@@ -54,28 +54,67 @@ export default () => {
       className="text-center my-12"
       // style={{ border: "1px solid red" }}
     >
-      <Link to="/tour">
+      <Link
+        to="/tour"
+        className="p-2"
+        style={{
+          border: "4px solid var(--main-pink)",
+          borderRadius: "0.25rem",
+        }}
+      >
         <Img fluid={data.liveImg.childImageSharp.fluid} />
       </Link>
+      <div
+        className="p-2"
+        style={{
+          border: "4px solid var(--main-blue)",
+          borderRadius: "0.25rem",
+        }}
+      >
+        <KidCarousel />
+      </div>
       <a
         href="https://minipopkids.myshopify.com/"
         target="_blank"
         rel="noopener noreferrer"
+        className="p-2"
+        style={{
+          border: "4px solid var(--main-yellow)",
+          borderRadius: "0.25rem",
+        }}
       >
         <Img fluid={data.mpk17.childImageSharp.fluid} />
       </a>
-      <Link to="/videos">
+      <Link
+        to="/videos"
+        className="p-2"
+        style={{
+          border: "4px solid var(--main-blue)",
+          borderRadius: "0.25rem",
+        }}
+      >
         <Img fluid={data.musicVideos.childImageSharp.fluid} />
       </Link>
-      <KidCarousel />
       <a
         href="https://mailchi.mp/minipopkids/newsletter"
         target="_blank"
         rel="noopener noreferrer"
+        className="p-2"
+        style={{
+          border: "4px solid var(--main-yellow)",
+          borderRadius: "0.25rem",
+        }}
       >
         <Img fluid={data.newsletter.childImageSharp.fluid} />
       </a>
-      <Link to="/pop-star-programs">
+      <Link
+        to="/pop-star-programs"
+        className="p-2"
+        style={{
+          border: "4px solid var(--main-pink)",
+          borderRadius: "0.25rem",
+        }}
+      >
         <Img fluid={data.travellingStage.childImageSharp.fluid} />
       </Link>
     </div>
