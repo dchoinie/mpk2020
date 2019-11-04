@@ -6,7 +6,7 @@ import KidCarousel from "../components/kidCarousel"
 export default () => {
   const data = useStaticQuery(graphql`
     {
-      liveImg: file(relativePath: { eq: "liveShows.jpg" }) {
+      liveImg: file(relativePath: { eq: "homeContent/LiveShows.jpg" }) {
         childImageSharp {
           fluid {
             src
@@ -14,7 +14,7 @@ export default () => {
           }
         }
       }
-      mpk17: file(relativePath: { eq: "MPK17.jpg" }) {
+      mpk17: file(relativePath: { eq: "homeContent/MPK17.jpg" }) {
         childImageSharp {
           fluid {
             src
@@ -22,7 +22,7 @@ export default () => {
           }
         }
       }
-      musicVideos: file(relativePath: { eq: "musicVideos.jpg" }) {
+      meetTheMPK: file(relativePath: { eq: "homeContent/MeetMPK.jpg" }) {
         childImageSharp {
           fluid {
             src
@@ -30,7 +30,17 @@ export default () => {
           }
         }
       }
-      travellingStage: file(relativePath: { eq: "travellingStage.jpg" }) {
+      musicVideos: file(relativePath: { eq: "homeContent/MusicVideos.jpg" }) {
+        childImageSharp {
+          fluid {
+            src
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      travellingStage: file(
+        relativePath: { eq: "homeContent/travellingStage.jpg" }
+      ) {
         childImageSharp {
           fluid {
             src
@@ -54,67 +64,30 @@ export default () => {
       className="text-center my-12"
       // style={{ border: "1px solid red" }}
     >
-      <Link
-        to="/tour"
-        className="p-2"
-        style={{
-          border: "4px solid var(--main-pink)",
-          borderRadius: "0.25rem",
-        }}
-      >
+      <Link to="/tour">
         <Img fluid={data.liveImg.childImageSharp.fluid} />
       </Link>
-      <div
-        className="p-2"
-        style={{
-          border: "4px solid var(--main-blue)",
-          borderRadius: "0.25rem",
-        }}
-      >
-        <KidCarousel />
-      </div>
       <a
         href="https://minipopkids.myshopify.com/"
         target="_blank"
         rel="noopener noreferrer"
-        className="p-2"
-        style={{
-          border: "4px solid var(--main-yellow)",
-          borderRadius: "0.25rem",
-        }}
       >
         <Img fluid={data.mpk17.childImageSharp.fluid} />
       </a>
-      <Link
-        to="/videos"
-        className="p-2"
-        style={{
-          border: "4px solid var(--main-blue)",
-          borderRadius: "0.25rem",
-        }}
-      >
-        <Img fluid={data.musicVideos.childImageSharp.fluid} />
+      <Link to="/meet-the-mpk">
+        <Img fluid={data.meetTheMPK.childImageSharp.fluid} />
       </Link>
       <a
         href="https://mailchi.mp/minipopkids/newsletter"
         target="_blank"
         rel="noopener noreferrer"
-        className="p-2"
-        style={{
-          border: "4px solid var(--main-yellow)",
-          borderRadius: "0.25rem",
-        }}
       >
         <Img fluid={data.newsletter.childImageSharp.fluid} />
       </a>
-      <Link
-        to="/pop-star-programs"
-        className="p-2"
-        style={{
-          border: "4px solid var(--main-pink)",
-          borderRadius: "0.25rem",
-        }}
-      >
+      <Link to="/videos">
+        <Img fluid={data.musicVideos.childImageSharp.fluid} />
+      </Link>
+      <Link to="/pop-star-programs">
         <Img fluid={data.travellingStage.childImageSharp.fluid} />
       </Link>
     </div>

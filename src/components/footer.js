@@ -8,7 +8,7 @@ const Footer = () => {
     {
       footerImg: file(relativePath: { eq: "footerImg.jpg" }) {
         childImageSharp {
-          fluid(quality: 80) {
+          fluid(quality: 100) {
             src
             tracedSVG
             srcWebp

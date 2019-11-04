@@ -20,7 +20,7 @@ const HomeCarousel = () => {
           }
         }
       }
-      car2: file(relativePath: { eq: "carousel/badGuy_carousel.jpg" }) {
+      car2: file(relativePath: { eq: "carousel/preorder_carousel.jpg" }) {
         childImageSharp {
           fluid(quality: 100) {
             src
@@ -33,7 +33,7 @@ const HomeCarousel = () => {
           }
         }
       }
-      car3: file(relativePath: { eq: "carousel/senorita_carousel.png" }) {
+      car3: file(relativePath: { eq: "carousel/badGuy_carousel.jpg" }) {
         childImageSharp {
           fluid(quality: 100) {
             src
@@ -62,11 +62,18 @@ const HomeCarousel = () => {
         <Img fluid={data.car1.childImageSharp.fluid} />
       </Link>
       <a
-        href="https://www.youtube.com/watch?v=KGVbn-Y7RHM"
+        href="https://minipopkids.myshopify.com/"
         target="_blank"
         rel="noopener noreferrer"
       >
         <Img fluid={data.car2.childImageSharp.fluid} />
+      </a>
+      <a
+        href="https://www.youtube.com/watch?v=KGVbn-Y7RHM"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Img fluid={data.car3.childImageSharp.fluid} />
       </a>
     </Carousel>
   )
