@@ -38,6 +38,7 @@ export default () => {
             }}
             className="px-2"
             id="newsletterEmail"
+            required
           />
           <div className="flex">
             <input

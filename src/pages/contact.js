@@ -52,18 +52,21 @@ export default () => {
               name="firstName"
               placeholder=" First Name"
               className="text-xl my-2 py-2 formField"
+              required
             ></input>
             <input
               type="text"
               name="lastName"
               placeholder=" Last Name"
               className="text-xl my-2 py-2 formField"
+              required
             ></input>
             <input
               type="email"
               name="email"
               placeholder=" Email"
               className="text-xl my-2 py-2 formField"
+              required
             />
             <textarea
               rows="5"
