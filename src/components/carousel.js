@@ -20,7 +20,7 @@ const HomeCarousel = () => {
           }
         }
       }
-      car2: file(relativePath: { eq: "carousel/preorder_carousel.jpg" }) {
+      car2: file(relativePath: { eq: "carousel/orderNow_carousel.jpg" }) {
         childImageSharp {
           fluid(quality: 100) {
             src
