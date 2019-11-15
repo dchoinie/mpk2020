@@ -26,9 +26,6 @@ module.exports = {
         pageTransitionDelay: 0,
         // Enables Google Optimize using your container Id
         optimizeId: "UA-58225315-7",
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
-        cookieDomain: "example.com",
       },
     },
     `gatsby-plugin-react-helmet`,
