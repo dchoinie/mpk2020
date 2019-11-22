@@ -66,7 +66,7 @@ export default () => {
               </li>
               <li className="mx-2">
                 <a
-                  href="https://www.amazon.com/Mini-Pop-Kids/e/B01GIM8EB0"
+                  href="https://www.amazon.ca/Mini-Kids-Double-2019-Release/dp/B07ZDJRGKQ"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="black"
