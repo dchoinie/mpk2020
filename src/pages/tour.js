@@ -20,10 +20,11 @@ export const tourQuery = graphql`
           weekday
           year
           buttonText
+          Codes
         }
       }
     }
-    tourImage: file(relativePath: { eq: "carousel/bannerTour.jpg" }) {
+    tourImage: file(relativePath: { eq: "FB-BlackFriday.jpg" }) {
       childImageSharp {
         fluid(quality: 80) {
           src
@@ -39,7 +40,19 @@ export default ({ data }) => {
     <Layout>
       <SEO title="Tour" />
       <PageTitle title="Tour" />
-      <Img fluid={data.tourImage.childImageSharp.fluid} />
+      <div className="max-w-2xl mx-auto">
+        <Img fluid={data.tourImage.childImageSharp.fluid} />
+      </div>
+      <p className="max-w-2xl mx-auto py-4">
+        Black Friday and Cyber Monday just got a little brighter with the
+        biggest{" "}
+        <span className="font-bold uppercase pink">FLASH FANDOM sale</span> in
+        Mini Pop Kids Live history. See promo codes below for up to 25% select
+        tickets, in select cities while quantities last. Promo codes begin on
+        Black Friday and expire on Cyber Monday at 11:59PM
+        <br />
+        <small>* no exchanges on previously purchased tickets.</small>
+      </p>
       <div className="max-w-3xl mx-auto">
         {data.allAirtable.nodes.map(node => (
           <div
@@ -68,6 +81,7 @@ export default ({ data }) => {
                 <p className="mb-0">{node.data.venue}</p>
                 <p>{node.data.time}</p>
               </div>
+              <p className="self-center mb-0">{node.data.Codes}</p>
               <a
                 href={node.data.ticketLink}
                 target="_blank"
