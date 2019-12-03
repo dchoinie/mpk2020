@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import PageTitle from "../components/pageTitle"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 export const tourQuery = graphql`
   {
@@ -69,14 +70,14 @@ export default ({ data }) => {
                 <p className="mb-0">{node.data.venue}</p>
                 <p>{node.data.time}</p>
               </div>
-              <a
+              <OutboundLink
                 href={node.data.ticketLink}
                 target="_blank"
-                rel="noopener noreferrer"
+                // rel="noopener noreferrer"
                 className="self-center pink text-xl"
               >
                 {node.data.buttonText}
-              </a>
+              </OutboundLink>
             </div>
           </div>
         ))}
