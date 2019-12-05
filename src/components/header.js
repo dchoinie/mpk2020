@@ -1,7 +1,8 @@
 import React, { useContext } from "react"
 import { Navbar } from "react-bootstrap"
 import Logo from "../images/logos/logo-horizontal.png"
-import { Link } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 import { StoreContext } from "../context/StoreContext"
 import {
   FaFacebook,
@@ -13,11 +14,23 @@ import {
 } from "react-icons/fa"
 
 export default () => {
+  const data = useStaticQuery(graphql`
+    {
+      logo: file(relativePath: { eq: "logos/logo-horizontal.png" }) {
+        childImageSharp {
+          fluid {
+            src
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
   const { isCartOpen, addProductToCart } = useContext(StoreContext)
   return (
     <Navbar collapseOnSelect expand="lg" className="flex pt-4">
-      <Link to="/">
-        <img src={Logo} alt="Mini Pop Kids logo" id="nav-logo" />
+      <Link to="/" className="w-1/2 lg:w-1/4">
+        <Img fluid={data.logo.childImageSharp.fluid} id="nav-logo" />
       </Link>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
