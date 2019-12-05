@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import PageTitle from "../components/pageTitle"
 import SEO from "../components/seo"
+import Partners from "../components/partners"
 
 export default () => {
   return (
@@ -79,6 +80,7 @@ export default () => {
             </button>
           </div>
         </form>
+        <Partners />
       </div>
     </Layout>
   )
