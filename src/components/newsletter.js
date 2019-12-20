@@ -25,6 +25,7 @@ export default () => {
         <form
           action="https://formspree.io/xknwgllk"
           method="POST"
+          name="Newsletter Form"
           className="self-center flex"
         >
           <input
