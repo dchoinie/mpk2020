@@ -65,12 +65,16 @@ export default ({ data }) => {
               VIP Meet &amp; Greet
             </h2>
             <p className="self-center">
-              A limited number of VIP seats are available right up in front with
-              the added bonus of meeting the cast at an exclusive MEET &amp;
-              GREET. But wait, there’s more...each VIP Spotlight pass comes with
-              an autographed poster, a VIP Tour lanyard with an exclusive VIP
-              acoustic performance. Don’t miss your chance to shine bright on
-              show day with your very own VIP Ticket.
+              A limited number of <span className="font-bold pink">VIP</span>{" "}
+              seats are available right up in front with the added bonus of
+              meeting the cast at an exclusive MEET &amp; GREET. But wait,
+              there’s more...each <span className="font-bold pink">VIP</span>{" "}
+              Spotlight pass comes with an autographed poster, a{" "}
+              <span className="font-bold pink">VIP</span> Tour lanyard with an
+              exclusive <span className="font-bold pink">VIP</span> acoustic
+              performance. Don’t miss your chance to shine bright on show day
+              with your very own <span className="font-bold pink">VIP</span>{" "}
+              Ticket.
             </p>
           </div>
         </div>
