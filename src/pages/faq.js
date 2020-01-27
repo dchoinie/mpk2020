@@ -51,23 +51,6 @@ export default () => {
               as={Button}
               variant="link"
               className="text-left"
-              eventKey="2"
-            >
-              Can I Exchange Tickets For Better Seats?
-            </Accordion.Toggle>
-          </Card.Header>
-          <Accordion.Collapse eventKey="2">
-            <Card.Body>
-              You can exchange seats by contacting the box office directly.
-            </Card.Body>
-          </Accordion.Collapse>
-        </Card>
-        <Card>
-          <Card.Header>
-            <Accordion.Toggle
-              as={Button}
-              variant="link"
-              className="text-left"
               eventKey="3"
             >
               What Songs Will The Kids Be Performing?
@@ -134,25 +117,6 @@ export default () => {
               <Link to="/vip-process" className="pink">
                 Here.
               </Link>
-            </Card.Body>
-          </Accordion.Collapse>
-        </Card>
-        <Card>
-          <Card.Header>
-            <Accordion.Toggle
-              as={Button}
-              variant="link"
-              className="text-left"
-              eventKey="7"
-            >
-              Can I Buy Meet &amp; Greet Upgrades?
-            </Accordion.Toggle>
-          </Card.Header>
-          <Accordion.Collapse eventKey="7">
-            <Card.Body>
-              Unfortunately, you need to buy VIP tickets to do a meet and greet.
-              You may contact the box office directly to exchange your tickets
-              for VIP.
             </Card.Body>
           </Accordion.Collapse>
         </Card>

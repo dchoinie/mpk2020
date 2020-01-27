@@ -25,7 +25,23 @@ export const tourQuery = graphql`
         }
       }
     }
-    tourImage: file(relativePath: { eq: "carousel/bannerTour.jpg" }) {
+    tourImage: file(relativePath: { eq: "tourPage.jpg" }) {
+      childImageSharp {
+        fluid(quality: 80) {
+          src
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    vipDesc: file(relativePath: { eq: "vipDesc.jpg" }) {
+      childImageSharp {
+        fluid(quality: 80) {
+          src
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    vip2: file(relativePath: { eq: "vip2.jpg" }) {
       childImageSharp {
         fluid(quality: 80) {
           src
@@ -42,6 +58,29 @@ export default ({ data }) => {
       <SEO title="Tour" />
       <PageTitle title="Tour" />
       <Img fluid={data.tourImage.childImageSharp.fluid} />
+      <div className="flex flex-col lg:flex-row my-6 lg:my-2">
+        <div className="flex lg:w-1/2">
+          <div className="self-center flex flex-col">
+            <h2 className="self-center text-xl lg:text-3xl">
+              VIP Meet &amp; Greet
+            </h2>
+            <p className="self-center">
+              A limited number of VIP seats are available right up in front with
+              the added bonus of meeting the cast at an exclusive MEET &amp;
+              GREET. But wait, there’s more...each VIP Spotlight pass comes with
+              an autographed poster, a VIP Tour lanyard with an exclusive VIP
+              acoustic performance. Don’t miss your chance to shine bright on
+              show day with your very own VIP Ticket.
+            </p>
+          </div>
+        </div>
+        <div className="flex lg:w-1/2">
+          <Img
+            fluid={data.vip2.childImageSharp.fluid}
+            className="w-full my-4"
+          />
+        </div>
+      </div>
       <div className="max-w-3xl mx-auto">
         {data.allAirtable.nodes.map(node => (
           <div
