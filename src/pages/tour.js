@@ -22,6 +22,7 @@ export const tourQuery = graphql`
           year
           buttonText
           Codes
+          vipTix
         }
       }
     }
@@ -62,7 +63,7 @@ export default ({ data }) => {
         <div className="flex lg:w-1/2">
           <div className="self-center flex flex-col">
             <h2 className="self-center text-xl lg:text-3xl">
-              VIP Meet &amp; Greet
+              VIP Packages Available
             </h2>
             <p className="self-center">
               A limited number of <span className="font-bold pink">VIP</span>{" "}
@@ -113,14 +114,24 @@ export default ({ data }) => {
                 <p className="mb-0">{node.data.venue}</p>
                 <p>{node.data.time}</p>
               </div>
-              <OutboundLink
-                href={node.data.ticketLink}
-                target="_blank"
-                // rel="noopener noreferrer"
-                className="self-center pink text-xl"
-              >
-                {node.data.buttonText}
-              </OutboundLink>
+              <div className="flex">
+                <OutboundLink
+                  href={node.data.ticketLink}
+                  target="_blank"
+                  // rel="noopener noreferrer"
+                  className="self-center pink text-xl"
+                >
+                  {node.data.buttonText}
+                </OutboundLink>
+                <span className="self-center mx-1 text-3xl">|</span>
+                <OutboundLink
+                  href={node.data.ticketLink}
+                  target="_blank"
+                  className="self-center blue text-xl"
+                >
+                  VIP
+                </OutboundLink>
+              </div>
             </div>
           </div>
         ))}
