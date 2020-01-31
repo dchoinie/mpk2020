@@ -33,7 +33,7 @@ const HomeCarousel = () => {
           }
         }
       }
-      car3: file(relativePath: { eq: "carousel/badGuy_carousel.jpg" }) {
+      car3: file(relativePath: { eq: "carousel/TruthHurts_Carousel.jpg" }) {
         childImageSharp {
           fluid(quality: 100) {
             src
@@ -69,7 +69,7 @@ const HomeCarousel = () => {
         <Img fluid={data.car2.childImageSharp.fluid} />
       </a>
       <a
-        href="https://www.youtube.com/watch?v=KGVbn-Y7RHM"
+        href="https://www.youtube.com/watch?v=m29m-mpDpgU"
         target="_blank"
         rel="noopener noreferrer"
       >
