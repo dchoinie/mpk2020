@@ -28,7 +28,7 @@ export default () => {
   `)
   const { isCartOpen, addProductToCart } = useContext(StoreContext)
   return (
-    <Navbar collapseOnSelect expand="lg" className="flex pt-4">
+    <Navbar collapseOnSelect expand="lg" className="flex pt-4 px-0">
       <Link to="/" className="w-1/2 lg:w-1/4">
         <Img fluid={data.logo.childImageSharp.fluid} id="nav-logo" />
       </Link>
@@ -37,7 +37,7 @@ export default () => {
         <div className="flex-col w-full">
           <div id="nav-socials">
             <ul className="flex">
-              <li className="mx-2">
+              <li className="mr-2">
                 <a
                   href="https://www.facebook.com/minipopkids"
                   target="_blank"
@@ -87,7 +87,7 @@ export default () => {
                   <FaAmazon />
                 </a>
               </li>
-              <li className="mx-2">
+              <li className="ml-2">
                 <a
                   href="https://music.apple.com/ca/artist/mini-pop-kids/39864063"
                   target="_blank"
