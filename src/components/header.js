@@ -127,6 +127,11 @@ export default () => {
                 </Link>
               </li>
               <li className="lg:mx-2">
+                <Link to="/auditions" className="pink">
+                  Auditions
+                </Link>
+              </li>
+              <li className="lg:mx-2">
                 <a
                   href="https://minipopkids.myshopify.com/"
                   target="_blank"
