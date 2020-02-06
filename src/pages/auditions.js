@@ -1,11 +1,27 @@
 import React from "react"
 import Layout from "../components/layout"
 import PageTitle from "../components/pageTitle"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
-export default () => {
+export const auditionsImage = graphql`
+  {
+    auditions: file(relativePath: { eq: "auditions.jpg" }) {
+      childImageSharp {
+        fluid(quality: 100) {
+          src
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
+
+export default ({ data }) => {
   return (
     <Layout>
       <PageTitle title="Auditions" />
+      <Img fluid={data.auditions.childImageSharp.fluid} className="my-4" />
       <iframe
         height="4000"
         width="100%"
