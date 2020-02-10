@@ -129,7 +129,7 @@ export default ({ data }) => {
                   target="_blank"
                   className="self-center blue text-xl"
                 >
-                  VIP
+                  {node.data.vipTix}
                 </OutboundLink>
               </div>
             </div>
