@@ -1,14 +1,16 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
-import PageTitle from "../components/pageTitle"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 export const tourQuery = graphql`
   {
-    allAirtable(sort: { fields: data___sortId }) {
+    allAirtable(
+      sort: { fields: data___sortId }
+      filter: { table: { eq: "MPKTourDates" } }
+    ) {
       nodes {
         id
         data {
@@ -23,10 +25,11 @@ export const tourQuery = graphql`
           buttonText
           Codes
           vipTix
+          slug
         }
       }
     }
-    tourImage: file(relativePath: { eq: "tourPage.jpg" }) {
+    tourImage: file(relativePath: { eq: "tourDetailBanner.jpg" }) {
       childImageSharp {
         fluid(quality: 80) {
           src
@@ -55,35 +58,43 @@ export const tourQuery = graphql`
 
 export default ({ data }) => {
   return (
-    <Layout>
+    <Layout backgroundColor="#000">
       <SEO title="Tour" />
-      <PageTitle title="Tour" />
       <Img fluid={data.tourImage.childImageSharp.fluid} />
-      <div className="flex flex-col lg:flex-row my-6 lg:my-2">
-        <div className="flex lg:w-1/2">
-          <div className="self-center flex flex-col">
-            <h2 className="self-center text-xl lg:text-3xl">
-              VIP Packages Available
-            </h2>
-            <p className="self-center">
-              A limited number of <span className="font-bold pink">VIP</span>{" "}
-              seats are available right up in front with the added bonus of
-              meeting the cast at an exclusive MEET &amp; GREET. But wait,
-              there’s more...each <span className="font-bold pink">VIP</span>{" "}
-              Spotlight pass comes with an autographed poster, a{" "}
-              <span className="font-bold pink">VIP</span> Tour lanyard with an
-              exclusive <span className="font-bold pink">VIP</span> acoustic
-              performance. Don’t miss your chance to shine bright on show day
-              with your very own <span className="font-bold pink">VIP</span>{" "}
-              Ticket.
-            </p>
-          </div>
+      <div className="flex flex-col lg:flex-row my-6">
+        <div className="flex flex-col w-full lg:w-1/2 mx-2">
+          <h2 className="text-white uppercase">
+            A concert for kids
+            <br /> <span className="pink">and parents too!</span>
+          </h2>
+          <p className="text-white">
+            The Mini Pop Kids are back and shining bright with their brand new
+            'Bright Lights Concert Tour,’ featuring the year’s biggest hits!
+            Performing songs by Ariana Grande, Shawn Mendes, The Jonas Brothers,
+            Taylor Swift to throwback favorites that all will enjoy. This isn't
+            just a show, it's an experience for the whole family! Don’t miss
+            your chance to sing, dance, and POP, with Canada’s best-selling kids
+            music group, The MINI POP KIDS.
+          </p>
+          <h4 className="blue">VIP Packages Available</h4>
+          <p className="text-white">
+            A limited number of VIP seats are available right up in front with
+            the added bonus of meeting the cast at an exclusive MEET &amp;
+            GREET. But wait, there’s more...each VIP Spotlight pass comes with
+            an autographed poster, a VIP Tour lanyard with an exclusive VIP
+            acoustic performance. Don’t miss your chance to shine bright on show
+            day with your very own VIP Ticket.
+          </p>
         </div>
-        <div className="flex lg:w-1/2">
-          <Img
-            fluid={data.vip2.childImageSharp.fluid}
-            className="w-full my-4"
-          />
+        <div className="flex flex-col w-full lg:w-1/2 self-center mx-2">
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/XIBQV7TA9KM"
+            frameBorder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
         </div>
       </div>
       <div className="max-w-3xl mx-auto">
@@ -91,46 +102,49 @@ export default ({ data }) => {
           <div
             key={node.data.id}
             className="flex"
-            // style={{ border: "1px solid red" }}
+            style={{ borderBottom: "1px solid white" }}
           >
             <div
-              className="py-6 lg:mr-12 text-center-noimportant flex-none"
+              className="py-6 lg:mr-12 text-center-noimportant flex-none lg:self-center"
               style={{ minWidth: "68px" }}
             >
-              <p className="mb-0">{node.data.weekday}</p>
-              <p className="mb-0 fredoka whitespace-no-wrap">
+              <p className="mb-0 text-white">{node.data.weekday}</p>
+              <p className="mb-0 fredoka whitespace-no-wrap blue">
                 {node.data.date}
               </p>
-              <p className="mb-0">{node.data.year}</p>
+              <p className="mb-0 text-white">{node.data.year}</p>
             </div>
-            <div
-              className="flex flex-col self-center lg:flex-row lg:justify-between w-full py-6"
-              // style={{ border: "1px solid green" }}
-            >
+            <div className="flex flex-col lg:flex-row lg:justify-between w-full py-6">
               <div className="flex flex-col self-center text-center-noimportant lg:text-left">
-                <p className="mb-0 fredoka text-xl">
+                <p className="mb-0 fredoka text-xl pink">
                   {node.data.city}, {node.data.province}
                 </p>
-                <p className="mb-0">{node.data.venue}</p>
-                <p>{node.data.time}</p>
+                <p className="mb-0 yellow fredoka">{node.data.venue}</p>
+                <p className="text-white lg:mb-0">{node.data.time}</p>
               </div>
-              <div className="flex">
-                <OutboundLink
-                  href={node.data.ticketLink}
-                  target="_blank"
-                  // rel="noopener noreferrer"
-                  className="self-center pink text-xl"
-                >
-                  {node.data.buttonText}
-                </OutboundLink>
-                <span className="self-center mx-1 text-3xl">|</span>
-                <OutboundLink
-                  href={node.data.ticketLink}
-                  target="_blank"
-                  className="self-center blue text-xl"
-                >
-                  {node.data.vipTix}
-                </OutboundLink>
+              <div className="flex justify-center">
+                {node.data.buttonText === "Sold Out" ? (
+                  <>
+                    <h4 className="yellow self-center">Sold Out!</h4>
+                  </>
+                ) : (
+                  <>
+                    <OutboundLink
+                      href={node.data.ticketLink}
+                      target="_blank"
+                      className="self-center button-pink text-xl"
+                    >
+                      {node.data.buttonText}
+                    </OutboundLink>
+                    <OutboundLink
+                      href={node.data.ticketLink}
+                      target="_blank"
+                      className="self-center button-blue text-xl"
+                    >
+                      {node.data.vipTix}
+                    </OutboundLink>
+                  </>
+                )}
               </div>
             </div>
           </div>

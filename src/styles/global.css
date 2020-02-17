@@ -26,6 +26,60 @@ a {
   width: 500px;
 }
 
+.button-pink {
+  color: #fff;
+  background-color: var(--main-pink);
+  text-shadow: -1px -1px 0 var(--main-black), 1px -1px 0 var(--main-black),
+    -1px 1px 0 var(--main-black), 1px 1px 0 var(--main-black),
+    3px 3px 0 var(--main-black);
+  border-radius: 4rem;
+  box-shadow: 6px 6px 2px var(--main-black);
+  padding: 0.5rem 1.5rem;
+  border: 1.5px solid var(--main-black);
+}
+
+.button-pink:hover {
+  background-color: var(--highlight-pink);
+  text-decoration: none;
+  color: #fff;
+}
+
+.button-blue {
+  color: #fff;
+  background-color: var(--main-blue);
+  text-shadow: -1px -1px 0 var(--main-black), 1px -1px 0 var(--main-black),
+    -1px 1px 0 var(--main-black), 1px 1px 0 var(--main-black),
+    3px 3px 0 var(--main-black);
+  border-radius: 4rem;
+  box-shadow: 6px 6px 2px var(--main-black);
+  padding: 0.5rem 1.5rem;
+  border: 1.5px solid var(--main-black);
+}
+
+.button-blue:hover {
+  background-color: var(--highlight-blue);
+  text-decoration: none;
+  color: #fff;
+}
+
+.button-yellow {
+  color: #fff;
+  background-color: var(--main-yellow);
+  text-shadow: -1px -1px 0 var(--main-black), 1px -1px 0 var(--main-black),
+    -1px 1px 0 var(--main-black), 1px 1px 0 var(--main-black),
+    3px 3px 0 var(--main-black);
+  border-radius: 4rem;
+  box-shadow: 6px 6px 2px var(--main-black);
+  padding: 0.5rem 1.5rem;
+  border: 1.5px solid var(--main-black);
+}
+
+.button-yellow:hover {
+  background-color: var(--highlight-yellow);
+  color: #fff;
+  text-decoration: none;
+}
+
 .splashButton {
   color: #fff;
   text-shadow: -1px -1px 0 var(--main-black), 1px -1px 0 var(--main-black),
@@ -136,29 +190,12 @@ a {
   row-gap: 2rem;
 }
 
-.instagram-btn {
-  display: flex;
-  justify-content: center;
-  background-image: linear-gradient(
-    to right,
-    #405de6,
-    #5851db,
-    #833ab4,
-    #c13584,
-    #e1306c,
-    #fd1d1d,
-    #f56040,
-    #f77737,
-    #fcaf45,
-    #ffdc80
-  );
-  color: #fff;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.instagram-btn a:hover {
-  text-decoration: none;
+.vip-images-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
 }
 
 .formField {

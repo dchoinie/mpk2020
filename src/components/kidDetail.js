@@ -41,13 +41,3 @@ const kidDetail = ({ kid }) => {
 }
 
 export default kidDetail
-
-{
-  /* <h2 className="text-5xl">{kid.name}</h2>
-<h5>Birthday: {kid.birthday}</h5>
-<h5>Age: {kid.age}</h5>
-<p className="text-left py-2">{kid.bio.bio}</p>
-<a href={kid.instagram} className="instagram-btn">
-Follow {kid.name} on Instagram
-</a> */
-}

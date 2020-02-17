@@ -3,7 +3,6 @@ import { Navbar } from "react-bootstrap"
 import Logo from "../images/logos/logo-horizontal.png"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { StoreContext } from "../context/StoreContext"
 import {
   FaFacebook,
   FaInstagram,
@@ -13,7 +12,7 @@ import {
   FaAmazon,
 } from "react-icons/fa"
 
-export default () => {
+const Header = ({ iconColor }) => {
   const data = useStaticQuery(graphql`
     {
       logo: file(relativePath: { eq: "logos/logo-horizontal.png" }) {
@@ -26,7 +25,6 @@ export default () => {
       }
     }
   `)
-  const { isCartOpen, addProductToCart } = useContext(StoreContext)
   return (
     <Navbar collapseOnSelect expand="lg" className="flex pt-4 px-0">
       <Link to="/" className="w-1/2 lg:w-1/4">
@@ -42,7 +40,8 @@ export default () => {
                   href="https://www.facebook.com/minipopkids"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="black"
+                  className="blue"
+                  style={{ color: iconColor }}
                 >
                   <FaFacebook />
                 </a>
@@ -52,7 +51,7 @@ export default () => {
                   href="https://www.instagram.com/minipopkids"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="black"
+                  className="blue"
                 >
                   <FaInstagram />
                 </a>
@@ -62,7 +61,7 @@ export default () => {
                   href="https://www.youtube.com/minipopkids"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="black"
+                  className="blue"
                 >
                   <FaYoutube />
                 </a>
@@ -72,7 +71,7 @@ export default () => {
                   href="https://open.spotify.com/artist/2VAjBQ6cM2faT2UKxONV93"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="black"
+                  className="blue"
                 >
                   <FaSpotify />
                 </a>
@@ -82,7 +81,7 @@ export default () => {
                   href="https://www.amazon.ca/Mini-Kids-Double-2019-Release/dp/B07ZDJRGKQ"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="black"
+                  className="blue"
                 >
                   <FaAmazon />
                 </a>
@@ -92,7 +91,7 @@ export default () => {
                   href="https://music.apple.com/ca/artist/mini-pop-kids/39864063"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="black"
+                  className="blue"
                 >
                   <FaApple />
                 </a>
@@ -153,3 +152,5 @@ export default () => {
     </Navbar>
   )
 }
+
+export default Header

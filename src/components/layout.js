@@ -1,14 +1,12 @@
-import React from "react"
+import React, { Component } from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import Helmet from "react-helmet"
-
 import Header from "./header"
 import Footer from "./footer"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, backgroundColor }) => {
   return (
-    <>
+    <div style={{ backgroundColor: backgroundColor }}>
       <Helmet>
         <link
           rel="stylesheet"
@@ -22,12 +20,30 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <Footer />
       </div>
-    </>
+    </div>
   )
 }
 
-Layout.propTypes = {
-  children: PropTypes.node,
-}
+// class LayoutBackground extends Component {
+//   constructor(props) {
+//     super(props)
+//   }
+
+//   static propTypes = {
+//     backgroundColor: PropTypes.string,
+//   }
+
+//   static defaultProps = {
+//     backgroundColor: "#fff",
+//   }
+
+//   render() {
+//     return (
+//       <div style={{ backgroundColor: this.props.backgroundColor }}>
+//         <Layout>{this.props.children}</Layout>
+//       </div>
+//     )
+//   }
+// }
 
 export default Layout
