@@ -7,6 +7,19 @@ import Img from "gatsby-image"
 const HomeCarousel = () => {
   const data = useStaticQuery(graphql`
     {
+      car4: file(relativePath: { eq: "carousel/Clothing.jpg" }) {
+        childImageSharp {
+          fluid(quality: 100) {
+            src
+            srcWebp
+            tracedSVG
+            srcSetWebp
+            base64
+            srcSet
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       car1: file(relativePath: { eq: "carousel/tourNew.jpg" }) {
         childImageSharp {
           fluid(quality: 100) {
@@ -58,6 +71,7 @@ const HomeCarousel = () => {
       transitionTime={450}
       interval={4000}
     >
+      <Img fluid={data.car4.childImageSharp.fluid} />
       <Link to="/tour">
         <Img fluid={data.car1.childImageSharp.fluid} />
       </Link>
