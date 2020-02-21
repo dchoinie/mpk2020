@@ -71,10 +71,10 @@ const HomeCarousel = () => {
       transitionTime={450}
       interval={4000}
     >
-      <Img fluid={data.car4.childImageSharp.fluid} />
       <Link to="/tour">
         <Img fluid={data.car1.childImageSharp.fluid} />
       </Link>
+      <Img fluid={data.car4.childImageSharp.fluid} />
       <a
         href="https://minipopkids.myshopify.com/"
         target="_blank"
