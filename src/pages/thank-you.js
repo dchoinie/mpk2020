@@ -27,10 +27,38 @@ const ThankYou = () => {
           <h5 className="text-white">for joining us on our</h5>
           <h5 className="blue">Bright Lights Tour 2020</h5>
           <div className="flex text-xl justify-center text-white py-2">
-            <FaFacebook className="mr-1" />
-            <FaInstagram className="mx-1" />
-            <FaYoutube className="mx-1" />
-            <FaTwitter className="ml-1" />
+            <a
+              href="https://www.facebook.com/minipopkids"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white"
+            >
+              <FaFacebook className="mr-1" />
+            </a>
+            <a
+              href="https://www.instagram.com/minipopkids/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white"
+            >
+              <FaInstagram className="mx-1" />
+            </a>
+            <a
+              href="https://www.youtube.com/minipopkids"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white"
+            >
+              <FaYoutube className="mx-1" />
+            </a>
+            <a
+              href="https://twitter.com/minipopkids"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white"
+            >
+              <FaTwitter className="ml-1" />
+            </a>
           </div>
         </div>
         <div className="w-full lg:w-1/2 flex">
