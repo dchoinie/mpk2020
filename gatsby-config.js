@@ -95,6 +95,10 @@ module.exports = {
             baseId: process.env.AIRTABLE_BASE_ID,
             tableName: `LondonVIP`,
           },
+          {
+            baseId: process.env.AIRTABLE_BASE_ID,
+            tableName: `BrantfordVIP`,
+          },
         ],
       },
     },

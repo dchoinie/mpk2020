@@ -6,10 +6,10 @@ import { graphql } from "gatsby"
 import { login, logout, isAuthenticated, getProfile } from "../../utils/auth"
 import ModalImage from "react-modal-image"
 
-export const londonVIP = graphql`
+export const brantfordVIP = graphql`
   {
     allAirtable(
-      filter: { table: { eq: "LondonVIP" } }
+      filter: { table: { eq: "BrantfordVIP" } }
       sort: { fields: data___img }
     ) {
       edges {
@@ -25,15 +25,15 @@ export const londonVIP = graphql`
   }
 `
 
-const london = ({ data }) => {
+const brantford = ({ data }) => {
   if (!isAuthenticated()) {
     login()
     return <p>Redirecting to login...</p>
   }
   return (
     <Layout backgroundColor="#000">
-      <SEO title="London VIP" />
-      <PageTitle title="London VIP Gallery" color="#fbed1d" />
+      <SEO title="Brantford VIP" />
+      <PageTitle title="Brantford VIP Gallery" color="#fbed1d" />
       <div className="vip-images-container">
         {data.allAirtable.edges.map(({ node }) => {
           return (
@@ -52,4 +52,4 @@ const london = ({ data }) => {
   )
 }
 
-export default london
+export default brantford
