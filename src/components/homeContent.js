@@ -38,9 +38,7 @@ export default () => {
           }
         }
       }
-      travellingStage: file(
-        relativePath: { eq: "homeContent/travellingStage.jpg" }
-      ) {
+      walmart: file(relativePath: { eq: "homeContent/walmart.png" }) {
         childImageSharp {
           fluid {
             src
@@ -74,8 +72,15 @@ export default () => {
       >
         <Img fluid={data.mpk17.childImageSharp.fluid} />
       </a>
-      <Link to="/meet-the-mpk">
-        <Img fluid={data.meetTheMPK.childImageSharp.fluid} />
+      <a
+        href="https://www.walmart.ca/en/mini-pop-kids/N-51184998"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Img fluid={data.walmart.childImageSharp.fluid} />
+      </a>
+      <Link to="/videos">
+        <Img fluid={data.musicVideos.childImageSharp.fluid} />
       </Link>
       <a
         href="https://mailchi.mp/minipopkids/newsletter"
@@ -84,11 +89,8 @@ export default () => {
       >
         <Img fluid={data.newsletter.childImageSharp.fluid} />
       </a>
-      <Link to="/videos">
-        <Img fluid={data.musicVideos.childImageSharp.fluid} />
-      </Link>
-      <Link to="/pop-star-programs">
-        <Img fluid={data.travellingStage.childImageSharp.fluid} />
+      <Link to="/meet-the-mpk">
+        <Img fluid={data.meetTheMPK.childImageSharp.fluid} />
       </Link>
     </div>
   )

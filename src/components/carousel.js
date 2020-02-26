@@ -74,7 +74,13 @@ const HomeCarousel = () => {
       <Link to="/tour">
         <Img fluid={data.car1.childImageSharp.fluid} />
       </Link>
-      <Img fluid={data.car4.childImageSharp.fluid} />
+      <a
+        href="https://www.walmart.ca/en/mini-pop-kids/N-51184998"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Img fluid={data.car4.childImageSharp.fluid} />
+      </a>
       <a
         href="https://minipopkids.myshopify.com/"
         target="_blank"
