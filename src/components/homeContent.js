@@ -22,7 +22,7 @@ export default () => {
           }
         }
       }
-      meetTheMPK: file(relativePath: { eq: "homeContent/MeetMPK.jpg" }) {
+      meetTheMPK: file(relativePath: { eq: "homeContent/MeetMPK2.jpg" }) {
         childImageSharp {
           fluid {
             src
@@ -38,7 +38,7 @@ export default () => {
           }
         }
       }
-      walmart: file(relativePath: { eq: "homeContent/walmart.png" }) {
+      walmart: file(relativePath: { eq: "homeContent/Clothing.jpg" }) {
         childImageSharp {
           fluid {
             src
