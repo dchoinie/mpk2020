@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import { useStaticQuery, graphql } from "gatsby"
+import { Carousel } from "react-responsive-carousel"
 import Img from "gatsby-image"
 
 const Walmart = () => {
@@ -37,23 +38,40 @@ const Walmart = () => {
     <Layout>
       <div>
         <Img fluid={data.clothing.childImageSharp.fluid} />
-        <div className="flex py-6">
-          <div className="w-1/2 flex">
-            <h4 className="pink self-center mb-0">
-              Check out the new Mini Pop Kids clothing line at your local
-              Walmart!
+        <div className="flex justify-between py-6 px-12">
+          <div className="flex w-2/3">
+            <h4 className="pink self-center mb-0 text-3xl">
+              Check out the new Mini Pop Kids
+              <br /> clothing line at select Walmart stores!
             </h4>
           </div>
-          <div className="w-1/2 flex justify-center">
+          <div className="flex w-1/3 justify-center">
             <a
               href="https://www.walmart.ca/en/mini-pop-kids/N-51184998"
               target="_blank"
-              className="button-pink self-center text-4xl"
+              className="button-pink self-center text-3xl whitespace-no-wrap"
             >
               Shop Now!
             </a>
           </div>
         </div>
+      </div>
+      <div className="carousel-container text-center">
+        <Carousel
+          centerMode
+          centerSlidePercentage={33.33}
+          emulateTouch
+          autoPlay={true}
+          showIndicators={true}
+          showStatus={false}
+          infiniteLoop={true}
+        >
+          <img src="https://via.placeholder.com/800x600" alt="" />
+          <img src="https://via.placeholder.com/800x600" alt="" />
+          <img src="https://via.placeholder.com/800x600" alt="" />
+          <img src="https://via.placeholder.com/800x600" alt="" />
+          <img src="https://via.placeholder.com/800x600" alt="" />
+        </Carousel>
       </div>
       <div className="flex justify-center">
         <h4>List of Stores</h4>
