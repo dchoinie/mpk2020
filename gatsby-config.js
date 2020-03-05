@@ -89,6 +89,10 @@ module.exports = {
           },
           {
             baseId: process.env.AIRTABLE_BASE_ID,
+            tableName: `Walmart`,
+          },
+          {
+            baseId: process.env.AIRTABLE_BASE_ID,
             tableName: `VIPGalleries`,
           },
           {
