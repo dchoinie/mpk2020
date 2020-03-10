@@ -1,13 +1,85 @@
 import React from "react"
 import Layout from "../components/layout"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import { Carousel } from "react-responsive-carousel"
 import Img from "gatsby-image"
 
 const Walmart = () => {
   const data = useStaticQuery(graphql`
     {
-      clothing: file(relativePath: { eq: "clothing.jpg" }) {
+      walmart1: file(relativePath: { eq: "walmart-group/1.jpg" }) {
+        childImageSharp {
+          fluid(quality: 80) {
+            src
+            srcSet
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      walmart2: file(relativePath: { eq: "walmart-group/2.jpg" }) {
+        childImageSharp {
+          fluid(quality: 80) {
+            src
+            srcSet
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      walmart3: file(relativePath: { eq: "walmart-group/3.jpg" }) {
+        childImageSharp {
+          fluid(quality: 80) {
+            src
+            srcSet
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      walmart4: file(relativePath: { eq: "walmart-group/4.jpg" }) {
+        childImageSharp {
+          fluid(quality: 80) {
+            src
+            srcSet
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      walmart5: file(relativePath: { eq: "walmart-group/5.jpg" }) {
+        childImageSharp {
+          fluid(quality: 80) {
+            src
+            srcSet
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      walmart6: file(relativePath: { eq: "walmart-group/6.jpg" }) {
+        childImageSharp {
+          fluid(quality: 80) {
+            src
+            srcSet
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      walmart7: file(relativePath: { eq: "walmart-group/7.jpg" }) {
+        childImageSharp {
+          fluid(quality: 80) {
+            src
+            srcSet
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      walmart8: file(relativePath: { eq: "walmart-group/8.jpg" }) {
+        childImageSharp {
+          fluid(quality: 80) {
+            src
+            srcSet
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      clothing: file(relativePath: { eq: "walmart-page.jpg" }) {
         childImageSharp {
           fluid(quality: 80) {
             src
@@ -56,7 +128,7 @@ const Walmart = () => {
           </div>
         </div>
       </div>
-      <div className="carousel-container text-center">
+      <div className="carousel-container text-center py-6">
         <Carousel
           centerMode
           centerSlidePercentage={33.33}
@@ -65,15 +137,32 @@ const Walmart = () => {
           showIndicators={true}
           showStatus={false}
           infiniteLoop={true}
+          showThumbs={false}
         >
-          <img src="https://via.placeholder.com/800x600" alt="" />
-          <img src="https://via.placeholder.com/800x600" alt="" />
-          <img src="https://via.placeholder.com/800x600" alt="" />
-          <img src="https://via.placeholder.com/800x600" alt="" />
-          <img src="https://via.placeholder.com/800x600" alt="" />
+          <Link to="/">
+            <Img fluid={data.walmart1.childImageSharp.fluid} />
+          </Link>
+          <Link to="/">
+            <Img fluid={data.walmart3.childImageSharp.fluid} />
+          </Link>
+          <Link to="/">
+            <Img fluid={data.walmart4.childImageSharp.fluid} />
+          </Link>
+          <Link to="/">
+            <Img fluid={data.walmart5.childImageSharp.fluid} />
+          </Link>
+          <Link to="/">
+            <Img fluid={data.walmart6.childImageSharp.fluid} />
+          </Link>
+          <Link to="/">
+            <Img fluid={data.walmart7.childImageSharp.fluid} />
+          </Link>
+          <Link to="/">
+            <Img fluid={data.walmart8.childImageSharp.fluid} />
+          </Link>
         </Carousel>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center pt-6">
         <h4>List of Stores</h4>
       </div>
       <div className="cities-grid">
