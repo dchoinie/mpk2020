@@ -27,8 +27,8 @@ const Footer = () => {
       <div>
         <Newsletter />
       </div>
-      <div id="footer" className="mt-12">
-        <ul id="footer-nav">
+      <div className="flex flex-col lg:flex-row justify-between mt-6">
+        <ul className="flex flex-col self-center text-center-noimportant lg:flex-row">
           <li className="mx-1">
             <Link to="privacy-policy" className="blue">
               Privacy Policy
@@ -50,7 +50,7 @@ const Footer = () => {
             </Link>
           </li>
         </ul>
-        <div id="footer-copyright">
+        <div id="footer-copyright" className="self-center">
           <p style={{ color: "var(--main-pink)" }}>
             &copy; {new Date().getFullYear()} Mini Pop Kids
           </p>

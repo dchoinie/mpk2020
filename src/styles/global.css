@@ -114,17 +114,6 @@ a {
   row-gap: 2rem;
 }
 
-#footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-#footer-nav {
-  display: flex;
-  flex-direction: row;
-}
-
 #albums-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -234,6 +223,14 @@ a {
   grid-auto-flow: column;
 }
 
+@media screen and (max-width: 1280px) {
+  .cities-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .starLogo {
     width: 250px;
@@ -261,14 +258,6 @@ a {
   }
   #partners-container {
     grid-template-columns: repeat(1, 1fr);
-  }
-  #footer {
-    flex-direction: column;
-    text-align: center;
-  }
-  #footer-nav {
-    margin-right: auto;
-    margin-left: auto;
   }
   #footerEnvelope {
     margin-right: 0;

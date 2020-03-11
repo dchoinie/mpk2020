@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import { useStaticQuery, graphql, Link } from "gatsby"
+import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from "react-responsive-carousel"
 import Img from "gatsby-image"
 
@@ -110,14 +111,14 @@ const Walmart = () => {
     <Layout>
       <div>
         <Img fluid={data.clothing.childImageSharp.fluid} />
-        <div className="flex justify-between py-6 px-12">
-          <div className="flex w-2/3">
-            <h4 className="pink self-center mb-0 text-3xl">
+        <div className="flex flex-col lg:flex-row lg:justify-between py-6 px-6 lg:px-12">
+          <div className="flex w-full justify-center lg:justify-start lg:w-2/3">
+            <h4 className="pink self-center mb-0 text-3xl text-center-noimportant lg:text-left">
               Check out the new Mini Pop Kids
               <br /> clothing line at select Walmart stores!
             </h4>
           </div>
-          <div className="flex w-1/3 justify-center">
+          <div className="flex w-full lg:w-1/3 py-4 lg:py-0 justify-center">
             <a
               href="https://www.walmart.ca/en/mini-pop-kids/N-51184998"
               target="_blank"
@@ -168,7 +169,7 @@ const Walmart = () => {
       <div className="cities-grid">
         {data.allAirtable.edges.map(({ node: walmart }) => {
           return (
-            <div key={walmart.id} className="">
+            <div key={walmart.id} className="self-center">
               <p className="text-xs mb-0 text-right">
                 {walmart.data.address} {walmart.data.city},{" "}
                 {walmart.data.province}
