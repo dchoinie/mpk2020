@@ -64,20 +64,10 @@ export default ({ data }) => {
       <Img fluid={data.tourImage.childImageSharp.fluid} />
       <p className="text-white">
         <em>
-          We have been closely monitoring the developments and communication
-          regarding (COVID-19). We are taking the increasing health concerns
-          seriously and are carefully following the guidelines set in place by
-          Health Canada officials and closely monitoring government websites for
-          updates.
-        </em>
-      </p>
-      <p className="text-white">
-        <em>
-          We are managing this process with great care and rigor, as safety
-          remains our top concern. At this time all shows listed are moving
-          forward as listed in the schedule. Please check back for updates as we
-          monitor each local situation carefully. Ticketholders will be notified
-          directly if there are any changes to the current schedule.
+          In light of ongoing public health concerns, the Mini Pop Kids Live
+          shows in British Columbia have been postponed. Ticket holders should
+          hold on to their tickets, which will be honoured at the rescheduled
+          date to be announced soon. Please stay tuned for further updates.
         </em>
       </p>
       <div className="flex flex-col lg:flex-row my-6">
