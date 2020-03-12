@@ -61,6 +61,24 @@ export default ({ data }) => {
     <Layout backgroundColor="#000">
       <SEO title="Tour" />
       <Img fluid={data.tourImage.childImageSharp.fluid} />
+      <p className="text-white">
+        <em>
+          We have been closely monitoring the developments and communication
+          regarding (COVID-19). We are taking the increasing health concerns
+          seriously and are carefully following the guidelines set in place by
+          Health Canada officials and closely monitoring government websites for
+          updates.
+        </em>
+      </p>
+      <p className="text-white">
+        <em>
+          We are managing this process with great care and rigor, as safety
+          remains our top concern. At this time all shows listed are moving
+          forward as listed in the schedule. Please check back for updates as we
+          monitor each local situation carefully. Ticketholders will be notified
+          directly if there are any changes to the current schedule.
+        </em>
+      </p>
       <div className="flex flex-col lg:flex-row my-6">
         <div className="flex flex-col w-full lg:w-1/2 mx-2">
           <h2 className="text-white uppercase">
