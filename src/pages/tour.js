@@ -26,6 +26,7 @@ export const tourQuery = graphql`
           Codes
           vipTix
           slug
+          status
         }
       }
     }
@@ -141,9 +142,10 @@ export default ({ data }) => {
                 <p className="text-white lg:mb-0">{node.data.time}</p>
               </div>
               <div className="flex justify-center">
-                {node.data.buttonText === "Sold Out" ? (
+                {node.data.buttonText === "Sold Out" ||
+                node.data.buttonText === "Postponed" ? (
                   <>
-                    <h4 className="yellow self-center">Sold Out!</h4>
+                    <h4 className="yellow self-center">{node.data.status}</h4>
                   </>
                 ) : (
                   <>
