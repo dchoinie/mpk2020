@@ -62,14 +62,6 @@ export default ({ data }) => {
     <Layout backgroundColor="#000">
       <SEO title="Tour" />
       <Img fluid={data.tourImage.childImageSharp.fluid} />
-      <p className="text-white">
-        <em>
-          In light of ongoing public health concerns, the Mini Pop Kids Live
-          shows in British Columbia have been postponed. Ticket holders should
-          hold on to their tickets, which will be honoured at the rescheduled
-          date to be announced soon. Please stay tuned for further updates.
-        </em>
-      </p>
       <div className="flex flex-col lg:flex-row my-6">
         <div className="flex flex-col w-full lg:w-1/2 mx-2">
           <h2 className="text-white uppercase">
@@ -106,6 +98,14 @@ export default ({ data }) => {
           ></iframe>
         </div>
       </div>
+      <p className="yellow max-w-3xl mx-auto">
+        <em>
+          In light of ongoing public health concerns, the Mini Pop Kids Live
+          shows in British Columbia have been postponed. Ticket holders should
+          hold on to their tickets, which will be honoured at the rescheduled
+          date to be announced soon. Please stay tuned for further updates.
+        </em>
+      </p>
       <div className="max-w-3xl mx-auto">
         {data.allAirtable.nodes.map(node => (
           <div
