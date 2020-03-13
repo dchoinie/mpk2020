@@ -98,14 +98,27 @@ export default ({ data }) => {
           ></iframe>
         </div>
       </div>
-      <p className="yellow max-w-3xl mx-auto">
-        <em>
-          In light of ongoing public health concerns, the Mini Pop Kids Live
-          shows in British Columbia have been postponed. Ticket holders should
-          hold on to their tickets, which will be honoured at the rescheduled
-          date to be announced soon. Please stay tuned for further updates.
-        </em>
-      </p>
+      <div className="max-w-3xl yellow mx-auto">
+        <p>Hi MPK fans!</p>
+        <p>
+          Due to public health concerns surrounding COVID-19 (Coronavirus), the
+          Mini Pop Kids LIVE shows in March have been postponed until further
+          notice.
+        </p>
+        <p>
+          The health and safety of our fans and community is our top priority.
+          Ticket holders of postposed shows should hold on to their tickets,
+          which will be honoured at the rescheduled dates to be announced soon.
+          We cannot wait to share with you this one-of-a-kind family-friendly
+          concert experience.
+        </p>
+        <p>
+          We love our fans and we will keep you updated! Keep singing, keep
+          dancing and stay safe.
+        </p>
+        <p>Love, The Mini Pop Kids</p>
+      </div>
+      <p></p>
       <div className="max-w-3xl mx-auto">
         {data.allAirtable.nodes.map(node => (
           <div
