@@ -102,8 +102,8 @@ export default ({ data }) => {
         <p>Hi MPK fans!</p>
         <p>
           Due to public health concerns surrounding COVID-19 (Coronavirus), the
-          Mini Pop Kids LIVE shows in March have been postponed until further
-          notice.
+          Mini Pop Kids LIVE shows through April 16th have been postponed until
+          further notice.
         </p>
         <p>
           The health and safety of our fans and community is our top priority.
@@ -148,7 +148,13 @@ export default ({ data }) => {
                 {node.data.buttonText === "Sold Out" ||
                 node.data.buttonText === "Postponed" ? (
                   <>
-                    <h4 className="yellow self-center">{node.data.status}</h4>
+                    <OutboundLink
+                      href={node.data.ticketLink}
+                      target="_blank"
+                      className="hover:no-underline"
+                    >
+                      <h4 className="yellow self-center">{node.data.status}</h4>
+                    </OutboundLink>
                   </>
                 ) : (
                   <>
