@@ -6,7 +6,7 @@ import Newsletter from "../components/newsletter"
 const Footer = () => {
   const data = useStaticQuery(graphql`
     {
-      footerImg: file(relativePath: { eq: "footerImg.jpg" }) {
+      footerImg: file(relativePath: { eq: "footer-banner-fblive.jpg" }) {
         childImageSharp {
           fluid(quality: 100) {
             src
@@ -21,9 +21,14 @@ const Footer = () => {
 
   return (
     <div className="mt-12">
-      <Link to="/tour">
+      <a
+        href="https://www.facebook.com/minipopkids"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <Img fluid={data.footerImg.childImageSharp.fluid} />
-      </Link>
+      </a>
+
       <div>
         <Newsletter />
       </div>
