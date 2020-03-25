@@ -29,7 +29,7 @@ const HomeCarousel = () => {
           }
         }
       }
-      car3: file(relativePath: { eq: "carousel/TruthHurts_Carousel.jpg" }) {
+      car3: file(relativePath: { eq: "carousel/Clothing.jpg" }) {
         childImageSharp {
           fluid(quality: 80) {
             src
@@ -40,7 +40,7 @@ const HomeCarousel = () => {
           }
         }
       }
-      car4: file(relativePath: { eq: "carousel/Clothing.jpg" }) {
+      car4: file(relativePath: { eq: "carousel/19min.jpg" }) {
         childImageSharp {
           fluid(quality: 80) {
             src
@@ -70,14 +70,6 @@ const HomeCarousel = () => {
       >
         <Img fluid={data.car1.childImageSharp.fluid} />
       </a>
-
-      <a
-        href="https://www.walmart.ca/en/mini-pop-kids/N-51184998"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Img fluid={data.car4.childImageSharp.fluid} />
-      </a>
       <a
         href="https://minipopkids.myshopify.com/"
         target="_blank"
@@ -85,13 +77,20 @@ const HomeCarousel = () => {
       >
         <Img fluid={data.car2.childImageSharp.fluid} />
       </a>
-      {/* <a
-        href="https://www.youtube.com/watch?v=m29m-mpDpgU"
+      <a
+        href="https://www.walmart.ca/en/mini-pop-kids/N-51184998"
         target="_blank"
         rel="noopener noreferrer"
       >
         <Img fluid={data.car3.childImageSharp.fluid} />
-      </a> */}
+      </a>
+      <a
+        href="https://www.youtube.com/watch?v=Gl1Fl6oiL6I"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Img fluid={data.car4.childImageSharp.fluid} />
+      </a>
     </Carousel>
   )
 }
