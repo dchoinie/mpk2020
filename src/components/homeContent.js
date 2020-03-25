@@ -54,17 +54,26 @@ export default () => {
           }
         }
       }
+      fblive: file(relativePath: { eq: "homeContent/FBLive-button.png" }) {
+        childImageSharp {
+          fluid {
+            src
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
   return (
-    <div
-      id="home-grid"
-      className="text-center my-12"
-      // style={{ border: "1px solid red" }}
-    >
-      <Link to="/tour">
-        <Img fluid={data.liveImg.childImageSharp.fluid} />
-      </Link>
+    <div id="home-grid" className="text-center my-12">
+      <a
+        href="https://www.facebook.com/minipopkids"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Img fluid={data.fblive.childImageSharp.fluid} />
+      </a>
+
       <a
         href="https://minipopkids.myshopify.com/"
         target="_blank"

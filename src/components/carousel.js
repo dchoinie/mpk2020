@@ -7,27 +7,12 @@ import Img from "gatsby-image"
 const HomeCarousel = () => {
   const data = useStaticQuery(graphql`
     {
-      car4: file(relativePath: { eq: "carousel/Clothing.jpg" }) {
+      car1: file(relativePath: { eq: "carousel/WEB-banner-FBlive.jpg" }) {
         childImageSharp {
-          fluid(quality: 100) {
+          fluid(quality: 80) {
             src
             srcWebp
-            tracedSVG
             srcSetWebp
-            base64
-            srcSet
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      car1: file(relativePath: { eq: "carousel/tourNew.jpg" }) {
-        childImageSharp {
-          fluid(quality: 100) {
-            src
-            srcWebp
-            tracedSVG
-            srcSetWebp
-            base64
             srcSet
             ...GatsbyImageSharpFluid
           }
@@ -35,12 +20,10 @@ const HomeCarousel = () => {
       }
       car2: file(relativePath: { eq: "carousel/orderNow_carousel.jpg" }) {
         childImageSharp {
-          fluid(quality: 100) {
+          fluid(quality: 80) {
             src
             srcWebp
-            tracedSVG
             srcSetWebp
-            base64
             srcSet
             ...GatsbyImageSharpFluid
           }
@@ -48,12 +31,21 @@ const HomeCarousel = () => {
       }
       car3: file(relativePath: { eq: "carousel/TruthHurts_Carousel.jpg" }) {
         childImageSharp {
-          fluid(quality: 100) {
+          fluid(quality: 80) {
             src
             srcWebp
-            tracedSVG
             srcSetWebp
-            base64
+            srcSet
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      car4: file(relativePath: { eq: "carousel/Clothing.jpg" }) {
+        childImageSharp {
+          fluid(quality: 80) {
+            src
+            srcWebp
+            srcSetWebp
             srcSet
             ...GatsbyImageSharpFluid
           }
@@ -71,9 +63,14 @@ const HomeCarousel = () => {
       transitionTime={450}
       interval={4000}
     >
-      <Link to="/tour">
+      <a
+        href="https://www.facebook.com/minipopkids"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <Img fluid={data.car1.childImageSharp.fluid} />
-      </Link>
+      </a>
+
       <a
         href="https://www.walmart.ca/en/mini-pop-kids/N-51184998"
         target="_blank"
@@ -88,13 +85,13 @@ const HomeCarousel = () => {
       >
         <Img fluid={data.car2.childImageSharp.fluid} />
       </a>
-      <a
+      {/* <a
         href="https://www.youtube.com/watch?v=m29m-mpDpgU"
         target="_blank"
         rel="noopener noreferrer"
       >
         <Img fluid={data.car3.childImageSharp.fluid} />
-      </a>
+      </a> */}
     </Carousel>
   )
 }
