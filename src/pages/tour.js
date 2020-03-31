@@ -27,6 +27,7 @@ export const tourQuery = graphql`
           vipTix
           slug
           status
+          prevDate(formatString: "MMMM DD")
         }
       }
     }
@@ -102,8 +103,8 @@ export default ({ data }) => {
         <p>Hi MPK fans!</p>
         <p>
           Due to public health concerns surrounding COVID-19 (Coronavirus), the
-          Mini Pop Kids LIVE shows through April 16th have been postponed until
-          further notice.
+          Mini Pop Kids LIVE shows through the end of April have been postponed
+          until further notice.
         </p>
         <p>
           The health and safety of our fans and community is our top priority.
@@ -138,13 +139,13 @@ export default ({ data }) => {
             </div>
             <div className="flex flex-col lg:flex-row lg:justify-between w-full py-6">
               <div className="flex flex-col self-center text-center-noimportant lg:text-left">
-                <p className="mb-0 fredoka text-xl pink">
+                <p className="mb-0 fredoka text-xl yellow">
                   {node.data.city}, {node.data.province}
                 </p>
-                <p className="mb-0 yellow fredoka">{node.data.venue}</p>
+                <p className="mb-0 pink fredoka">{node.data.venue}</p>
                 <p className="text-white lg:mb-0">{node.data.time}</p>
               </div>
-              <div className="flex justify-center">
+              <div className="flex justify-center self-center">
                 {node.data.buttonText === "Sold Out" ||
                 node.data.buttonText === "Postponed" ? (
                   <>
@@ -157,22 +158,33 @@ export default ({ data }) => {
                     </OutboundLink>
                   </>
                 ) : (
-                  <>
-                    <OutboundLink
-                      href={node.data.ticketLink}
-                      target="_blank"
-                      className="self-center button-pink text-xl"
-                    >
-                      {node.data.buttonText}
-                    </OutboundLink>
-                    <OutboundLink
-                      href={node.data.ticketLink}
-                      target="_blank"
-                      className="self-center button-blue text-xl"
-                    >
-                      {node.data.vipTix}
-                    </OutboundLink>
-                  </>
+                  <div className="flex flex-col self-center">
+                    <div className="flex">
+                      <OutboundLink
+                        href={node.data.ticketLink}
+                        target="_blank"
+                        className="self-center button-pink text-xl"
+                      >
+                        {node.data.buttonText}
+                      </OutboundLink>
+                      <OutboundLink
+                        href={node.data.ticketLink}
+                        target="_blank"
+                        className="self-center button-blue text-xl"
+                      >
+                        {node.data.vipTix}
+                      </OutboundLink>
+                    </div>
+                    {node.data.prevDate !== null ? (
+                      <>
+                        <div className="flex self-center text-center mt-2 text-white">
+                          <p className="mb-0">
+                            <em>Rescheduled from: {node.data.prevDate}</em>
+                          </p>
+                        </div>
+                      </>
+                    ) : null}
+                  </div>
                 )}
               </div>
             </div>
