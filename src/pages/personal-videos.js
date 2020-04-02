@@ -56,7 +56,9 @@ const PersonalVideos = ({ data }) => {
             <h4 className="text-2xl">Step #1</h4>
             <p>
               Upload a video singing or dancing to one of our songs on{" "}
-              <span className="font-bold">Spotify, YouTube, Apple Music</span>{" "}
+              <span className="font-bold text-lg">
+                Spotify, YouTube, Apple Music
+              </span>{" "}
               or wherever you listen to Mini Pop Kids!
             </p>
             <div className="flex mb-6">
