@@ -123,6 +123,7 @@ const Walmart = () => {
               href="https://www.walmart.ca/en/mini-pop-kids/N-51184998"
               target="_blank"
               className="button-pink self-center text-3xl whitespace-no-wrap"
+              rel="noopener noreferrer"
             >
               Shop Now!
             </a>

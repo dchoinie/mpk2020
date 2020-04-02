@@ -103,8 +103,8 @@ export default ({ data }) => {
         <p>Hi MPK fans!</p>
         <p>
           Due to public health concerns surrounding COVID-19 (Coronavirus), the
-          Mini Pop Kids LIVE shows through the end of April have been postponed
-          until further notice.
+          MIN POP KIDS Live Bright Lights Concert Tour has been postponed until
+          further notice.
         </p>
         <p>
           The health and safety of our fans and community is our top priority.

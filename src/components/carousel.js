@@ -51,6 +51,17 @@ const HomeCarousel = () => {
           }
         }
       }
+      car5: file(relativePath: { eq: "carousel/Banner-PersonalVideo.jpg" }) {
+        childImageSharp {
+          fluid(quality: 80) {
+            src
+            srcWebp
+            srcSetWebp
+            srcSet
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
   return (
@@ -90,6 +101,13 @@ const HomeCarousel = () => {
         rel="noopener noreferrer"
       >
         <Img fluid={data.car4.childImageSharp.fluid} />
+      </a>
+      <a
+        href="https://www.facebook.com/minipopkids"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Img fluid={data.car5.childImageSharp.fluid} />
       </a>
     </Carousel>
   )
