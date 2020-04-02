@@ -33,7 +33,7 @@ const sudbury = ({ data }) => {
   return (
     <Layout backgroundColor="#000">
       <SEO title="Sudbury VIP" />
-      <PageTitle title="Montreal VIP Gallery" color="#fbed1d" />
+      <PageTitle title="Sudbury VIP Gallery" color="#fbed1d" />
       <div className="vip-images-container">
         {data.allAirtable.edges.map(({ node }) => {
           return (
