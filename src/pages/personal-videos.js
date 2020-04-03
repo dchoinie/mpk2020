@@ -50,8 +50,9 @@ const PersonalVideos = ({ data }) => {
       <div className="flex flex-col mt-24">
         <div className="flex flex-col lg:flex-row">
           <div className="flex flex-col w-full lg:w-1/2">
-            <h2 className="text-4xl lg:text-5xl uppercase mb-12 font-bold">
-              Get a personal video from a mini pop kid
+            <h2 className="text-4xl lg:text-4xl uppercase mb-12 font-bold">
+              Get a personal video
+              <br /> from a mini pop kid
             </h2>
             <h4 className="text-2xl">Step #1</h4>
             <p>
@@ -128,9 +129,9 @@ const PersonalVideos = ({ data }) => {
             <h4 className="text-2xl">Step #3</h4>
             <p>
               Due to privacy settings on social media, it is sometimes hard for
-              us to see your videos. So please make sure you DM us on Facebook
-              or Instagram with your video so we can see your future POPstar
-              jamming out like a Mini Pop Kid!
+              us to see your videos. So please make sure you direct message us
+              on Facebook or Instagram with your video so we can see your future
+              POPstar jamming out like a Mini Pop Kid!
             </p>
             <h4 className="text-2xl">Step #4</h4>
             <p>
@@ -152,11 +153,11 @@ const PersonalVideos = ({ data }) => {
         <div className="flex w-full bg-black text-white">
           <p className="p-4">
             Disclaimer: You may send the video directly to us if you are not
-            comfortable posting your child online. Please DM us your video on
-            Facebook or Instagram and let us know you DO NOT want us posting
-            your child to our social channels. You will still receive a personal
-            video from a Mini Pop Kid even if you do not post your video
-            publicly.
+            comfortable posting your child online. Please direct message us your
+            video on Facebook or Instagram and let us know you DO NOT want us
+            posting your child to our social channels. You will still receive a
+            personal video from a Mini Pop Kid even if you do not post your
+            video publicly.
           </p>
         </div>
       </div>
