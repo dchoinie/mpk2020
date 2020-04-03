@@ -56,22 +56,68 @@ const PersonalVideos = ({ data }) => {
             <h4 className="text-2xl">Step #1</h4>
             <p>
               Upload a video singing or dancing to one of our songs on{" "}
-              <span className="text-lg">Spotify, YouTube, Apple Music</span> or
-              wherever you listen to Mini Pop Kids!
+              <span className="text-lg">
+                <a
+                  href="https://open.spotify.com/artist/2VAjBQ6cM2faT2UKxONV93"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="pink"
+                >
+                  Spotify,{" "}
+                </a>
+                <a
+                  href="https://www.youtube.com/minipopkids"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="pink"
+                >
+                  YouTube,{" "}
+                </a>
+                <a
+                  href="https://music.apple.com/ca/artist/mini-pop-kids/39864063"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="pink"
+                >
+                  Apple Music{" "}
+                </a>
+              </span>
+              or wherever you listen to Mini Pop Kids!
             </p>
             <div className="flex mb-6">
-              <Img
-                fluid={data.spotify.childImageSharp.fluid}
-                className="w-40 self-center mr-2"
-              />
-              <Img
-                fluid={data.youtube.childImageSharp.fluid}
-                className="w-40 self-center mx-2"
-              />
-              <Img
-                fluid={data.apple.childImageSharp.fluid}
-                className="w-40 self-center mx-2"
-              />
+              <a
+                href="https://open.spotify.com/artist/2VAjBQ6cM2faT2UKxONV93"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="pink self-center w-40"
+              >
+                <Img
+                  fluid={data.spotify.childImageSharp.fluid}
+                  className="w-full self-center mr-1"
+                />
+              </a>
+              <a
+                href="https://www.youtube.com/minipopkids"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="pink self-center w-40 mx-1"
+              >
+                <Img
+                  fluid={data.youtube.childImageSharp.fluid}
+                  className="w-full self-center"
+                />
+              </a>
+              <a
+                href="https://music.apple.com/ca/artist/mini-pop-kids/39864063"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="pink self-center w-40 ml-1"
+              >
+                <Img
+                  fluid={data.apple.childImageSharp.fluid}
+                  className="w-full self-center"
+                />
+              </a>
             </div>
             <h4 className="text-2xl">Step #2</h4>
             <p>
