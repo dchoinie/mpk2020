@@ -23,14 +23,14 @@ export default ({ data }) => {
       <PageTitle title="Auditions" />
       <Img fluid={data.auditions.childImageSharp.fluid} className="my-4" />
       <iframe
-        height="4000"
+        height="6000"
         width="100%"
         frameborder="0"
         style={{ width: "100%", overflow: "hidden", border: "none" }}
-        src="https://minipopkidsauditions2020.castingcrane.com/embed"
+        src="https://minipopkids2020round2.castingcrane.com/embed"
         allow="microphone; camera"
       >
-        <a href="https://minipopkidsauditions2020.castingcrane.com/">
+        <a href="https://minipopkids2020round2.castingcrane.com/">
           Fill out the Mini Pop Kids Auditions 2020 form
         </a>
       </iframe>
