@@ -27,10 +27,10 @@ export default ({ data }) => {
         width="100%"
         frameborder="0"
         style={{ width: "100%", overflow: "hidden", border: "none" }}
-        src="https://minipopkids2020round2.castingcrane.com/embed"
+        src="https://minipopkidsauditions2020.castingcrane.com/embed"
         allow="microphone; camera"
       >
-        <a href="https://minipopkids2020round2.castingcrane.com/">
+        <a href="https://minipopkidsauditions2020.castingcrane.com/">
           Fill out the Mini Pop Kids Auditions 2020 form
         </a>
       </iframe>
