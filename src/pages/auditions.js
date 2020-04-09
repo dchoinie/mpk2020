@@ -22,6 +22,7 @@ export default ({ data }) => {
     <Layout>
       <PageTitle title="Auditions" />
       <Img fluid={data.auditions.childImageSharp.fluid} className="my-4" />
+      {/* First round audition form */}
       <iframe
         height="6000"
         width="100%"
