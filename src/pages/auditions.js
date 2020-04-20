@@ -20,11 +20,13 @@ export const auditionsImage = graphql`
 export default ({ data }) => {
   return (
     <Layout>
-      <PageTitle title="Auditions" />
-      <Img fluid={data.auditions.childImageSharp.fluid} className="my-4" />
+      <Img
+        fluid={data.auditions.childImageSharp.fluid}
+        className="my-4 shadow-md rounded"
+      />
       {/* First round audition form */}
       <iframe
-        height="6000"
+        height="4200"
         width="100%"
         frameborder="0"
         style={{ width: "100%", overflow: "hidden", border: "none" }}
