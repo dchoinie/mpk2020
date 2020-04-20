@@ -93,13 +93,6 @@ const DanceAtHome = () => {
               />
               <input
                 type="text"
-                name="studioSize"
-                id="studioSize"
-                placeholder="Number Of Total Students"
-                className="border border-gray-300 p-2 rounded w-full my-2"
-              />
-              <input
-                type="text"
                 name="city"
                 id="city"
                 placeholder="City"
@@ -166,8 +159,9 @@ const DanceAtHome = () => {
                   htmlFor="newsletter"
                   className="self-center mb-0 text-xs"
                 >
-                  I agree to my email being stored and used to receive the Mini
-                  Pop Kids newsletter
+                  I agree to my email being stored and used to receive "Dance at
+                  Home" program materials, newsletters, pre-sale access codes
+                  &amp; dance opportunites.
                 </label>
               </div>
               <div className="flex mt-2">
