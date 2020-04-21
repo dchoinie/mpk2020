@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
+import SEO from "../components/seo"
 
 export const PVImage = graphql`
   {
@@ -47,6 +48,7 @@ export const PVImage = graphql`
 const PersonalVideos = ({ data }) => {
   return (
     <Layout>
+      <SEO title="Personal Videos" />
       <div className="flex flex-col">
         <div className="flex w-full">
           <Img fluid={data.pv.childImageSharp.fluid} className="w-full" />

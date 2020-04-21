@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { FaAngleRight, FaStar, FaDollarSign } from "react-icons/fa"
+import SEO from "../components/seo"
 
 const DanceAtHome = () => {
   const data = useStaticQuery(graphql`
@@ -29,6 +30,7 @@ const DanceAtHome = () => {
   `)
   return (
     <Layout>
+      <SEO title="Dance At Home" />
       <div className="flex my-4">
         <Img fluid={data.header.childImageSharp.fluid} className="w-full" />
       </div>

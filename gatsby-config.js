@@ -64,26 +64,6 @@ module.exports = {
         ],
       },
     },
-    // {
-    //   resolve: "gatsby-plugin-web-font-loader",
-    //   options: {
-    //     google: {
-    //       families: ["Fredoka One", "Open Sans"],
-    //     },
-    //   },
-    // },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#ed418e`,
-        theme_color: `#ed418e`,
-        display: `minimal-ui`,
-        icon: `src/images/logos/logo-vertical.png`, // This path is relative to the root of the site.
-      },
-    },
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -146,6 +126,40 @@ module.exports = {
         cloudName: process.env.CLOUDINARY_CLOUD_NAME,
         apiKey: process.env.CLOUDINARY_API_KEY,
         apiSecret: process.env.CLOUDINARY_API_SECRET,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Mini Pop Kids`,
+        short_name: `MPK`,
+        start_url: `/`,
+        background_color: `#ed418e`,
+        theme_color: `#ed418e`,
+        display: `minimal-ui`,
+        // icon: `src/images/logos/logo-vertical.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [
+          `/auditions/`,
+          `/contact/`,
+          `/dance-at-home/`,
+          `/faq/`,
+          `/home/`,
+          `/meet-the-mpk/`,
+          `/music/`,
+          `/personal-videos/`,
+          `/pop-star-programs/`,
+          `/privacy-policy/`,
+          `/terms-conditions/`,
+          `/tour/`,
+          `/videos/`,
+          `/vip-process/`,
+          `/walmartcanada/`,
+        ],
       },
     },
     // {

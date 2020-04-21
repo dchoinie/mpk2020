@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa"
+import SEO from "../components/seo"
 
 const ThankYou = () => {
   const data = useStaticQuery(graphql`
@@ -19,6 +20,7 @@ const ThankYou = () => {
   `)
   return (
     <Layout backgroundColor="#000">
+      <SEO title="Thank You" />
       <h2 className="text-white text-3xl text-center my-12">Thank You!</h2>
       <Img fluid={data.banner.childImageSharp.fluid} />
       <div className="flex flex-col lg:flex-row">

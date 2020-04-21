@@ -5,10 +5,12 @@ import PageTitle from "../components/pageTitle"
 import Accordion from "react-bootstrap/Accordion"
 import Button from "react-bootstrap/Button"
 import Card from "react-bootstrap/Card"
+import SEO from "../components/seo"
 
 export default () => {
   return (
     <Layout>
+      <SEO title="FAQ" />
       <PageTitle title="F.A.Q." />
       <Accordion className="px-2 lg:px-0">
         <Card>

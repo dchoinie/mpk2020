@@ -4,6 +4,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from "react-responsive-carousel"
 import Img from "gatsby-image"
+import SEO from "../components/seo"
 
 const Walmart = () => {
   const data = useStaticQuery(graphql`
@@ -109,6 +110,7 @@ const Walmart = () => {
   `)
   return (
     <Layout>
+      <SEO title="Walmart Canada" />
       <div>
         <Img fluid={data.clothing.childImageSharp.fluid} />
         <div className="flex flex-col lg:flex-row lg:justify-between py-6 px-6 lg:px-12">

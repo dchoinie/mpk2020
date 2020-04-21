@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import PageTitle from "../components/pageTitle"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import SEO from "../components/seo"
 
 export const auditionsImage = graphql`
   {
@@ -20,6 +21,7 @@ export const auditionsImage = graphql`
 export default ({ data }) => {
   return (
     <Layout>
+      <SEO title="Auditions" />
       <Img
         fluid={data.auditions.childImageSharp.fluid}
         className="my-4 shadow-md rounded"
