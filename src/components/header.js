@@ -18,7 +18,8 @@ const Logo = () => {
     {
       logo: file(relativePath: { eq: "logos/logo-horizontal.png" }) {
         childImageSharp {
-          fluid {
+          fluid(maxWidth: 300) {
+            srcSet
             src
             ...GatsbyImageSharpFluid
           }
