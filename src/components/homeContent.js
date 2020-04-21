@@ -8,7 +8,10 @@ export default () => {
     {
       liveImg: file(relativePath: { eq: "homeContent/LiveShows.jpg" }) {
         childImageSharp {
-          fluid {
+          fluid(maxWidth: 300) {
+            srcWebp
+            srcSetWebp
+            srcSet
             src
             ...GatsbyImageSharpFluid
           }
@@ -16,7 +19,10 @@ export default () => {
       }
       mpk17: file(relativePath: { eq: "homeContent/MPK17.jpg" }) {
         childImageSharp {
-          fluid {
+          fluid(maxWidth: 300) {
+            srcWebp
+            srcSetWebp
+            srcSet
             src
             ...GatsbyImageSharpFluid
           }
@@ -24,7 +30,10 @@ export default () => {
       }
       meetTheMPK: file(relativePath: { eq: "homeContent/MeetMPK2.jpg" }) {
         childImageSharp {
-          fluid {
+          fluid(maxWidth: 300) {
+            srcWebp
+            srcSetWebp
+            srcSet
             src
             ...GatsbyImageSharpFluid
           }
@@ -32,7 +41,10 @@ export default () => {
       }
       musicVideos: file(relativePath: { eq: "homeContent/MusicVideos.jpg" }) {
         childImageSharp {
-          fluid {
+          fluid(maxWidth: 300) {
+            srcWebp
+            srcSetWebp
+            srcSet
             src
             ...GatsbyImageSharpFluid
           }
@@ -40,7 +52,10 @@ export default () => {
       }
       walmart: file(relativePath: { eq: "homeContent/Clothing.jpg" }) {
         childImageSharp {
-          fluid {
+          fluid(maxWidth: 300) {
+            srcWebp
+            srcSetWebp
+            srcSet
             src
             ...GatsbyImageSharpFluid
           }
@@ -48,7 +63,10 @@ export default () => {
       }
       newsletter: file(relativePath: { eq: "newsletterImg.jpg" }) {
         childImageSharp {
-          fluid {
+          fluid(maxWidth: 300) {
+            srcWebp
+            srcSetWebp
+            srcSet
             src
             ...GatsbyImageSharpFluid
           }
@@ -56,7 +74,9 @@ export default () => {
       }
       fblive: file(relativePath: { eq: "homeContent/FBLive-button.png" }) {
         childImageSharp {
-          fluid {
+          fluid(maxWidth: 300) {
+            srcWebp
+            srcSet
             src
             ...GatsbyImageSharpFluid
           }

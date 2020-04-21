@@ -1,15 +1,31 @@
 import React from "react"
 import { FaEnvelope, FaChevronRight } from "react-icons/fa"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 import Envelope from "../images/envelope.png"
 
 export default () => {
+  const data = useStaticQuery(graphql`
+    {
+      envelope: file(relativePath: { eq: "envelope.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            srcWebp
+            srcSet
+            src
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
   return (
     <div className="flex justify-between my-2">
-      <img
-        src={Envelope}
-        alt="Newsletter"
+      <Img
+        fluid={data.envelope.childImageSharp.fluid}
         id="footerEnvelope"
-        className="hidden lg:block"
+        className="hidden lg:block w-20 -mr-6"
+        alt="Newsletter"
       />
       <div
         className="flex flex-col lg:flex-row justify-around flex-grow self-center py-2"

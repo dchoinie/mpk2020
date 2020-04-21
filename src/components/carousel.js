@@ -9,55 +9,55 @@ const HomeCarousel = () => {
     {
       car1: file(relativePath: { eq: "carousel/WEB-banner-FBlive.jpg" }) {
         childImageSharp {
-          fluid(quality: 80) {
-            src
+          fluid(maxWidth: 800, quality: 80) {
             srcWebp
             srcSetWebp
             srcSet
+            src
             ...GatsbyImageSharpFluid
           }
         }
       }
       car2: file(relativePath: { eq: "carousel/orderNow_carousel.jpg" }) {
         childImageSharp {
-          fluid(quality: 80) {
-            src
+          fluid(maxWidth: 800, quality: 80) {
             srcWebp
             srcSetWebp
             srcSet
+            src
             ...GatsbyImageSharpFluid
           }
         }
       }
       car3: file(relativePath: { eq: "carousel/Clothing.jpg" }) {
         childImageSharp {
-          fluid(quality: 80) {
-            src
+          fluid(maxWidth: 800, quality: 80) {
             srcWebp
             srcSetWebp
             srcSet
+            src
             ...GatsbyImageSharpFluid
           }
         }
       }
       car4: file(relativePath: { eq: "carousel/19min.jpg" }) {
         childImageSharp {
-          fluid(quality: 80) {
-            src
+          fluid(maxWidth: 800, quality: 80) {
             srcWebp
             srcSetWebp
             srcSet
+            src
             ...GatsbyImageSharpFluid
           }
         }
       }
       car5: file(relativePath: { eq: "carousel/Banner-PersonalVideo.jpg" }) {
         childImageSharp {
-          fluid(quality: 80) {
-            src
+          fluid(maxWidth: 800, quality: 80) {
             srcWebp
             srcSetWebp
             srcSet
+            src
             ...GatsbyImageSharpFluid
           }
         }
