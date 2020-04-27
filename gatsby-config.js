@@ -129,6 +129,12 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-preconnect",
+      options: {
+        domains: ["https://www.googletagmanager.com"],
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Mini Pop Kids`,
@@ -137,7 +143,7 @@ module.exports = {
         background_color: `#ed418e`,
         theme_color: `#ed418e`,
         display: `minimal-ui`,
-        // icon: `src/images/logos/logo-vertical.png`, // This path is relative to the root of the site.
+        // icon: `src/images/logos/icon.png`,
       },
     },
     {

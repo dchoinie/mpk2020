@@ -8,7 +8,7 @@ export default () => {
     {
       liveImg: file(relativePath: { eq: "homeContent/LiveShows.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 500) {
             srcWebp
             srcSetWebp
             srcSet
@@ -19,7 +19,7 @@ export default () => {
       }
       mpk17: file(relativePath: { eq: "homeContent/MPK17.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 500) {
             srcWebp
             srcSetWebp
             srcSet
@@ -30,7 +30,7 @@ export default () => {
       }
       meetTheMPK: file(relativePath: { eq: "homeContent/MeetMPK2.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 500) {
             srcWebp
             srcSetWebp
             srcSet
@@ -41,7 +41,7 @@ export default () => {
       }
       musicVideos: file(relativePath: { eq: "homeContent/MusicVideos.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 500) {
             srcWebp
             srcSetWebp
             srcSet
@@ -52,7 +52,7 @@ export default () => {
       }
       walmart: file(relativePath: { eq: "homeContent/Clothing.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 500) {
             srcWebp
             srcSetWebp
             srcSet
@@ -63,7 +63,7 @@ export default () => {
       }
       newsletter: file(relativePath: { eq: "newsletterImg.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 500) {
             srcWebp
             srcSetWebp
             srcSet
@@ -74,7 +74,7 @@ export default () => {
       }
       fblive: file(relativePath: { eq: "homeContent/FBLive-button.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 500) {
             srcWebp
             srcSet
             src

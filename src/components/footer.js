@@ -8,7 +8,7 @@ const Footer = () => {
     {
       footerImg: file(relativePath: { eq: "footer-banner-fblive.png" }) {
         childImageSharp {
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 800) {
             srcWebp
             srcSet
             src
