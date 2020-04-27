@@ -50,6 +50,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
+    `gatsby-plugin-favicon`,
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
