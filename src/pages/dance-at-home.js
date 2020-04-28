@@ -34,8 +34,11 @@ const DanceAtHome = () => {
       <div className="flex my-4">
         <Img fluid={data.header.childImageSharp.fluid} className="w-full" />
       </div>
-      <div className="flex">
-        <div className="flex flex-col w-1/2 pr-6 bg-white rounded-tl rounded-bl">
+      <div
+        className="flex flex-col lg:flex-row"
+        style={{ border: "1px solid red" }}
+      >
+        <div className="flex flex-col w-full lg:w-1/2 lg:pr-6 bg-white rounded-tl rounded-bl">
           <p>
             Stay home, stay safe and stay entertained with the best-selling
             kids's music group in Canada, the Mini Pop Kids.
@@ -72,7 +75,7 @@ const DanceAtHome = () => {
             through a private Zoom class.
           </p>
         </div>
-        <div className="flex w-1/2 pl-6 rounded">
+        <div className="flex w-full lg:w-1/2 lg:pl-6 rounded">
           <div className="flex w-full">
             <form
               action="https://formspree.io/mnqbynza"
