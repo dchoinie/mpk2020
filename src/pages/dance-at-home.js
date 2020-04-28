@@ -34,10 +34,7 @@ const DanceAtHome = () => {
       <div className="flex my-4">
         <Img fluid={data.header.childImageSharp.fluid} className="w-full" />
       </div>
-      <div
-        className="flex flex-col lg:flex-row"
-        style={{ border: "1px solid red" }}
-      >
+      <div className="flex flex-col lg:flex-row">
         <div className="flex flex-col w-full lg:w-1/2 lg:pr-6 bg-white rounded-tl rounded-bl">
           <p>
             Stay home, stay safe and stay entertained with the best-selling
