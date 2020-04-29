@@ -108,7 +108,7 @@ export class Header extends Component {
             </div>
             <div id="nav-links">
               <ul id="nav-links-ul" className="flex text-xl">
-                <li className="lg:mx-2">
+                <li className="lg:mr-2">
                   <Link to="/home" className="pink">
                     Home
                   </Link>
@@ -131,6 +131,11 @@ export class Header extends Component {
                 <li className="lg:mx-2">
                   <Link to="/auditions" className="pink">
                     Auditions
+                  </Link>
+                </li>
+                <li className="lg:mx-2">
+                  <Link to="/fun-at-home" className="pink">
+                    Fun @ Home
                   </Link>
                 </li>
                 <li className="lg:mx-2 flex">

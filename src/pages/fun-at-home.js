@@ -45,7 +45,7 @@ const FunAtHome = ({ data }) => {
           singing and dancing @ home. Don’t forget to tag us @minipopkids
           #minippkids.
         </p>
-        <h2 className="text-5xl my-6 text-center rainbow-text self-center">
+        <h2 className="text-5xl my-6 text-center text-black self-center">
           Colouring Pages
         </h2>
         <div className="flex flex-col lg:flex-row justify-center">
@@ -100,7 +100,7 @@ const FunAtHome = ({ data }) => {
         </div>
         <div className="flex flex-col lg:flex-row">
           <div className="flex flex-col w-full lg:w-1/2 p-4">
-            <h2 className="text-5xl text-center blue self-center">
+            <h2 className="text-5xl text-center text-black self-center">
               Sing-A-Long
             </h2>
             <p className="mb-2 text-center">"I Love Me"</p>
@@ -117,7 +117,7 @@ const FunAtHome = ({ data }) => {
             </div>
           </div>
           <div className="flex flex-col w-full lg:w-1/2 p-4">
-            <h2 className="text-5xl text-center blue self-center">
+            <h2 className="text-5xl text-center text-black self-center">
               Dance-A-Long
             </h2>
             <p className="mb-2 text-center">"Sucker"</p>
