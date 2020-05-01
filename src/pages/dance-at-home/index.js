@@ -1,9 +1,9 @@
 import React from "react"
-import Layout from "../components/layout"
+import Layout from "../../components/layout"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { FaAngleRight, FaStar, FaDollarSign } from "react-icons/fa"
-import SEO from "../components/seo"
+import SEO from "../../components/seo"
 
 const DanceAtHome = () => {
   const data = useStaticQuery(graphql`
@@ -91,6 +91,13 @@ const DanceAtHome = () => {
                 name="studio"
                 id="studio"
                 placeholder="Dance Studio"
+                className="border border-gray-300 p-2 rounded w-full my-2"
+              />
+              <input
+                type="email"
+                name="danceEmail"
+                id="danceEmail"
+                placeholder="Email"
                 className="border border-gray-300 p-2 rounded w-full my-2"
               />
               <input
@@ -183,14 +190,3 @@ const DanceAtHome = () => {
 }
 
 export default DanceAtHome
-
-// Dance Studio
-// City
-// Province
-// Contact Name
-// 3 Options
-//     Pop Star Chorerograph
-//     Follow ALong Videos
-//     Choreographer Zoom Classes
-
-// checkbox - consent to be added to email List
