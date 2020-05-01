@@ -94,6 +94,13 @@ const DanceAtHome = () => {
                 className="border border-gray-300 p-2 rounded w-full my-2"
               />
               <input
+                type="email"
+                name="danceEmail"
+                id="danceEmail"
+                placeholder="Email"
+                className="border border-gray-300 p-2 rounded w-full mb-2"
+              />
+              <input
                 type="text"
                 name="city"
                 id="city"
