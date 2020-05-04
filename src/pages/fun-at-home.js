@@ -43,7 +43,7 @@ const FunAtHome = ({ data }) => {
         <p className="max-w-xl mx-auto text-center">
           Stay tuned for weekly updates! We want to see your art and see you
           singing and dancing @ home. Don’t forget to tag us @minipopkids
-          #minippkids.
+          #minipopkids.
         </p>
         <h2 className="text-5xl my-6 text-center text-black self-center">
           Colouring Pages
