@@ -56,12 +56,12 @@ const Ep2 = ({ data }) => {
           </div>
         </div>
         <div className="flex flex-col">
-          <div className="flex">
-            <div className="flex flex-col items-center mb-6 w-1/3">
+          <div className="flex flex-col lg:flex-row">
+            <div className="flex flex-col items-center mb-6 w-full lg:w-1/3">
               <h3 className="text-3xl pb-2">"Happier"</h3>
               <Img fluid={data.mpk15.childImageSharp.fluid} className="w-48" />
             </div>
-            <div className="flex w-2/3">
+            <div className="flex w-full lg:w-2/3">
               <p className="text-xl self-center">
                 Join industry choreographer Jamie (Ariana Grande, Madonna, Demi
                 Lovato) as he takes you step-by-step through the moves the mini
@@ -71,8 +71,8 @@ const Ep2 = ({ data }) => {
               </p>
             </div>
           </div>
-          <div className="flex">
-            <div className="w-full mr-2">
+          <div className="flex flex-col lg:flex-row">
+            <div className="w-full mb-4 lg:mb-0 lg:mr-2">
               <iframe
                 width="100%"
                 height="315"
@@ -82,7 +82,7 @@ const Ep2 = ({ data }) => {
                 allowfullscreen
               ></iframe>
             </div>
-            <div className="w-full ml-2">
+            <div className="w-full lg:ml-2">
               <iframe
                 width="100%"
                 height="315"
