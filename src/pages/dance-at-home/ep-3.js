@@ -82,7 +82,7 @@ const Ep3 = ({ data }) => {
               <iframe
                 width="100%"
                 height="315"
-                src="https://www.youtube.com/embed/cuc4_qQESzw"
+                src="https://www.youtube.com/embed/DjT5l1fHrMQ"
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
@@ -100,59 +100,104 @@ const Ep3 = ({ data }) => {
             </div>
           </div>
         </div>
-      </div>
-      <div>
-        <div className="flex flex-col items-center my-6">
-          <h2 className="flex text-3xl lg:text-5xl pink my-6 text-center-noimportant">
+        <div className="flex flex-col">
+          <h2 className="flex justify-center text-3xl lg:text-5xl pink my-6 text-center-noimportant">
             Follow{" "}
             <span className="self-center hidden lg:block">
               <FaArrowRight className="blue mx-1" />
             </span>
             Along Dance Video
           </h2>
-          <p className="text-center text-xl">
-            Get ready to follow along to one of the sweetest tracks off Mini Pop
-            Kids 17, Sucker. This is the perfect opportunity to get the whole
-            family up singing and dancing to this chart topping track. Just
-            follow the Mini Pop Kids and be sure to send upload your videos
-            using #mpkdancewithus for your studio's chance to win studio of the
-            week!
-          </p>
-        </div>
-        <div className="flex flex-col lg:flex-row w-full">
-          <div className="flex flex-col items-center self-center w-full lg:w-1/2">
-            <h3 className="text-3xl pb-2 text-center-noimportant">"Sucker"</h3>
-            <Img fluid={data.mpk17.childImageSharp.fluid} className="w-48" />
+          <div className="flex flex-col lg:flex-row mb-6">
+            <div className="flex flex-col items-center w-full lg:w-1/3">
+              <h3 className="text-3xl pb-2 text-center-noimportant">
+                "Sucker"
+              </h3>
+              <Img fluid={data.mpk17.childImageSharp.fluid} className="w-48" />
+            </div>
+            <div className="flex w-full lg:w-2/3">
+              <p className="text-xl self-center">
+                Get ready to follow along to one of the sweetest tracks off Mini
+                Pop Kids 17, Sucker. This is the perfect opportunity to get the
+                whole family up singing and dancing to this chart topping track.
+                Just follow the Mini Pop Kids and be sure to send upload your
+                videos using #mpkdancewithus for your studio's chance to win
+                studio of the week!
+              </p>
+            </div>
           </div>
-          <div className="flex w-full lg:w-1/2 mt-6 lg:mt-0">
-            <div className="flex w-full video-responsive">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/01glAOObWwY"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
+          <div className="flex flex-col lg:flex-row">
+            <div className="flex w-full lg:w-1/2 lg:mr-2 mb-2 lg:mb-0">
+              <div className="flex w-full video-responsive">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/01glAOObWwY"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div className="flex w-full lg:w-1/2 lg:ml-2">
+              <div className="flex w-full video-responsive">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/PsE9Qn2fICI"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="flex flex-col lg:flex-row justify-center my-24">
-        <a
-          herf="https://www.youtube.com/minipopkids"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="button-pink text-3xl fredoka flex text-white cursor-pointer mr-2 self-center"
-        >
-          Subscribe <FaYoutube className="self-center ml-2 text-4xl" />
-        </a>
-        <h3 className="self-center ml-2 mb-0 text-3xl text-center-noimportant mt-6 lg:mt-0">
-          To our YouTube Channel for more MPK fun!
-        </h3>
       </div>
     </Layout>
   )
 }
 
 export default Ep3
+
+{
+  /* <h2 className="flex text-3xl lg:text-5xl pink my-6 text-center-noimportant">
+Follow{" "}
+<span className="self-center hidden lg:block">
+<FaArrowRight className="blue mx-1" />
+</span>
+Along Dance Video
+</h2>
+
+<h3 className="text-3xl pb-2 text-center-noimportant">"Sucker"</h3>
+<Img fluid={data.mpk17.childImageSharp.fluid} className="w-48" />
+
+Get ready to follow along to one of the sweetest tracks off Mini
+Pop Kids 17, Sucker. This is the perfect opportunity to get the
+whole family up singing and dancing to this chart topping track.
+Just follow the Mini Pop Kids and be sure to send upload your
+videos using #mpkdancewithus for your studio's chance to win
+studio of the week!
+
+<div className="flex w-full video-responsive">
+<iframe
+width="560"
+height="315"
+src="https://www.youtube.com/embed/01glAOObWwY"
+frameborder="0"
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen
+></iframe>
+</div>
+
+<div className="flex w-full video-responsive">
+<iframe
+width="560"
+height="315"
+src="https://www.youtube.com/embed/PsE9Qn2fICI"
+frameborder="0"
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen
+></iframe>
+</div> */
+}
