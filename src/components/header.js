@@ -108,37 +108,42 @@ export class Header extends Component {
             </div>
             <div id="nav-links">
               <ul id="nav-links-ul" className="flex text-xl">
-                <li className="lg:mr-2">
+                <li className="lg:mr-2 self-center leading-none">
                   <Link to="/home" className="pink">
                     Home
                   </Link>
                 </li>
-                <li className="lg:mx-2">
+                <li className="lg:mx-2 self-center leading-none">
                   <Link to="/tour" className="pink">
                     Tour
                   </Link>
                 </li>
-                <li className="lg:mx-2">
+                <li className="lg:mx-2 self-center leading-none">
                   <Link to="/music" className="pink">
                     Music
                   </Link>
                 </li>
-                <li className="lg:mx-2">
+                <li className="lg:mx-2 self-center leading-none">
                   <Link to="/videos" className="pink">
                     Videos
                   </Link>
                 </li>
-                <li className="lg:mx-2">
+                <li className="lg:mx-2 self-center leading-none">
                   <Link to="/auditions" className="pink">
                     Auditions
                   </Link>
                 </li>
-                <li className="lg:mx-2">
-                  <Link to="/fun-at-home" className="pink">
+                <li className="lg:mx-2 self-center leading-none">
+                  <Link to="fun-at-home" className="pink">
                     Fun @ Home
                   </Link>
                 </li>
-                <li className="lg:mx-2 flex">
+                {/* <li className="lg:mx-2 text-center leading-none">
+                  <Link to="/ambassador" className="pink text-center">
+                    Ambassador
+                  </Link>
+                </li> */}
+                <li className="lg:mx-2 flex self-center leading-none">
                   <Dropdown style={{ display: "flex" }}>
                     <Dropdown.Toggle
                       id="shop-dropdown"
@@ -174,7 +179,7 @@ export class Header extends Component {
                     </Dropdown.Menu>
                   </Dropdown>
                 </li>
-                <li className="ml-2">
+                <li className="ml-2 self-center leading-none">
                   <Link to="/contact" className="pink">
                     Contact
                   </Link>

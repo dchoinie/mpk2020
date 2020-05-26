@@ -66,8 +66,8 @@ const Ep3 = ({ data }) => {
             </div>
             <div className="flex w-full lg:w-2/3">
               <p className="text-xl self-center">
-                Join industry choreographer Jamie (Ariana Grande, Madonna, Demi
-                Lovato) as he takes you step-by-step through the moves the mini
+                Join industry choreographer, Jamie (Ariana Grande, Madonna, Demi
+                Lovato), as he takes you step-by-step through the moves the mini
                 pops perform in their newest music video, DANCE MONKEY. Dancers
                 from across the country submitted dancing videos to be a part of
                 this awesome project. It celebrates the efforts kids and parents
@@ -120,9 +120,9 @@ const Ep3 = ({ data }) => {
                 Get ready to follow along to one of the sweetest tracks off Mini
                 Pop Kids 17, Sucker. This is the perfect opportunity to get the
                 whole family up singing and dancing to this chart topping track.
-                Just follow the Mini Pop Kids and be sure to send upload your
-                videos using #mpkdancewithus for your studio's chance to win
-                studio of the week!
+                Just follow the Mini Pop Kids and be sure to upload your videos
+                using #mpkdancewithus for your studio's chance to win studio of
+                the week!
               </p>
             </div>
           </div>
