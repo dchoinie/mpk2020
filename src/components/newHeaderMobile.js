@@ -34,10 +34,12 @@ const NewHeaderMobile = () => {
     <div className="lg:hidden">
       <div className="flex justify-between">
         <div className="flex">
-          <Img
-            fluid={data.logo.childImageSharp.fluid}
-            className="w-56 self-center"
-          />
+          <Link to="/">
+            <Img
+              fluid={data.logo.childImageSharp.fluid}
+              className="w-56 self-center"
+            />
+          </Link>
         </div>
         <div className="flex">
           <button
