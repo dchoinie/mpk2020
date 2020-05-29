@@ -4,12 +4,14 @@ import SEO from "../components/seo"
 import HomeContent from "../components/homeContent"
 import Carousel from "../components/carousel"
 
-const IndexPage1 = () => (
-  <Layout>
-    <SEO title="Home" />
-    <Carousel />
-    <HomeContent />
-  </Layout>
-)
+const Index = () => {
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <Carousel />
+      <HomeContent />
+    </Layout>
+  )
+}
 
-export default IndexPage1
+export default Index

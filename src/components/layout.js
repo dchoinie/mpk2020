@@ -1,7 +1,7 @@
 import React, { Component } from "react"
-import PropTypes from "prop-types"
-import Helmet from "react-helmet"
-import Header from "./header"
+import { Helmet } from "react-helmet"
+import NewHeader from "./newHeader"
+import NewHeaderMobile from "./newHeaderMobile"
 import Footer from "./footer"
 
 const Layout = ({ children, backgroundColor }) => {
@@ -16,34 +16,13 @@ const Layout = ({ children, backgroundColor }) => {
         />
       </Helmet>
       <div className="container mx-auto">
-        <Header />
+        <NewHeader />
+        <NewHeaderMobile />
         <main>{children}</main>
         <Footer />
       </div>
     </div>
   )
 }
-
-// class LayoutBackground extends Component {
-//   constructor(props) {
-//     super(props)
-//   }
-
-//   static propTypes = {
-//     backgroundColor: PropTypes.string,
-//   }
-
-//   static defaultProps = {
-//     backgroundColor: "#fff",
-//   }
-
-//   render() {
-//     return (
-//       <div style={{ backgroundColor: this.props.backgroundColor }}>
-//         <Layout>{this.props.children}</Layout>
-//       </div>
-//     )
-//   }
-// }
 
 export default Layout

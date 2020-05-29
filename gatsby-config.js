@@ -121,14 +121,7 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-source-cloudinary`,
-      options: {
-        cloudName: process.env.CLOUDINARY_CLOUD_NAME,
-        apiKey: process.env.CLOUDINARY_API_KEY,
-        apiSecret: process.env.CLOUDINARY_API_SECRET,
-      },
-    },
+    //
     {
       resolve: "gatsby-plugin-preconnect",
       options: {
@@ -153,17 +146,13 @@ module.exports = {
         precachePages: [
           `/auditions/`,
           `/contact/`,
-          `/dance-at-home/`,
           `/faq/`,
-          `/home/`,
           `/meet-the-mpk/`,
           `/music/`,
           `/personal-videos/`,
           `/pop-star-programs/`,
           `/privacy-policy/`,
           `/terms-conditions/`,
-          `/tour/`,
-          `/videos/`,
           `/vip-process/`,
           `/walmartcanada/`,
         ],

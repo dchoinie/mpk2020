@@ -13,7 +13,7 @@ import {
   FaAmazon,
 } from "react-icons/fa"
 
-const Logo = () => {
+export const Logo = () => {
   const data = useStaticQuery(graphql`
     {
       logo: file(relativePath: { eq: "logos/logo-horizontal.png" }) {
@@ -192,5 +192,3 @@ export class Header extends Component {
     )
   }
 }
-
-export default Header
