@@ -65,9 +65,9 @@ const Ep4 = ({ data }) => {
               <p className="text-xl self-center">
                 Join Kayleigh and some of the mini pop kid backup dancers as
                 they take us down the “OLD TOWN ROAD.” Saddle up for one of the
-                most popular cover songs off Mini Pop Kids 16. Watch the music
+                most popular cover songs off Mini Pop Kids 17. Watch the music
                 video and now YOU can learn the moves. Don’t forget to upload
-                your dancing videos using #mpkdanceiwthus! Stay safe keep
+                your dancing videos using #mpkdancewithus! Stay safe keep
                 dancing!
               </p>
             </div>
@@ -112,13 +112,13 @@ const Ep4 = ({ data }) => {
             </div>
             <div className="flex w-full lg:w-2/3">
               <p className="text-xl self-center">
-                This song will get you moving and creaming I LIKE IT LIKE THAT.
-                Get ready to follow along to a song that has been one of our
-                faves to perform in our LIVE Concert. This is the perfect
-                opportunity to get the whole family up singing and dancing to
-                this “ LIKE IT” by Cardi B. Just follow the Mini Pop Kids and be
-                sure to upload your videos using #mpkdancewithus for your
-                studio's chance to win studio of the week!
+                This song will get you moving and screaming, "I LIKE IT LIKE
+                THAT". Get ready to follow along to a song that has been one of
+                our faves to perform in our LIVE Concert. This is the perfect
+                opportunity to get the whole family up singing and dancing to “I
+                LIKE IT” by Cardi B. Just follow the Mini Pop Kids and be sure
+                to upload your videos using #mpkdancewithus for your studio's
+                chance to win studio of the week!
               </p>
             </div>
           </div>
