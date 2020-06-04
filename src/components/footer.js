@@ -6,10 +6,9 @@ import Newsletter from "../components/newsletter"
 const Footer = () => {
   const data = useStaticQuery(graphql`
     {
-      footerImg: file(relativePath: { eq: "footer-banner-fblive.png" }) {
+      footerImg: file(relativePath: { eq: "footer/YTmusic-banner.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 800) {
-            srcWebp
+          fluid(quality: 100) {
             srcSet
             src
             ...GatsbyImageSharpFluid
@@ -22,13 +21,12 @@ const Footer = () => {
   return (
     <div className="mt-12">
       <a
-        href="https://www.facebook.com/minipopkids"
+        href="https://music.youtube.com/channel/UCj8q6WdiVP0EJViq0vQItvw"
         target="_blank"
         rel="noopener noreferrer"
       >
         <Img fluid={data.footerImg.childImageSharp.fluid} />
       </a>
-
       <div>
         <Newsletter />
       </div>

@@ -8,7 +8,7 @@ const Ambassador = () => {
         <div className="flex">
           <iframe
             title="Ambassador"
-            height="4500"
+            height="3800"
             width="100%"
             frameborder="0"
             style={{ width: "100%", overflow: "hidden", border: "none" }}

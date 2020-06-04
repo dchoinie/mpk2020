@@ -132,6 +132,11 @@ const NewHeader = () => {
               </Link>
             </li>
             <li className="mx-2 self-center">
+              <Link to="/ambassador" className="pink">
+                Ambassador
+              </Link>
+            </li>
+            <li className="mx-2 self-center">
               <button
                 className="pink flex fredoka relative focus:outline-none"
                 onClick={() => setIsOpen(!isOpen)}
