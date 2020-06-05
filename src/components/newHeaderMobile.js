@@ -82,6 +82,11 @@ const NewHeaderMobile = () => {
                   Fun @ Home
                 </Link>
               </li>
+              <li className="my-2">
+                <Link to="/ambassador" className="text-main-pink text-3xl">
+                  Ambassador
+                </Link>
+              </li>
               <li className="flex flex-col items-center text-center text-3xl">
                 <a href="" className="flex text-main-pink my-2">
                   <FaTshirt className="self-center mr-2" /> Clothing
