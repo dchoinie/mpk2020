@@ -72,7 +72,9 @@ export default () => {
           }
         }
       }
-      fblive: file(relativePath: { eq: "homeContent/FBLive-button.png" }) {
+      ambassador: file(
+        relativePath: { eq: "homeContent/Ambassador-button-1.png" }
+      ) {
         childImageSharp {
           fluid(maxWidth: 500) {
             srcWebp
@@ -86,14 +88,9 @@ export default () => {
   `)
   return (
     <div id="home-grid" className="text-center my-12">
-      <a
-        href="https://www.facebook.com/minipopkids"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Img fluid={data.fblive.childImageSharp.fluid} />
-      </a>
-
+      <Link to="/ambassador">
+        <Img fluid={data.ambassador.childImageSharp.fluid} />
+      </Link>
       <a
         href="https://minipopkids.myshopify.com/"
         target="_blank"

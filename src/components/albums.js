@@ -8,8 +8,9 @@ const getAlbums = graphql`
       edges {
         node {
           cover {
-            fluid {
+            fluid(maxWidth: 800) {
               src
+              srcSet
               ...GatsbyContentfulFluid_tracedSVG
             }
             id
@@ -32,7 +33,7 @@ export default () => {
     <div>
       <StaticQuery
         query={getAlbums}
-        render={data => {
+        render={(data) => {
           return (
             <div id="albums-container" className="text-center">
               {data.albums.edges.map(({ node: album }) => {

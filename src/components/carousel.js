@@ -7,7 +7,7 @@ import Img from "gatsby-image"
 const HomeCarousel = () => {
   const data = useStaticQuery(graphql`
     {
-      car1: file(relativePath: { eq: "carousel/WEB-banner-FBlive.jpg" }) {
+      cd: file(relativePath: { eq: "carousel/orderNow_carousel.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 800, quality: 80) {
             srcWebp
@@ -18,7 +18,7 @@ const HomeCarousel = () => {
           }
         }
       }
-      car2: file(relativePath: { eq: "carousel/orderNow_carousel.jpg" }) {
+      walmart: file(relativePath: { eq: "carousel/Clothing.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 800, quality: 80) {
             srcWebp
@@ -29,7 +29,7 @@ const HomeCarousel = () => {
           }
         }
       }
-      car3: file(relativePath: { eq: "carousel/Clothing.jpg" }) {
+      ambassador: file(relativePath: { eq: "carousel/MPK-Ambassador-1.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 800, quality: 80) {
             srcWebp
@@ -40,18 +40,7 @@ const HomeCarousel = () => {
           }
         }
       }
-      car4: file(relativePath: { eq: "carousel/19min.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 800, quality: 80) {
-            srcWebp
-            srcSetWebp
-            srcSet
-            src
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      car5: file(relativePath: { eq: "carousel/Banner-PersonalVideo.jpg" }) {
+      monkey: file(relativePath: { eq: "carousel/Dancemonkey.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 800, quality: 80) {
             srcWebp
@@ -75,39 +64,32 @@ const HomeCarousel = () => {
       interval={4000}
     >
       <a
-        href="https://www.facebook.com/minipopkids"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Img fluid={data.car1.childImageSharp.fluid} />
-      </a>
-      <a
         href="https://minipopkids.myshopify.com/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Img fluid={data.car2.childImageSharp.fluid} />
+        <Img fluid={data.cd.childImageSharp.fluid} />
       </a>
       <a
         href="https://www.walmart.ca/en/mini-pop-kids/N-51184998"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Img fluid={data.car3.childImageSharp.fluid} />
+        <Img fluid={data.walmart.childImageSharp.fluid} />
       </a>
+      <Link to="/ambassador">
+        <Img
+          fluid={data.ambassador.childImageSharp.fluid}
+          objectFit="cover"
+          className="h-full"
+        />
+      </Link>
       <a
-        href="https://www.youtube.com/watch?v=Gl1Fl6oiL6I"
+        href="https://www.youtube.com/watch?v=v8DjA66QbeE"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Img fluid={data.car4.childImageSharp.fluid} />
-      </a>
-      <a
-        href="https://www.facebook.com/minipopkids"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Img fluid={data.car5.childImageSharp.fluid} />
+        <Img fluid={data.monkey.childImageSharp.fluid} />
       </a>
     </Carousel>
   )
