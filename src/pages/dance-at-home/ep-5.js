@@ -63,12 +63,13 @@ const Ep5 = ({ data }) => {
             </div>
             <div className="flex w-full lg:w-2/3">
               <p className="text-xl self-center">
-                Join Kayleigh and some of the mini pop kid backup dancers as
-                they take us down the “OLD TOWN ROAD.” Saddle up for one of the
-                most popular cover songs off Mini Pop Kids 17. Watch the music
-                video and now YOU can learn the moves. Don’t forget to upload
-                your dancing videos using #mpkdancewithus! Stay safe keep
-                dancing!
+                Get ready to TAKE FLIGHT with Jazzy, Vasili and their fried
+                Alivia in this Pop Star Choreography class. Learn step by step
+                the dance the Mini Pop Kids perform LIVE o stage in their
+                concerts. This is an original song off Mini Pop Kids 16 and was
+                performed to over 50,000 fans on the Take Flight Concert Tour
+                Don’t forget to upload your dancing videos using
+                #mpkdancewithus! Stay safe keep dancing!
               </p>
             </div>
           </div>
@@ -102,13 +103,13 @@ const Ep5 = ({ data }) => {
             </div>
             <div className="flex w-full lg:w-2/3">
               <p className="text-xl self-center">
-                This song will get you moving and screaming, "I LIKE IT LIKE
-                THAT". Get ready to follow along to a song that has been one of
-                our faves to perform in our LIVE Concert. This is the perfect
-                opportunity to get the whole family up singing and dancing to “I
-                LIKE IT” by Cardi B. Just follow the Mini Pop Kids and be sure
-                to upload your videos using #mpkdancewithus for your studio's
-                chance to win studio of the week!
+                This song is an absolute classic with Mini Pop Kid fans around
+                the world. We love performing this song LIVE on stage and it has
+                been a fan favourite since we first performed it on national
+                television alongside MPK alumni, Johnny Orlando. Just follow the
+                Mini Pop Kids and be sure to upload your videos using
+                #mpkdancewithus for your studio's chance to win studio of the
+                week! Get up, shake it off and most importantly, have fun!
               </p>
             </div>
           </div>
