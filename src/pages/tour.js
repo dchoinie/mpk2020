@@ -121,7 +121,7 @@ export default ({ data }) => {
       </div>
       <p></p>
       <div className="max-w-3xl mx-auto">
-        {data.allAirtable.nodes.map(node => (
+        {data.allAirtable.nodes.map((node) => (
           <div
             key={node.data.id}
             className="flex"
@@ -147,7 +147,8 @@ export default ({ data }) => {
               </div>
               <div className="flex justify-center self-center">
                 {node.data.buttonText === "Sold Out" ||
-                node.data.buttonText === "Postponed" ? (
+                node.data.buttonText === "Postponed" ||
+                node.data.buttonText === "Cancelled" ? (
                   <>
                     <OutboundLink
                       href={node.data.ticketLink}

@@ -63,11 +63,11 @@ const Ep5 = ({ data }) => {
             </div>
             <div className="flex w-full lg:w-2/3">
               <p className="text-xl self-center">
-                Get ready to TAKE FLIGHT with Jazzy, Vasili and their fried
-                Alivia in this Pop Star Choreography class. Learn step by step
-                the dance the Mini Pop Kids perform LIVE o stage in their
+                Get ready to TAKE FLIGHT with Jazzy, Vasili and their friend
+                Alivia in this Pop Star Choreography class. Learn step-by-step
+                the dance the Mini Pop Kids perform LIVE on stage in their
                 concerts. This is an original song off Mini Pop Kids 16 and was
-                performed to over 50,000 fans on the Take Flight Concert Tour
+                performed to over 50,000 fans on the Take Flight Concert Tour.
                 Don’t forget to upload your dancing videos using
                 #mpkdancewithus! Stay safe keep dancing!
               </p>
