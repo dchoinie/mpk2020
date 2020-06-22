@@ -15,7 +15,7 @@ export const albumQuery = graphql`
         }
       }
     }
-    mpk16: file(relativePath: { eq: "mpk16_album.jpg" }) {
+    mpk17: file(relativePath: { eq: "mpk17_album.jpg" }) {
       childImageSharp {
         fluid {
           src
@@ -98,7 +98,7 @@ const Ep6 = ({ data }) => {
           <div className="flex flex-col lg:flex-row mb-6">
             <div className="flex flex-col items-center w-full lg:w-1/3">
               <h3 className="text-3xl pb-2 text-center-noimportant">"ME!"</h3>
-              <Img fluid={data.mpk16.childImageSharp.fluid} className="w-48" />
+              <Img fluid={data.mpk17.childImageSharp.fluid} className="w-48" />
             </div>
             <div className="flex w-full lg:w-2/3">
               <p className="text-xl self-center">
