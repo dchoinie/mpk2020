@@ -31,11 +31,12 @@ export const tourQuery = graphql`
         }
       }
     }
-    tourImage: file(relativePath: { eq: "tourDetailBanner.jpg" }) {
+    tourImage: file(relativePath: { eq: "logos/Live_Horizontal2020.png" }) {
       childImageSharp {
         fluid(quality: 80) {
           src
-          ...GatsbyImageSharpFluid_withWebp
+          srcSet
+          ...GatsbyImageSharpFluid
         }
       }
     }
@@ -60,16 +61,16 @@ export const tourQuery = graphql`
 
 export default ({ data }) => {
   return (
-    <Layout backgroundColor="#000">
+    <Layout>
       <SEO title="Tour" />
       <Img fluid={data.tourImage.childImageSharp.fluid} />
       <div className="flex flex-col lg:flex-row my-6">
         <div className="flex flex-col w-full lg:w-1/2 mx-2">
-          <h2 className="text-white uppercase">
+          <h2 className="text-main-gray uppercase">
             A concert for kids
-            <br /> <span className="pink">and parents too!</span>
+            <br /> <span className="text-main-pink">and parents too!</span>
           </h2>
-          <p className="text-white">
+          <p className="text-main-gray">
             The Mini Pop Kids are back and shining bright with their brand new
             'Bright Lights Concert Tour,’ featuring the year’s biggest hits!
             Performing songs by Ariana Grande, Shawn Mendes, The Jonas Brothers,
@@ -78,8 +79,8 @@ export default ({ data }) => {
             your chance to sing, dance, and POP, with Canada’s best-selling kids
             music group, The MINI POP KIDS.
           </p>
-          <h4 className="blue">VIP Packages Available</h4>
-          <p className="text-white">
+          <h4 className="text-main-blue">VIP Packages Available</h4>
+          <p className="text-main-gray">
             A limited number of VIP seats are available right up in front with
             the added bonus of meeting the cast at an exclusive MEET &amp;
             GREET. But wait, there’s more...each VIP Spotlight pass comes with
@@ -99,7 +100,7 @@ export default ({ data }) => {
           ></iframe>
         </div>
       </div>
-      <div className="max-w-3xl yellow mx-auto">
+      <div className="bg-main-pink p-6 text-white rounded-lg">
         <p>Hi MPK fans!</p>
         <p>
           Due to public health concerns surrounding COVID-19 (Coronavirus), the
@@ -131,19 +132,19 @@ export default ({ data }) => {
               className="py-6 lg:mr-12 text-center-noimportant flex-none lg:self-center"
               style={{ minWidth: "68px" }}
             >
-              <p className="mb-0 text-white">{node.data.weekday}</p>
-              <p className="mb-0 fredoka whitespace-no-wrap blue">
+              <p className="mb-0 text-main-gray">{node.data.weekday}</p>
+              <p className="mb-0 fredoka whitespace-no-wrap text-main-blue">
                 {node.data.date}
               </p>
-              <p className="mb-0 text-white">{node.data.year}</p>
+              <p className="mb-0 text-main-gray">{node.data.year}</p>
             </div>
             <div className="flex flex-col lg:flex-row lg:justify-between w-full py-6">
               <div className="flex flex-col self-center text-center-noimportant lg:text-left">
                 <p className="mb-0 fredoka text-xl yellow">
                   {node.data.city}, {node.data.province}
                 </p>
-                <p className="mb-0 pink fredoka">{node.data.venue}</p>
-                <p className="text-white lg:mb-0">{node.data.time}</p>
+                <p className="mb-0 text-main-pink fredoka">{node.data.venue}</p>
+                <p className="text-main-gray lg:mb-0">{node.data.time}</p>
               </div>
               <div className="flex justify-center self-center">
                 {node.data.buttonText === "Sold Out" ||
@@ -155,7 +156,9 @@ export default ({ data }) => {
                       target="_blank"
                       className="hover:no-underline"
                     >
-                      <h4 className="yellow self-center">{node.data.status}</h4>
+                      <h4 className="text-main-pink self-center">
+                        {node.data.status}
+                      </h4>
                     </OutboundLink>
                   </>
                 ) : (
@@ -164,21 +167,21 @@ export default ({ data }) => {
                       <OutboundLink
                         href={node.data.ticketLink}
                         target="_blank"
-                        className="self-center button-pink text-xl"
+                        className="self-center button-text-main-pink text-xl"
                       >
                         {node.data.buttonText}
                       </OutboundLink>
                       <OutboundLink
                         href={node.data.ticketLink}
                         target="_blank"
-                        className="self-center button-blue text-xl"
+                        className="self-center button-text-main-blue text-xl"
                       >
                         {node.data.vipTix}
                       </OutboundLink>
                     </div>
                     {node.data.prevDate !== null ? (
                       <>
-                        <div className="flex self-center text-center mt-2 text-white">
+                        <div className="flex self-center text-center mt-2 text-main-gray">
                           <p className="mb-0">
                             <em>Rescheduled from: {node.data.prevDate}</em>
                           </p>

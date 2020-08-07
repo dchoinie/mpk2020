@@ -7,43 +7,9 @@ import Img from "gatsby-image"
 const HomeCarousel = () => {
   const data = useStaticQuery(graphql`
     {
-      cd: file(relativePath: { eq: "carousel/orderNow_carousel.jpg" }) {
+      album: file(relativePath: { eq: "carousel/2020/WEBSlider-MPK18-1.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 800, quality: 80) {
-            srcWebp
-            srcSetWebp
-            srcSet
-            src
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      walmart: file(relativePath: { eq: "carousel/Clothing.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 800, quality: 80) {
-            srcWebp
-            srcSetWebp
-            srcSet
-            src
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      ambassador: file(relativePath: { eq: "carousel/MPK-Ambassador-1.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 800, quality: 80) {
-            srcWebp
-            srcSetWebp
-            srcSet
-            src
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      monkey: file(relativePath: { eq: "carousel/Dancemonkey.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 800, quality: 80) {
-            srcWebp
+          fluid(quality: 80) {
             srcSetWebp
             srcSet
             src
@@ -64,32 +30,11 @@ const HomeCarousel = () => {
       interval={4000}
     >
       <a
-        href="https://minipopkids.myshopify.com/"
+        href="https://shop.minipopkids.com/collections/albums/products/mini-pop-kids-18"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Img fluid={data.cd.childImageSharp.fluid} />
-      </a>
-      <a
-        href="https://www.walmart.ca/en/mini-pop-kids/N-51184998"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Img fluid={data.walmart.childImageSharp.fluid} />
-      </a>
-      <Link to="/ambassador">
-        <Img
-          fluid={data.ambassador.childImageSharp.fluid}
-          objectFit="cover"
-          className="h-full"
-        />
-      </Link>
-      <a
-        href="https://www.youtube.com/watch?v=v8DjA66QbeE"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Img fluid={data.monkey.childImageSharp.fluid} />
+        <Img fluid={data.album.childImageSharp.fluid} className="w-full" />
       </a>
     </Carousel>
   )

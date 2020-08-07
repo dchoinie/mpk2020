@@ -19,7 +19,7 @@ const NewHeaderMobile = () => {
   const [isOpen, setIsOpen] = useState(false)
   const data = useStaticQuery(graphql`
     {
-      logo: file(relativePath: { eq: "logos/logo-horizontal.png" }) {
+      logo: file(relativePath: { eq: "logos/logo2020.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             srcSet
@@ -31,7 +31,7 @@ const NewHeaderMobile = () => {
     }
   `)
   return (
-    <div className="lg:hidden">
+    <div className="lg:hidden py-4">
       <div className="flex justify-between">
         <div className="flex">
           <Link to="/">
@@ -75,11 +75,6 @@ const NewHeaderMobile = () => {
               <li className="my-2">
                 <Link to="/videos" className="text-main-pink text-3xl">
                   Videos
-                </Link>
-              </li>
-              <li className="my-2">
-                <Link to="/fun-at-home" className="text-main-pink text-3xl">
-                  Fun @ Home
                 </Link>
               </li>
               <li className="my-2">

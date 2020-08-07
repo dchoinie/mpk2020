@@ -33,22 +33,22 @@ const Footer = () => {
       <div className="flex flex-col lg:flex-row justify-between mt-6">
         <ul className="flex flex-col self-center text-center-noimportant lg:flex-row">
           <li className="mx-1">
-            <Link to="privacy-policy" className="blue">
+            <Link to="privacy-policy" className="text-main-blue oswald">
               Privacy Policy
             </Link>
           </li>
           <li className="mx-1">
-            <Link to="/terms-conditions" className="blue">
+            <Link to="/terms-conditions" className="text-main-blue oswald">
               Terms &amp; Conditions
             </Link>
           </li>
           <li className="mx-1">
-            <Link to="/faq" className="blue">
+            <Link to="/faq" className="text-main-blue oswald">
               FAQ
             </Link>
           </li>
           <li className="mx-1">
-            <Link to="/contact" className="blue">
+            <Link to="/contact" className="text-main-blue oswald">
               Contact Us
             </Link>
           </li>

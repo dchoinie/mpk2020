@@ -52,17 +52,11 @@ module.exports = {
     `gatsby-plugin-postcss`,
     `gatsby-plugin-favicon`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
-        fonts: [
-          {
-            family: `Fredoka One`,
-          },
-          {
-            family: `Open Sans`,
-            variants: [`400`, `700`],
-          },
-        ],
+        google: {
+          families: ["Fredoka One", "Oswald"],
+        },
       },
     },
     {

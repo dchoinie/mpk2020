@@ -27,44 +27,31 @@ export default () => {
         className="hidden lg:block w-20 -mr-6"
         alt="Newsletter"
       />
-      <div
-        className="flex flex-col lg:flex-row justify-around flex-grow self-center py-2"
-        style={{
-          backgroundColor: "var(--main-blue)",
-          border: "2px solid var(--highlight-blue)",
-        }}
-      >
-        <h6 className="mb-0 self-center">
+      <div className="flex flex-col lg:flex-row justify-around flex-grow self-center py-2 bg-main-blue rounded-lg">
+        <p className="text-white lg:mb-0 self-center">
           Sign Up For Our Mini Pop Kids Newsletter!
-        </h6>
-
+        </p>
         <form
           action="https://formspree.io/xknwgllk"
           method="POST"
-          name="Newsletter Form"
+          name="NewsletterForm"
           className="self-center flex"
         >
           <input
             type="email"
             name="email"
             placeholder="Enter Email"
-            style={{
-              borderRadius: "2rem",
-              backgroundColor: "lightgray",
-              border: "1px solid grey",
-            }}
-            className="px-2"
+            className="p-1 px-3 rounded-full focus:bg-gray-200 text-main-gray"
             id="newsletterEmail"
             required
           />
-          <div className="flex">
-            <input
+          <div className="flex ml-2">
+            <button
               type="submit"
-              value="Sign-Up"
-              style={{ backgroundColor: "transparent" }}
-              className="px-1"
-            ></input>
-            <FaChevronRight className="self-center pl-1" />
+              className="flex self-center text-main-gray oswald"
+            >
+              Sign Up <FaChevronRight className="self-center ml-1" />
+            </button>
           </div>
         </form>
       </div>

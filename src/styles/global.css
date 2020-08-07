@@ -20,6 +20,12 @@ a {
   font-family: "Fredoka One";
 }
 
+p,
+ul,
+li {
+  font-family: "Oswald";
+}
+
 @tailwind components;
 
 .starLogo {
@@ -343,4 +349,8 @@ a {
 
 .fredoka {
   font-family: "Fredoka One";
+}
+
+.oswald {
+  font-family: "Oswald";
 }
