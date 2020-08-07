@@ -7,7 +7,31 @@ import Img from "gatsby-image"
 const HomeCarousel = () => {
   const data = useStaticQuery(graphql`
     {
-      album: file(relativePath: { eq: "carousel/2020/WEBSlider-MPK18-1.jpg" }) {
+      album: file(
+        relativePath: { eq: "carousel/2020/Slider-MPK18pre-order.jpg" }
+      ) {
+        childImageSharp {
+          fluid(quality: 80) {
+            srcSetWebp
+            srcSet
+            src
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      walmart: file(relativePath: { eq: "carousel/2020/Slider-Walmart.jpg" }) {
+        childImageSharp {
+          fluid(quality: 80) {
+            srcSetWebp
+            srcSet
+            src
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      video: file(
+        relativePath: { eq: "carousel/2020/Slider-YT-Dontstartnow.jpg" }
+      ) {
         childImageSharp {
           fluid(quality: 80) {
             srcSetWebp
@@ -35,6 +59,20 @@ const HomeCarousel = () => {
         rel="noopener noreferrer"
       >
         <Img fluid={data.album.childImageSharp.fluid} className="w-full" />
+      </a>
+      <a
+        href="https://www.walmart.ca/en/mini-pop-kids/N-51184998"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Img fluid={data.walmart.childImageSharp.fluid} className="w-full" />
+      </a>
+      <a
+        href="https://www.youtube.com/minipopkids"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Img fluid={data.video.childImageSharp.fluid} className="w-full" />
       </a>
     </Carousel>
   )
