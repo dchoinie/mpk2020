@@ -38,8 +38,8 @@ export class kid extends Component {
         onMouseEnter={() => this.onMouseOver()}
         onMouseLeave={() => this.onMouseOut()}
       >
-        <h2>{kid.name}</h2>
-        <Img fluid={this.state.image} className="my-2" />
+        {/* <h2>{kid.name}</h2> */}
+        <Img fluid={this.state.image} className="my-2 rounded-md" />
       </Link>
     )
   }

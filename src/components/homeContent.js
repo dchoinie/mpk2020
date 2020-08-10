@@ -59,7 +59,7 @@ export default () => {
           }
         }
       }
-      walmart: file(relativePath: { eq: "homeContent/2020/B-Walmart.jpg" }) {
+      walmart: file(relativePath: { eq: "homeContent/2020/B-Walmart-1.jpg" }) {
         childImageSharp {
           fluid {
             src
@@ -80,11 +80,21 @@ export default () => {
       >
         <Img fluid={data.album.childImageSharp.fluid} className="w-full" />
       </a>
+      <a
+        href="https://www.walmart.ca/en/mini-pop-kids/N-51184998"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Img fluid={data.walmart.childImageSharp.fluid} className="w-full" />
+      </a>
+      <Link to="/meet-the-mpk">
+        <Img fluid={data.meet.childImageSharp.fluid} className="w-full" />
+      </Link>
       <Link to="/ambassador">
         <Img fluid={data.ambassador.childImageSharp.fluid} className="w-full" />
       </Link>
-      <Link to="/meet-the-mpk">
-        <Img fluid={data.meet.childImageSharp.fluid} className="w-full" />
+      <Link to="/videos">
+        <Img fluid={data.videos.childImageSharp.fluid} className="w-full" />
       </Link>
       <a
         href="http://eepurl.com/b1ARlP"
@@ -92,16 +102,6 @@ export default () => {
         rel="noopener noreferrer"
       >
         <Img fluid={data.newsletter.childImageSharp.fluid} className="w-full" />
-      </a>
-      <Link to="/videos">
-        <Img fluid={data.videos.childImageSharp.fluid} className="w-full" />
-      </Link>
-      <a
-        href="https://www.walmart.ca/en/mini-pop-kids/N-51184998"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Img fluid={data.walmart.childImageSharp.fluid} className="w-full" />
       </a>
     </div>
   )

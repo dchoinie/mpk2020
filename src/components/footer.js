@@ -6,9 +6,9 @@ import Newsletter from "../components/newsletter"
 const Footer = () => {
   const data = useStaticQuery(graphql`
     {
-      footerImg: file(relativePath: { eq: "footer/YTmusic-banner.jpg" }) {
+      footerImg: file(relativePath: { eq: "footer/YT-bar.jpg" }) {
         childImageSharp {
-          fluid(quality: 100) {
+          fluid(quality: 70) {
             srcSet
             src
             ...GatsbyImageSharpFluid

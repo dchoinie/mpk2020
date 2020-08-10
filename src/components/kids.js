@@ -16,12 +16,14 @@ const getKids = graphql`
           headshot {
             fluid {
               src
+              srcSet
               ...GatsbyContentfulFluid
             }
           }
           headshotStar {
             fluid {
               src
+              srcSet
               ...GatsbyContentfulFluid
             }
           }
@@ -44,7 +46,7 @@ const kids = () => {
     <div>
       <StaticQuery
         query={getKids}
-        render={data => {
+        render={(data) => {
           return (
             <div id="kids-container" className="text-center">
               {data.kids.edges.map(({ node: kid }) => {
