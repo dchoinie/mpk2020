@@ -9,7 +9,7 @@ export class kid extends Component {
     this.onMouseOut = this.onMouseOut.bind(this)
     this.state = {
       isHovered: false,
-      image: this.props.kid.headshot.fluid,
+      image: this.props.kid.headshotStar.fluid,
     }
   }
 
@@ -17,7 +17,7 @@ export class kid extends Component {
     console.log("Mouse Over")
     this.setState({
       isHovered: true,
-      image: this.props.kid.headshotStar.fluid,
+      image: this.props.kid.headshot.fluid,
     })
   }
 
@@ -25,7 +25,7 @@ export class kid extends Component {
     console.log("Mouse Out")
     this.setState({
       isHovered: false,
-      image: this.props.kid.headshot.fluid,
+      image: this.props.kid.headshotStar.fluid,
     })
   }
 

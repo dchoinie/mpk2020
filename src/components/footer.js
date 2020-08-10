@@ -53,8 +53,8 @@ const Footer = () => {
             </Link>
           </li>
         </ul>
-        <div id="footer-copyright" className="self-center">
-          <p style={{ color: "var(--main-pink)" }}>
+        <div className="self-center">
+          <p className="text-main-pink">
             &copy; {new Date().getFullYear()} Mini Pop Kids
           </p>
         </div>
