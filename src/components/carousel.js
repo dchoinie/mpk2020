@@ -7,9 +7,7 @@ import Img from "gatsby-image"
 const HomeCarousel = () => {
   const data = useStaticQuery(graphql`
     {
-      album: file(
-        relativePath: { eq: "carousel/2020/Slider-MPK18pre-order.jpg" }
-      ) {
+      album: file(relativePath: { eq: "carousel/2020/Slider-MPK18now.jpg" }) {
         childImageSharp {
           fluid(quality: 80) {
             srcSetWebp

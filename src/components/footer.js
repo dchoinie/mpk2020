@@ -8,7 +8,7 @@ const Footer = () => {
     {
       footerImg: file(relativePath: { eq: "footer/YT-bar.jpg" }) {
         childImageSharp {
-          fluid(quality: 70) {
+          fluid(quality: 90) {
             srcSet
             src
             ...GatsbyImageSharpFluid
