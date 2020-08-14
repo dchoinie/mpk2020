@@ -1,10 +1,32 @@
 import React from "react"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import Img from "gatsby-image"
 
-const Ambassador = () => {
+export const ambassadorImage = graphql`
+  {
+    ambassador: file(relativePath: { eq: "ambassador/Slider-Ambassador.jpg" }) {
+      childImageSharp {
+        fluid(quality: 70) {
+          src
+          srcSet
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
+
+const Ambassador = ({ data }) => {
   return (
     <Layout>
       <div className="max-w-screen-xl mx-auto">
+        <div className="flex mt-12">
+          <Img
+            fluid={data.ambassador.childImageSharp.fluid}
+            className="w-full"
+          />
+        </div>
         <div className="flex">
           <iframe
             title="Ambassador"
