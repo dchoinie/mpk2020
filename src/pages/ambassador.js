@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 
 export const ambassadorImage = graphql`
   {
-    ambassador: file(relativePath: { eq: "ambassador/Slider-Ambassador.jpg" }) {
+    ambassador: file(relativePath: { eq: "ambassador/ambassador.jpg" }) {
       childImageSharp {
         fluid(quality: 70) {
           src
