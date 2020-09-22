@@ -56,6 +56,7 @@ module.exports = {
     "./src/pages/videos.js",
     "./src/pages/vip-process.js",
     "./src/pages/walmartcanada.js",
+    "./src/pages/contest.js",
   ],
   theme: {
     extend: {
