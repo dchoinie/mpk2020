@@ -31,10 +31,10 @@ export default () => {
         <p>
           For booking inquiries please contact:&nbsp;
           <a
-            href="mailto:jhodgins@k-tel.com?cc=info@minipopkids.com&subject=Mini%20Pop%20Kids%20Booking%20Inquiry"
+            href="mailto:skives@k-tel.com?cc=info@minipopkids.com&subject=Mini%20Pop%20Kids%20Booking%20Inquiry"
             className="pink"
           >
-            Jamie Hodgins
+            Samantha Kives
           </a>
         </p>
         <h4 className="my-2 py-2">General Questions And Comments</h4>
