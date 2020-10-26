@@ -63,9 +63,6 @@ const HomeCarousel = () => {
       transitionTime={450}
       interval={4000}
     >
-      <Link to="/contest">
-        <Img fluid={data.contest.childImageSharp.fluid} className="w-full" />
-      </Link>
       <a
         href="https://shop.minipopkids.com/collections/albums/products/mini-pop-kids-18"
         target="_blank"
