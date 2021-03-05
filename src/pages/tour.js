@@ -102,25 +102,12 @@ export default ({ data }) => {
       </div>
       <div className="bg-main-pink p-6 text-white rounded-lg">
         <p>Hi MPK fans!</p>
-        <p>
-          Due to public health concerns surrounding COVID-19 (Coronavirus), the
-          MIN POP KIDS Live Bright Lights Concert Tour has been postponed until
-          further notice.
-        </p>
-        <p>
-          The health and safety of our fans and community is our top priority.
-          Ticket holders of postposed shows should hold on to their tickets,
-          which will be honoured at the rescheduled dates to be announced soon.
-          We cannot wait to share with you this one-of-a-kind family-friendly
-          concert experience.
-        </p>
-        <p>
-          We love our fans and we will keep you updated! Keep singing, keep
-          dancing and stay safe.
-        </p>
+        <p>Due to public health concerns surrounding COVID-19 (Coronavirus), the MIN POP KIDS Live Bright Lights Concert Tour has been postponed.</p>
+        <p>The health and safety of our fans and community is our top priority. Ticket holders of postposed shows should hold on to their tickets, which will be honoured at the rescheduled dates. We know that these are hard times, so if you would like a refund now for your show, please email us at <a href="mailto:info@minipopkids.com">info@minipopkids</a>If you do not see your show on the list below, then your show has been canceled and your credit card would have been refunded.</p>
+        <p>We cannot wait to share with you this one-of-a-kind family-friendly concert experience.</p>
+        <p>We love our fans, and we will keep you updated! Keep singing, keep dancing and stay safe.</p>
         <p>Love, The Mini Pop Kids</p>
       </div>
-      <p></p>
       <div className="max-w-3xl mx-auto">
         {data.allAirtable.nodes.map((node) => (
           <div

@@ -33,7 +33,11 @@ const NewHeader = () => {
     <div className="hidden lg:flex flex-col pt-4 pb-2">
       <div className="flex justify-end">
         <ul className="flex text-gray-800 mb-0">
-          <li className="text-base mr-1">
+           <li>
+             <a href="https://ktel.us1.list-manage.com/subscribe?u=3e45fcef3895f21e6ba7bdb20&id=a84d28ce24" target="_blank"
+              rel="noopener noreferrer" className="mr-1 p-2 bg-main-gray text-gray-100 rounded hover:no-underline border border-transparent hover:bg-white hover:text-main-gray">Join the MPK VIPs</a>
+           </li>
+          <li className="text-base mx-1 self-center">
             <a
               href="http://facebook.com/minipopkids"
               target="_blank"
@@ -43,7 +47,7 @@ const NewHeader = () => {
               <FaFacebook />
             </a>
           </li>
-          <li className="text-base mx-1 hover:text-main-text-main-pink">
+          <li className="text-base mx-1 self-center">
             <a
               href="https://www.instagram.com/minipopkids/"
               target="_blank"
@@ -53,7 +57,7 @@ const NewHeader = () => {
               <FaInstagram />
             </a>
           </li>
-          <li className="text-base mx-1 hover:text-main-text-main-pink">
+          <li className="text-base mx-1 self-center">
             <a
               href="https://www.youtube.com/minipopkids"
               target="_blank"
@@ -63,7 +67,7 @@ const NewHeader = () => {
               <FaYoutube />
             </a>
           </li>
-          <li className="text-base mx-1 hover:text-main-text-main-pink">
+          <li className="text-base mx-1 self-center">
             <a
               href="https://open.spotify.com/artist/2VAjBQ6cM2faT2UKxONV93"
               target="_blank"
@@ -73,7 +77,7 @@ const NewHeader = () => {
               <FaSpotify />
             </a>
           </li>
-          <li className="text-base mx-1 hover:text-main-text-main-pink">
+          <li className="text-base mx-1 self-center">
             <a
               href="https://www.amazon.ca/Mini-Kids-Double-2019-Release/dp/B07ZDJRGKQ"
               target="_blank"
@@ -83,7 +87,7 @@ const NewHeader = () => {
               <FaAmazon />
             </a>
           </li>
-          <li className="text-base ml-1 hover:text-main-text-main-pink">
+          <li className="text-base ml-1 self-center">
             <a
               href="https://music.apple.com/ca/artist/mini-pop-kids/39864063"
               target="_blank"
@@ -134,12 +138,14 @@ const NewHeader = () => {
               </Link>
             </li>
             <li className="mx-2 self-center">
-              <Link
-                to="/ambassador"
+              <a
+                href="https://outschool.com/#abklwmp240"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-main-gray hover:text-main-pink hover:no-underline"
               >
-                Ambassador
-              </Link>
+                OutSchool
+              </a>
             </li>
             <li className="mx-2 self-center">
               <button

@@ -21,7 +21,8 @@ const Ambassador = ({ data }) => {
   return (
     <Layout>
       <div className="max-w-screen-xl mx-auto">
-        <div className="flex mt-12">
+        <p>This page no longer exists</p>
+        {/* <div className="flex mt-12">
           <Img
             fluid={data.ambassador.childImageSharp.fluid}
             className="w-full"
@@ -41,7 +42,7 @@ const Ambassador = ({ data }) => {
               Fill out the Mini Pop Kids | Ambassador Program form
             </a>
           </iframe>
-        </div>
+        </div> */}
       </div>
     </Layout>
   )

@@ -17,7 +17,7 @@ const HomeCarousel = () => {
           }
         }
       }
-      walmart: file(relativePath: { eq: "carousel/2020/Slider-Walmart.jpg" }) {
+      walmart: file(relativePath: { eq: "carousel/2020/WEBSlider-Spring2021.jpg" }) {
         childImageSharp {
           fluid(quality: 80) {
             srcSetWebp
@@ -28,7 +28,7 @@ const HomeCarousel = () => {
         }
       }
       video: file(
-        relativePath: { eq: "carousel/2020/Slider-YT-Dontstartnow.jpg" }
+        relativePath: { eq: "carousel/2020/WEBSlider-Dynamite.jpg" }
       ) {
         childImageSharp {
           fluid(quality: 80) {
@@ -39,8 +39,8 @@ const HomeCarousel = () => {
           }
         }
       }
-      contest: file(
-        relativePath: { eq: "carousel/2020/WEBSlider-ClothingCONTEST.jpg" }
+      outSchool: file(
+        relativePath: { eq: "carousel/2020/WEBSlider-Outschool.jpg" }
       ) {
         childImageSharp {
           fluid(quality: 80) {
@@ -63,16 +63,6 @@ const HomeCarousel = () => {
       transitionTime={450}
       interval={4000}
     >
-      <Link to="/contest">
-        <Img fluid={data.contest.childImageSharp.fluid} className="w-full" />
-      </Link>
-      <a
-        href="https://shop.minipopkids.com/collections/albums/products/mini-pop-kids-18"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Img fluid={data.album.childImageSharp.fluid} className="w-full" />
-      </a>
       <a
         href="https://www.walmart.ca/en/mini-pop-kids/N-51184998"
         target="_blank"
@@ -81,11 +71,22 @@ const HomeCarousel = () => {
         <Img fluid={data.walmart.childImageSharp.fluid} className="w-full" />
       </a>
       <a
+        href="https://shop.minipopkids.com/collections/albums/products/mini-pop-kids-18"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Img fluid={data.album.childImageSharp.fluid} className="w-full" />
+      </a>
+      <a
         href="https://www.youtube.com/minipopkids"
         target="_blank"
         rel="noopener noreferrer"
       >
         <Img fluid={data.video.childImageSharp.fluid} className="w-full" />
+      </a>
+      <a href="https://outschool.com/#abklwmp240" target="_blank"
+        rel="noopener noreferrer">
+          <Img fluid={data.outSchool.childImageSharp.fluid} className="w-full" />
       </a>
     </Carousel>
   )

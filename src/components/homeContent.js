@@ -5,8 +5,8 @@ import Img from "gatsby-image"
 export default () => {
   const data = useStaticQuery(graphql`
     {
-      ambassador: file(
-        relativePath: { eq: "homeContent/2020/B-Ambassador.jpg" }
+      outSchool: file(
+        relativePath: { eq: "homeContent/2021/WEB-button-outSchool.jpg" }
       ) {
         childImageSharp {
           fluid {
@@ -17,7 +17,7 @@ export default () => {
           }
         }
       }
-      meet: file(relativePath: { eq: "homeContent/2020/B-MeetMPK.jpg" }) {
+      meet: file(relativePath: { eq: "homeContent/2021/WEB-button-MeetMPK.jpg" }) {
         childImageSharp {
           fluid {
             src
@@ -27,7 +27,7 @@ export default () => {
           }
         }
       }
-      album: file(relativePath: { eq: "homeContent/2020/B-MPK18.jpg" }) {
+      album: file(relativePath: { eq: "homeContent/2021/WEB-button-MPK18.jpg" }) {
         childImageSharp {
           fluid {
             src
@@ -37,7 +37,7 @@ export default () => {
           }
         }
       }
-      videos: file(relativePath: { eq: "homeContent/2020/B-MusicVideos.jpg" }) {
+      videos: file(relativePath: { eq: "homeContent/2021/WEB-button-MusicVideos.jpg" }) {
         childImageSharp {
           fluid {
             src
@@ -48,7 +48,7 @@ export default () => {
         }
       }
       newsletter: file(
-        relativePath: { eq: "homeContent/2020/B-Newsletter.jpg" }
+        relativePath: { eq: "homeContent/2021/WEB-button-Newsletter.jpg" }
       ) {
         childImageSharp {
           fluid {
@@ -59,7 +59,7 @@ export default () => {
           }
         }
       }
-      walmart: file(relativePath: { eq: "homeContent/2020/B-Walmart-1.jpg" }) {
+      walmart: file(relativePath: { eq: "homeContent/2021/WEB-button-Clothing.jpg" }) {
         childImageSharp {
           fluid {
             src
@@ -74,25 +74,26 @@ export default () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 my-12">
       <a
-        href="https://shop.minipopkids.com/collections/albums/products/mini-pop-kids-18"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Img fluid={data.album.childImageSharp.fluid} className="w-full" />
-      </a>
-      <a
         href="https://www.walmart.ca/en/mini-pop-kids/N-51184998"
         target="_blank"
         rel="noopener noreferrer"
       >
         <Img fluid={data.walmart.childImageSharp.fluid} className="w-full" />
       </a>
-      <Link to="/meet-the-mpk">
-        <Img fluid={data.meet.childImageSharp.fluid} className="w-full" />
-      </Link>
-      <Link to="/ambassador">
-        <Img fluid={data.ambassador.childImageSharp.fluid} className="w-full" />
-      </Link>
+      <a
+        href="https://outschool.com/#abklwmp240"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Img fluid={data.outSchool.childImageSharp.fluid} className="w-full" />
+      </a>
+      <a
+        href="https://shop.minipopkids.com/collections/albums/products/mini-pop-kids-18"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Img fluid={data.album.childImageSharp.fluid} className="w-full" />
+      </a>
       <Link to="/videos">
         <Img fluid={data.videos.childImageSharp.fluid} className="w-full" />
       </Link>
@@ -103,6 +104,9 @@ export default () => {
       >
         <Img fluid={data.newsletter.childImageSharp.fluid} className="w-full" />
       </a>
+      <Link to="/meet-the-mpk">
+        <Img fluid={data.meet.childImageSharp.fluid} className="w-full" />
+      </Link>
     </div>
   )
 }

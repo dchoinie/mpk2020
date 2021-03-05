@@ -78,9 +78,13 @@ const NewHeaderMobile = () => {
                 </Link>
               </li>
               <li className="my-2">
-                <Link to="/ambassador" className="text-main-pink text-3xl">
-                  Ambassador
-                </Link>
+              <a
+                href="https://outschool.com/#abklwmp240"
+                target="_blank"
+                rel="noopener noreferrer" 
+                className="text-main-pink text-3xl">
+                  OutSchool
+                </a>
               </li>
               <li className="flex flex-col items-center text-center text-3xl">
                 <a href="" className="flex text-main-pink my-2">

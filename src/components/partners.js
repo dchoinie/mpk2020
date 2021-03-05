@@ -21,14 +21,6 @@ export default () => {
           }
         }
       }
-      ypad: file(relativePath: { eq: "partners/YPAD.png" }) {
-        childImageSharp {
-          fluid {
-            src
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
       travellingStage: file(
         relativePath: { eq: "partners/travellingStage.jpg" }
       ) {
@@ -67,13 +59,6 @@ export default () => {
           rel="noreferrer noopener"
         >
           <Img fluid={data.sickkids.childImageSharp.fluid} />
-        </a>
-        <a
-          href="https://www.ypadnow.com/"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <Img fluid={data.ypad.childImageSharp.fluid} />
         </a>
         <Link to="/pop-star-programs">
           <Img fluid={data.travellingStage.childImageSharp.fluid} />
