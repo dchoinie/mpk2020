@@ -138,7 +138,7 @@ const OutSchool = ({ data }) => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col lg:flew-row mb-4">
+            <div className="flex flex-col lg:flex-row mb-4">
                 <div className="flex w-full lg:w-1/2">
                     <Img fluid={data.savage.childImageSharp.fluid} className="w-full" />
                 </div>
